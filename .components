@@ -1,0 +1,7 @@
+---
+:orm: mini_record
+:test: rspec
+:mock: none
+:script: jquery
+:renderer: haml
+:stylesheet: scss
