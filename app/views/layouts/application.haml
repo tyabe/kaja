@@ -16,28 +16,15 @@
         padding-top: 60px;
       }
     =javascript_include_tag 'application', 'jquery'
-    =yield_content :include
-  %body
+    =yield_content :head
 
-    %div(class="navbar navbar-fixed-top")
-      %div.navbar-inner
-        %div.container
-          %a.brand(href="/")Ruby Kaja
-          %div{:class => "nav-collapse"}
-            %ul.nav
-              %li.active
-                %a(href="/about")RubyKajaとは
-              %li
-                %a(href="/nominate")応募する
-              %li
-                %a(href="/kaja")歴代Kaja
-    %div.container
-      =yield
+  %body(data-spy="scroll" data-offset="50" screen_capture_injected="true")
+    =yield
 
-      %footer.footer
-        Ruby Kaja is devised by
-        %a(href="http://twitter.com/nagachika")@nagachika.
-        produced by
-        %a(href="http://twitter.com/dan5ya")@dan5ya.
-        operated by
-        %a(href="http://groups.google.com/group/yokohamarb")Yokohama.rb.
+    %footer.center
+      Ruby Kaja is devised by
+      %a(href="http://twitter.com/nagachika")@nagachika.
+      produced by
+      %a(href="http://twitter.com/dan5ya")@dan5ya.
+      operated by
+      %a(href="http://groups.google.com/group/yokohamarb")Yokohama.rb.

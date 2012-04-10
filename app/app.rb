@@ -1,3 +1,4 @@
+# coding: utf-8
 class Kaja < Padrino::Application
   register ScssInitializer
   use ActiveRecord::ConnectionAdapters::ConnectionManagement
@@ -9,6 +10,21 @@ class Kaja < Padrino::Application
 
   get '/' do
     render :index
+  end
+
+  get "/nominate" do
+    @nomination = Nomination.new
+    render :nominate
+  end
+
+  post "/nominate" do
+    @nomination = Nomination.new(params[:nomination])
+    if @nomination.valid?
+      flash[:notice] = '登録しました'
+      redirect '/'
+    else
+      render :nominate
+    end
   end
 
   ##

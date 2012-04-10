@@ -1,0 +1,53 @@
+-# coding: utf-8
+=partial 'navbar'
+
+%div.container
+  %div.page-header
+    %h1
+      Ruby Kajaの推薦
+
+  %div(class="form-nominate")
+    - form_for @nomination, '/nominate', class: 'form-horizontal well' do |f|
+      - if @nomination.errors.any?
+        %div(class="alert alert-error")
+          %ul
+            - @nomination.errors.full_messages.each do |msg|
+              %li= msg
+
+      - field_set_tag do
+        %legend コミュニティ情報
+        %div(class="control-group")
+          = f.label :name, class: "control-label", caption: "名称"
+          %div.controls
+            = f.text_field :name
+        %div(class="control-group")
+          = f.label :description, class: "control-label", caption: "説明・活動予定等"
+          %div.controls
+            = f.text_area :description, rows: 5
+        %div(class="control-group")
+          = f.label :contact, class: "control-label", caption: "連絡先( or URL )"
+          %div.controls
+            = f.text_field :contact
+
+        %legend Ruby Kaja情報
+        %div(class="control-group")
+          = f.label :kaja, class: "control-label", caption: "名前"
+          %div.controls
+            = f.text_field :kaja
+        %div(class="control-group")
+          = f.label :testimonial, class: "control-label", caption: "推薦理由"
+          %div.controls
+            = f.text_area :testimonial, rows: 5
+        %div(class="control-group")
+          = f.label :github, class: "control-label", caption: "github"
+          %div.controls
+            = f.text_field :github
+        %div(class="control-group")
+          = f.label :twitter, class: "control-label", caption: "twitter"
+          %div.controls
+            = f.text_field :twitter
+
+      %div(class="form-action")
+        = submit_tag '登録する', class: "btn btn-primary"
+
+
