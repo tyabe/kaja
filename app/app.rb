@@ -9,22 +9,27 @@ class Kaja < Padrino::Application
   enable :sessions
 
   get '/' do
+    @community = Community.new
     render :index
+  end
+
+  post '/entry' do
+    @community = Community.new(params[:community])
+    if @community.valid?
+      flash[:notice] = '登録しました'
+      redirect '/'
+    else
+      render :index
+    end
+  end
+
+  get '/history' do
+    render :history
   end
 
   get "/nominate" do
     @nomination = Nomination.new
     render :nominate
-  end
-
-  post "/nominate" do
-    @nomination = Nomination.new(params[:nomination])
-    if @nomination.valid?
-      flash[:notice] = '登録しました'
-      redirect '/'
-    else
-      render :nominate
-    end
   end
 
   ##

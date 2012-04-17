@@ -3,10 +3,10 @@ class Community < ActiveRecord::Base
   # Fields
   field :name
   field :description
-  field :contact
+  field :email
   timestamps
 
   # Validations
-  validates_presence_of :name
+  validates_presence_of :name, :description, :email
 
 end

@@ -19,7 +19,8 @@
     =yield_content :head
 
   %body(data-spy="scroll" data-offset="50" screen_capture_injected="true")
-    =yield
+    %div.container
+      =yield
 
     %footer.center
       Ruby Kaja is devised by

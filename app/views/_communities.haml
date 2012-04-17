@@ -1,0 +1,40 @@
+-# coding: utf-8
+
+%div.page-header
+  %h1
+    参加コミュニティ
+
+%div
+  %p
+    現在、参加コミュニティを募集中です。<br/>
+    %i.icon-exclamation-sign
+    %strong 応募締め切り：2012年7月末日
+
+%div(class="form-nominate")
+  - form_for @community, '/entry#communities', class: 'form-horizontal well' do |f|
+    - if @community.errors.any?
+      %div(class="alert alert-error")
+        %ul
+          - @community.errors.full_messages.each do |msg|
+            %li= msg
+
+    - field_set_tag do
+      %legend コミュニティの情報を入力してください
+      %div(class="control-group")
+        = f.label :name, class: "control-label", caption: "名称"
+        %div.controls
+          = f.text_field :name
+      %div(class="control-group")
+        = f.label :description, class: "control-label", caption: "説明"
+        %div.controls
+          = f.text_area :description, rows: 5
+          %p.help-block 活動内容や今後の予定を入力ください
+      %div(class="control-group")
+        = f.label :email, class: "control-label", caption: "連絡用メールアドレス"
+        %div.controls
+          = f.text_field :email
+          %p.help-block Kaja登録用ページのURLをご案内するときに使用します
+
+    %div(class="form-action")
+      = submit_tag '応募する', class: "btn btn-primary"
+

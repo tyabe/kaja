@@ -1,21 +1,21 @@
 -# coding: utf-8
 =partial 'navbar'
 
-%div.container
-  %header
-    %div(class="hero-unit")
-      %div.center
-        %h1 Ruby Kaja
-      %h2 互いのコミュニティ活動を認め合うことでモチベーションを高める
-      %div.center
-        %h3 To begin recruitment from 2012-06-02.
+%header
+  %div(class="hero-unit")
+    %div.center
+      %h1 Ruby Kaja
+    %h2 互いのコミュニティ活動を認め合うことでモチベーションを高める
+    %div.center
+      %p
+        %strong To begin recruitment from 2012-06-02.
 
-  %section#about
-    = partial 'about'
-  %section#nominate
-    = partial 'nominate'
-  %section#kaja
-    = partial 'kaja'
+%section#about
+  = partial 'about'
+%section#guidelines
+  = partial 'guidelines'
+%section#communities
+  = partial 'communities'
 
 - content_for :head do
   =javascript_include_tag 'bootstrap-modal'
