@@ -21,6 +21,8 @@ gem 'rack-test', :require => "rack/test", :group => "test"
 # Padrino Stable Gem
 gem 'padrino', '0.10.6'
 
+gem 'thin'
+
 group :production do
   gem 'pg'
 end
