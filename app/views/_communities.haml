@@ -15,22 +15,21 @@
     - if @community.errors.any?
       %div(class="alert alert-error")
         %ul
-          - @community.errors.full_messages.each do |msg|
-            %li= msg
+          %li= error_messages_for :community
 
     - field_set_tag do
       %legend コミュニティの情報を入力してください
       %div(class="control-group")
-        = f.label :name, class: "control-label", caption: "名称"
+        = f.label :name, class: "control-label"
         %div.controls
           = f.text_field :name
       %div(class="control-group")
-        = f.label :description, class: "control-label", caption: "説明"
+        = f.label :description, class: "control-label"
         %div.controls
           = f.text_area :description, rows: 5
           %p.help-block 活動内容や今後の予定を入力ください
       %div(class="control-group")
-        = f.label :email, class: "control-label", caption: "連絡用メールアドレス"
+        = f.label :email, class: "control-label"
         %div.controls
           = f.text_field :email
           %p.help-block Kaja登録用ページのURLをご案内するときに使用します

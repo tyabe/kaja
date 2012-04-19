@@ -1,0 +1,10 @@
+ja:
+  models:
+    community:
+      name: コミュニティ
+      attributes:
+        name: 名称
+        description: 説明
+        email: 連絡用メールアドレス
+        created_at: 登録日
+
