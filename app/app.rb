@@ -8,6 +8,11 @@ class Kaja < Padrino::Application
 
   enable :sessions
 
+  before do
+    session[:locale] ||= :ja
+    I18n.locale = session[:locale]
+  end
+
   get '/' do
     @community = Community.new
     render :index
@@ -30,6 +35,11 @@ class Kaja < Padrino::Application
   get "/nominate" do
     @nomination = Nomination.new
     render :nominate
+  end
+
+  get "/locale/:locale" do
+    session[:locale] = params[:locale].to_sym
+    redirect '/'
   end
 
   ##

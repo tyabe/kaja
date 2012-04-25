@@ -15,4 +15,7 @@
             %a(href="/history")歴代Kaja
 
         %p(class="navbar-text pull-right")
-          %a(href="#")English
+          -if I18n.locale == :ja
+            %a(href="/locale/en")English
+          -else
+            %a(href="/locale/ja")日本語
