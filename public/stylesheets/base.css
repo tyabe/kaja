@@ -1,7 +1,15 @@
-.center {
+.hero-unit {
+  line-height: 2;
   margin: 0 auto;
   padding: 0;
-  width: 400px; }
+  text-align: center; }
+  .hero-unit * {
+    padding: 10px 0; }
+  .hero-unit h2 {
+    color: #666; }
+  .hero-unit p {
+    color: #999;
+    letter-spacing: 2px; }
 
 h3 {
   margin-top: 40px;
@@ -20,7 +28,8 @@ dd {
 section {
   padding-top: 30px; }
 
-.footer {
+footer {
+  text-align: center;
   margin-top: 45px;
   padding: 35px 0 36px;
   border-top: 1px solid #E5E5E5; }
