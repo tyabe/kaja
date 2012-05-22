@@ -23,20 +23,18 @@
       %div(class="control-group")
         = f.label :name, class: "control-label"
         %div.controls
-          = f.text_field :name
+          = f.text_field :name, class: "span8"
       %div(class="control-group")
         = f.label :description, class: "control-label"
         %div.controls
-          = f.text_area :description, rows: 5
-          %p.help-block 活動内容や今後の予定を入力ください
+          = f.text_area :description, rows: 5, class: "span8", placeholder: '活動内容や今後の予定を入力ください'
       %div(class="control-group")
         = f.label :email, class: "control-label"
         %div.controls
-          = f.text_field :email
-          %p.help-block Kaja登録用ページのURLをご案内するときに使用します
+          = f.text_field :email, class: "span8"
 
     %div(class="form-action")
-      = submit_tag '応募する', class: "btn btn-primary"
+      = submit_tag '応募する', class: "btn btn-primary btn-large"
 
 %p.pull-right
   %a(href="#")
