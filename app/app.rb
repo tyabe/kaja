@@ -28,11 +28,6 @@ class Kaja < Padrino::Application
     end
   end
 
-  get "/locale/:locale" do
-    session[:locale] = params[:locale].to_sym
-    redirect '/'
-  end
-
   ##
   # Caching support
   #
