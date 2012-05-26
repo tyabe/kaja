@@ -6,3 +6,10 @@ vendor/gems/*
 !vendor/gems/cache/
 .sass-cache/*
 db/*.db
+
+# rvm
+.rvmrc
+
+# rbenv
+.rbenv-version
+.rbenv-gemsets
