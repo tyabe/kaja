@@ -28,10 +28,6 @@ class Kaja < Padrino::Application
     end
   end
 
-  get '/history' do
-    render :history
-  end
-
   get "/locale/:locale" do
     session[:locale] = params[:locale].to_sym
     redirect '/'
