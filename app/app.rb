@@ -32,11 +32,6 @@ class Kaja < Padrino::Application
     render :history
   end
 
-  get "/nominate" do
-    @nomination = Nomination.new
-    render :nominate
-  end
-
   get "/locale/:locale" do
     session[:locale] = params[:locale].to_sym
     redirect '/'
