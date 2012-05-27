@@ -2,7 +2,7 @@ class Account < ActiveRecord::Base
   attr_accessor :password, :password_confirmation
 
   # Fields
-  field :name, :surname, :email, :crypted_password, :role
+  field :name, :email, :crypted_password, :role
 
   # Validations
   validates_presence_of     :email, :role

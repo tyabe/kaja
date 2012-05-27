@@ -5,12 +5,12 @@
 #   name = shell.ask("What's your name?")
 #   shell.say name
 #
-email     = "admin@example.com"
+email     = "admin@kaja.rubyist.net"
 password  = 'admin'
 
 shell.say ""
 
-account = Account.create(:email => email, :name => "Foo", :surname => "Bar", :password => password, :password_confirmation => password, :role => "admin")
+account = Account.create(email: email, name: "Admin", password: password, password_confirmation: password, role: "admin")
 
 if account.valid?
   shell.say "================================================================="
