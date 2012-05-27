@@ -2,12 +2,12 @@
 %html{:lang => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
-    %title Padrino Admin
+    %title Ruby Kaja Admin
     =stylesheet_link_tag :base, "themes/default/style"
   %body
     #container
       #header
-        %h1=link_to "Padrino Admin", url(:base_index)
+        %h1=link_to "Ruby Kaja Admin", url(:base_index)
         #user-navigation
           %ul.wat-cf
             %li=link_to pat(:profile), url(:accounts, :edit, :id => current_account.id)
@@ -26,6 +26,6 @@
               %p
                 Copyright &copy;
                 =Time.now.year
-                Your Site - Powered by
+                Ruby Kaja - Powered by
                 =link_to "Padrino v.#{Padrino.version}", "http://padrino.github.com", :target => :_blank
         #sidebar=yield_content :sidebar
