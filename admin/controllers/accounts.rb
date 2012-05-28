@@ -14,6 +14,7 @@ Admin.controllers :accounts do
     @account = Account.new(params[:account])
     if @account.save
       flash[:notice] = 'Account was successfully created.'
+      Admin.deliver(:notifier, :registration, @account)
       redirect url(:accounts, :edit, :id => @account.id)
     else
       render 'accounts/new'

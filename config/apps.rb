@@ -28,9 +28,23 @@
 Padrino.configure_apps do
   # enable :sessions
   set :session_secret, '4a06000bc28a572317f9bea2953ca6be932fec7a71f2b960e61c2455a89c2dd1'
+  set :mailer_defaults, from: 'RubyKaja WebSite <noreply@kaja.rubyist.net>'
+  if production?
+    set :delivery_method, :smtp => {
+      address: ENV['MAILGUN_SMTP_SERVER'],
+      port: ENV['MAILGUN_SMTP_PORT'],
+      user_name: ENV['MAILGUN_SMTP_LOGIN'],
+      password: ENV['MAILGUN_SMTP_PASSWORD'],
+      domain: "kaja.rubyist.net",
+      transport_encoding: "8bit",
+      authentication: :plain
+    }
+  else
+    set :delivery_method, :test
+  end
+  set :host, production? ? "kaja.rubyist.net" : "localhost:3000"
 end
 
 # Mounts the core application for this project
 Padrino.mount("Kaja").to('/')
-
 Padrino.mount("Admin").to("/admin")
