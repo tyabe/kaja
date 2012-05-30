@@ -1,0 +1,16 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first=link_to pat(:list), url(:communities, :index)
+      %li=link_to pat(:new), url(:communities, :new)
+      %li.active=link_to pat(:show), url(:communities, :show, id: @community.id)
+  .content
+    %h2.title
+      =h @community.name
+    .inner
+      .group
+        =h @community.email
+      .group
+        =simple_format h @community.description
+
+-content_for :sidebar, partial("base/sidebar")
