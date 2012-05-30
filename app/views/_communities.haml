@@ -4,6 +4,14 @@
   %h1
     参加コミュニティ
 
+- if flash[:complete]
+  %div(class="alert alert-info")
+    %h2.alert-heading
+      応募を受け付けました
+    %p
+      RubyKajaにご参加いただき、ありがとうございます。<br/>
+      後日、運営委員の審査結果及び、Kajaの登録方法をメールにてご連絡いたします。
+
 %div
   %p
     現在、参加コミュニティを募集中です。
@@ -31,7 +39,7 @@
       %div(class="control-group")
         = f.label :email, class: "control-label"
         %div.controls
-          = f.text_field :email, class: "span8"
+          = f.email_field :email, class: "span8"
 
     %div(class="form-action")
       = submit_tag '応募する', class: "btn btn-primary btn-large"

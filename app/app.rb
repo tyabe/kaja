@@ -20,8 +20,8 @@ class Kaja < Padrino::Application
 
   post '/entry' do
     @community = Community.new(params[:community])
-    if @community.valid?
-      flash[:notice] = '登録しました'
+    if @community.save
+      flash[:complete] = true
       redirect '/'
     else
       render :index
