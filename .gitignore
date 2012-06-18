@@ -13,3 +13,6 @@ db/*.db
 # rbenv
 .rbenv-version
 .rbenv-gemsets
+
+# pow
+.powrc
