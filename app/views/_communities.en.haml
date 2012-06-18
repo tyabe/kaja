@@ -1,0 +1,20 @@
+-# coding: utf-8
+
+%div.page-header
+  %h1
+    Participating Communities
+
+- if flash[:complete]
+  = partial "registration_complete"
+
+%div
+  %p
+    We are currently recruiting communities for Ruby Kaja.
+  %p
+    %i.icon-exclamation-sign
+    %strong Application deadline: the last day of July, 2012
+= partial "form"
+%p.pull-right
+  %a(href="#")
+    %small Return to Top
+

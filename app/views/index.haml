@@ -4,7 +4,11 @@
 %header
   %div(class="hero-unit")
     %h1 Ruby Kaja
-    %h2 Ruby Kajaであなたのコミュニティを支える身近なRubyistを賞賛しよう！
+    %h2
+      - if I18n.locale == :ja
+        Ruby Kajaであなたのコミュニティを支える身近なRubyistを賞賛しよう！
+      - else
+        Praise the Rubyists in your community through Ruby Kaja
     %p
       %strong To begin recruitment from 2012-06-02.
 

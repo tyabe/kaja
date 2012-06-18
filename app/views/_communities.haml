@@ -18,32 +18,7 @@
   %p
     %i.icon-exclamation-sign
     %strong 応募締め切り：2012年7月末日
-
-%div(class="form-nominate")
-  - form_for @community, '/entry#communities', class: 'form-horizontal well' do |f|
-    - if @community.errors.any?
-      %div(class="alert alert-error")
-        %ul
-          %li= error_messages_for :community
-
-    - field_set_tag do
-      %legend コミュニティの情報を入力してください
-      %div(class="control-group")
-        = f.label :name, class: "control-label"
-        %div.controls
-          = f.text_field :name, class: "span8"
-      %div(class="control-group")
-        = f.label :description, class: "control-label"
-        %div.controls
-          = f.text_area :description, rows: 5, class: "span8", placeholder: '活動内容や今後の予定を入力ください'
-      %div(class="control-group")
-        = f.label :email, class: "control-label"
-        %div.controls
-          = f.email_field :email, class: "span8"
-
-    %div(class="form-action")
-      = submit_tag '応募する', class: "btn btn-primary btn-large"
-
+= partial "form"
 %p.pull-right
   %a(href="#")
     %small ページの先頭へ

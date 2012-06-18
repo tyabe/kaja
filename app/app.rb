@@ -9,23 +9,37 @@ class Kaja < Padrino::Application
   enable :sessions
 
   before do
-    session[:locale] ||= :ja
-    I18n.locale = session[:locale]
+    I18n.locale = if params[:captures] && s = params[:captures].first 
+      s.gsub("/","").to_sym 
+    else 
+      :ja
+    end
   end
 
-  get '/' do
+  get %r{/(en)?} do
     @community = Community.new
     render :index
   end
 
-  post '/entry' do
+  post %r{/(en/)?entry} do
     @community = Community.new(params[:community])
     if @community.save
       flash[:complete] = true
-      redirect '/'
+      redirect i18n_path('/')
     else
       render :index
     end
+  end
+
+  private
+
+  def i18n_path(s)
+    root = I18n.locale == :ja ? "/" : "/#{I18n.locale}"
+    s == "/" ? root : File.join(root, s)
+  end
+
+  def rubyize(s,t)
+    "<ruby>#{s}<rp>（</rp><rt>#{t}</rt><rp>）</rp></ruby>"
   end
 
   ##

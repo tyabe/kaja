@@ -1,4 +1,13 @@
 ja:
+  menu:
+    about: RubyKajaとは
+    application_criteria: 応募要項
+    participating_communities: 参加コミュニティ
+    management_community: 運営委員
+  form:
+    description_placeholder: '活動内容や今後の予定を入力ください'
+    apply: '応募する'
+    legend: コミュニティの情報を入力してください
   date:
     abbr_day_names:
     - 日
