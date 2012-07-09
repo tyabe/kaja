@@ -1,7 +1,9 @@
 source :rubygems
 
+ruby '1.9.3'
+
 # Server requirements
-# gem 'thin' # or mongrel
+gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
 
 # Project requirements
@@ -14,14 +16,8 @@ gem 'sass'
 gem 'haml'
 gem 'mini_record'
 
-# Test requirements
-gem 'rspec', :group => "test"
-gem 'rack-test', :require => "rack/test", :group => "test"
-
 # Padrino Stable Gem
-gem 'padrino', '0.10.6'
-
-gem 'thin'
+gem 'padrino', '0.10.7'
 
 group :production do
   gem 'pg'
@@ -29,6 +25,13 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem 'pry-padrino'
+end
+
+# Test requirements
+group :test do
+  gem 'rspec'
+  gem 'rack-test'
 end
 
 # Or Padrino Edge
@@ -36,5 +39,5 @@ end
 
 # Or Individual Gems
 # %w(core gen helpers cache mailer admin).each do |g|
-#   gem 'padrino-' + g, '0.10.6'
+#   gem 'padrino-' + g, '0.10.7'
 # end
