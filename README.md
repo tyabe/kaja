@@ -1,9 +1,9 @@
-# Welcome Ruby Kaja
+# Welcome to Ruby Kaja
 
-Ruby Kajaは、RubyやRubyコミュニティに貢献している人達に与えられる称号です。
-WEBサイトは http://kaja.rubyist.net/ です。
+Ruby Kaja is a title to recognize people who have contributed to Ruby or the Ruby community.
+Here is the web site for http://kaja.rubyist.net/en .
 
-## 動かし方
+## Usage
 ```
 $ gem install bundler
 $ git clone git://github.com/tyabe/kaja.git
