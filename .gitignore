@@ -1,6 +1,7 @@
 .DS_Store
 log/**/*
 tmp/**/*
+tmp/*
 bin/*
 vendor/gems/*
 !vendor/gems/cache/
@@ -13,3 +14,6 @@ db/*.db
 # rbenv
 .rbenv-version
 .rbenv-gemsets
+
+# pow
+.powrc

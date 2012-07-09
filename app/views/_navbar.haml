@@ -6,11 +6,15 @@
       %div{:class => "nav-collapse"}
         %ul.nav
           %li.active
-            %a(href="/#about")RubyKajaとは
+            %a(href="#about")= t("menu.about")
           %li
-            %a(href="/#guidelines")応募要項
+            %a(href="#guidelines")= t("menu.application_criteria")
           %li
-            %a(href="/#communities")参加コミュニティ
+            %a(href="#communities")= t("menu.participating_communities")
           %li
-            %a(href="/#committee")運営委員
-
+            %a(href="#committee")= t("menu.management_community")
+          %li
+            - if I18n.locale == :ja
+              %a(href="/en")English
+            - else
+              %a(href="/")日本語
