@@ -1,0 +1,19 @@
+// style.scss document
+
+// import YUI
+@import "reset"; // _reset.scssの読み込み
+@import "base"; // _base.scssの読み込み
+
+/*!
+ * kaja Style *
+ * author:
+ * url   :
+ */
+
+// ********************
+// main
+// ********************
+@import "my-mixin";
+@import "my-default";
+@import "kaja";
+@import "ie";

@@ -1,0 +1,228 @@
+/*! my-default.scss document */
+
+// ********************
+// default
+// ********************
+body,
+div,
+dl,dt,dd,
+h1,h2,h3,h4,h5,h6,
+pre,
+form,
+fieldset,
+legend,
+p,
+ul,ol,li,
+blockquote,
+table,thead,tbody,tfoot,tr,th,td,
+a,
+address {
+  margin:0;
+  padding:0;
+  //word-break:break-all; // IE,safari独自（ただし、css3の仕様にはアリ）
+  //word-wrap:break-word;
+  vertical-align:baseline;
+}
+html {
+  background:none;
+}
+body {
+  text-align:left;
+  color:#000;
+  font-style:normal;
+  font-weight:normal;
+  font-family:helvetica,arial,'ヒラギノ角ゴ Pro W3','HiraKakuProN','HiraKakuProN-W3','Hiragino Kaku Gothic Pro','Hiragino Kaku Gothic Pro W3','ＭＳ Ｐゴシック','MS-PGothic','MS PGothic',sans-serif;
+  letter-spacing:0;
+  background:#fff;
+  text-decoration:none;
+}
+body,
+pre,
+button,
+input,
+select,
+label,
+textarea {
+  font-size:12px;
+  line-height:1.5; // 単位em削除 20100820
+  vertical-align:baseline;
+  margin:0;
+}
+body,
+pre,
+button,
+input,
+select,
+label,
+textarea {
+  font-family:font-family( sanserif );
+}
+h1,h2,h3,h4,h5,h6 {
+  //font-size:100%;
+  //font-weight:normal;
+}
+ul,ol {
+  //margin-left:1.3em;
+}
+li {
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+}
+fieldset,
+img {
+  border-width:0;
+  border-style:none;
+}
+img { // 画像縮小時の最適化
+  -ms-interpolation-mode: bicubic; // IE7~
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0px; // except IE6,7
+  border:none;
+}
+th {
+  text-align:center; // IE6,7
+}
+th,td {
+  border:1px solid #ccc;
+}
+iframe {
+  margin:0;
+  padding:0;
+  border-widht:0;
+  border-style:none;
+  width:100%;
+}
+div,
+p,
+td {
+  //text-align:justify; // moz, webkit, opera
+  //text-justify:distribute; // IE // css3
+  //-ms-text-justify:distribute; // IE8
+}
+p,
+td {
+  //text-align:justify; // moz, webkit, opera
+  //text-justify:distribute; // IE // css3
+  //-ms-text-justify:distribute; // IE8
+}
+input,
+select,
+label,
+button {
+  cursor:pointer;
+  _cursor:auto; // IE6
+}
+input,
+select,
+button {
+  @include box-sizing( border-box );
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] { // except IE6
+  cursor:text;
+}
+input[type="text"] { // except IE6
+  height:1.8em;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right:0.25em;
+}
+// ********************
+// @ html5
+// ********************
+// legacy browser, ie9以下に対応するには以下scriptが<head>内に必須
+// <!--[if lt IE 9]>
+// 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+// <![endif]-->
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display:block;
+  margin:0;
+  padding:0;
+}
+// ********************
+// @ Anchor
+// ********************
+a,
+address a { // リンク
+  outline:none;
+  text-decoration:none;
+  color:#05c; // 彩度の低いリンク色
+  color:#000;
+  @include transition( all 0.5s ease-out );
+}
+a:hover,
+address a:hover { // マウスオーバー時
+  text-decoration:underline;
+  color:#0bf; // 爽やかなリンク色
+  color:#C20000;
+  @include transition( all 0.5s ease-out );
+}
+a:focus { // tabキーで選択時 except IE6,7 safari
+  text-decoration:underline;
+  color:#000;
+  //background-color:#8cf!important;
+  outline:1px solid #C20000!important;
+  outline-offset:-2px; // except IE
+}
+// ********************
+// @ input
+// ********************
+input[type='button'] {
+}
+// ■■■■■■■■■■■■■■■■■■■■
+// status class
+// ■■■■■■■■■■■■■■■■■■■■
+html {
+  // 有効
+  .active {
+  }
+  // 無効
+  .inactive {
+    color:#999;
+  }
+  // 表示されているが機能していない
+  .ex_disable,
+  .disable {
+    color:#ccc;
+    cursor:default;
+  }
+  .hidden {
+    visibility:hidden;
+  }
+  // 現在
+  .current {
+  }
+  // フォーカス
+  .focus {
+    background:red;
+  }
+  // 表示しない
+  .hide {
+    // hideの管理は必ずJSでする仕様となったので
+    // !importantをデフォルトで付与 2012/06/20
+    //display:none;
+    display:none !important;
+  }
+  .hide-important {
+    display:none !important;
+  }
+}
+// click可能領域
+.s_handler {
+  cursor:pointer;
+}

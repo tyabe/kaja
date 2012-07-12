@@ -1,0 +1,46 @@
+<%= partial 'sidebar' %>
+
+<section class="communities-contents contents">
+  <h1>参加コミュニティ登録</h1>
+
+  <header>
+    <h2>現在、Ruby Kajaでは参加コミュニティを募集中です。</h2>
+    <p class="deadline"><strong>応募締め切り：2012年7月末日</strong></p>
+  </header>
+</section>
+
+<section class="entry-form contents">
+  <% if flash[:complete] %>
+    <div class="success">
+      <h2>応募を受け付けました</h2>
+      <p>RubyKajaにご参加いただき、ありがとうございます。<br/>
+      後日、運営委員の審査結果及び、Kajaの登録方法をメールにてご連絡いたします。</p>
+    </div>
+  <% end %>
+
+  <h2>コミュニティの情報を入力してください</h2>
+  <% form_for @community, '/entry#communities', class: "" do |f| %>
+    <% if @community.errors.any? %>
+      <div class="errors">
+        <ul>
+          <li><%= error_messages_for :community %></li>
+        </ul>
+      </div>
+    <% end %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "input" %>
+    </p>
+    <p>
+      <%= f.label :description %>
+      <%= f.text_area :description, rows: 5, class: "input", placeholder: '活動内容や今後の予定を入力ください' %>
+    </p>
+    <p>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "input" %>
+    </p>
+    <p>
+      <%= submit_tag '応募する', class: "button" %>
+    </p>
+  <% end %>
+</section>
