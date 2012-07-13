@@ -17,19 +17,53 @@ class Kaja < Padrino::Application
   end
 
   get %r{/(en)?} do
-    @community = Community.new
+    @page_id = 'Index'
     render :index
   end
 
-  post %r{/(en/)?entry} do
-    @community = Community.new(params[:community])
-    if @community.save
-      flash[:complete] = true
-      redirect i18n_path('/')
-    else
-      render :index
-    end
+  get %r{/(en)?about} do
+    @page_id = 'About'
+    render :about
   end
+
+  #get %r{/(en)?communities} do
+  get %r{/(en)?entry} do
+    @community = Community.new
+    @page_id = 'Entry'
+    render :entry
+  end
+
+  get %r{/(en)?kaja} do
+    @page_id = 'Kaja'
+    render :kaja
+  end
+
+  #get %r{/(en)?guidelines} do
+  #  @page_id = 'Guidelines'
+  #  render :guidelines
+  #end
+
+  #get %r{/(en)?communities} do
+  #  @community = Community.new
+  #  @page_id = 'Communities'
+  #  render :communities
+  #end
+
+  #get %r{/(en)?committee} do
+  #  @page_id = 'Committee'
+  #  render :committee
+  #end
+
+  # 名前被ったので一端コメントしています
+  #post %r{/(en/)?entry} do
+  #  @community = Community.new(params[:community])
+  #  if @community.save
+  #    flash[:complete] = true
+  #    redirect i18n_path('/')
+  #  else
+  #    render :index
+  #  end
+  #end
 
   private
 

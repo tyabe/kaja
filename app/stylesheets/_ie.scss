@@ -1,0 +1,37 @@
+/*! ie.scss document */
+
+// ■■■■■■■■■■■■■■■■■■■■
+// .ie
+// ■■■■■■■■■■■■■■■■■■■■
+// ********************
+// #ie_containerの表示非表示
+// ********************
+#ie_container {
+  display:none !important;
+}
+.ie {
+  #Container,
+  .bg-kumo,
+  .bg-matsu {
+    display:none !important;
+  }
+  #ie_container {
+    display:block !important;
+  }
+}
+// ********************
+// #ie_container
+// ********************
+.ie {
+  body {
+    background:#010185;
+    padding:2em;
+  }
+  #ie_container {
+    strong,
+    p {
+      color:#fff;
+      font-weight:bold;
+    }
+  }
+}

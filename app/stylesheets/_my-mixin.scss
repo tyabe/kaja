@@ -1,0 +1,150 @@
+// app_mixin.scss document
+
+// ********************
+// method
+// ********************
+// type-of(100px)      => number
+// type-of(asdf)       => string
+// type-of("asdf")     => string
+// type-of(true)       => bool
+// type-of(#fff #fff)  => list
+// type-of(#fff)       => color
+// type-of(blue)       => color
+
+// unit(100) => ""
+// unit(100px) => "px"
+// unit(3em) => "em"
+// unit(10px * 5em) => "em*px"
+// unit(10px * 5em / 30cm / 1rem) => "em*px/cm*rem"
+
+// unitless(100) => true
+// unitless(100px) => false
+
+// unquote("foo") => foo
+// unquote(foo) => foo
+//
+// quote("foo") => "foo"
+// quote(foo) => "foo"
+
+// length(10px) => 1
+// length(10px 20px 30px) => 3
+
+// join(10px 20px, 30px 40px) => 10px 20px 30px 40px
+// join((blue, red), (#abc, #def)) => blue, red, #abc, #def
+// join(10px, 20px) => 10px 20px
+// join(10px, 20px, comma) => 10px, 20px
+// join((blue, red), (#abc, #def), space) => blue red #abc #def
+
+// if(true, 1px, 2px) => 1px
+// if(false, 1px, 2px) => 2px
+
+// nth(10px 20px 30px, 1) => 10px
+// nth((Helvetica, Arial, sans-serif), 3) => sans-serif
+
+// ********************
+// opacity
+// ********************
+@mixin opacity( $opacity: 1 ) {
+  $ie:$opacity*100;
+  opacity:$opacity;// except IE6,7,8
+  filter:alpha(opacity=#{ $ie });// IE6,7
+  -ms-filter:"alpha(opacity=#{ $ie })";// IE8
+}
+// ********************
+// box-sizing
+// ********************
+@mixin box-sizing( $arg ) {
+  // content-box, border-box
+  -moz-box-sizing:$arg;
+  -webkit-box-sizing:$arg;
+  box-sizing:$arg; // the standard, IE8~
+}
+// ********************
+// boxShadow
+// ********************
+// TODO: inset どうしよう？
+@mixin box-shadow( $arg: none ) {
+  @if $arg != none {
+    -moz-box-shadow: $arg; // firefox
+    -webkit-box-shadow: $arg; // chrome, safari
+    box-shadow: $arg; // opera10.5~
+  } @else {
+    -moz-box-shadow: none; // firefox
+    -webkit-box-shadow: none; // chrome, safari
+    box-shadow: none; // opera10.5~
+  }
+}
+// ********************
+// border-radius
+// ********************
+// 最新ブラウザならいらない子なんだけど一応
+@mixin border-radius( $arg: none ) {
+  @if $arg != none {
+    -moz-border-radius: $arg; // old firefox
+    border-radius: $arg; // firefox, chrome, safari, opera ie9
+  }
+}
+// ********************
+// linear-gradient
+// ********************
+@mixin linear-gradient( $arg: none ) {
+  @if length( $arg ) == 2 and type-of( nth( $arg, 1 ) ) == color {
+    $topColor: nth( $arg, 1 );
+    $bottomColor: nth( $arg, 2 );
+    background:$topColor;
+    background:-moz-linear-gradient(top, $topColor, $bottomColor); // FF 3.6+
+    background:-ms-linear-gradient($topColor, $bottomColor); // IE10
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, $topColor), color-stop(100%, $bottomColor)); // Safari 4+, Chrome 2+
+    background:-webkit-linear-gradient($topColor, $bottomColor); // Safari 5.1+ Chrome 10+
+    background:-o-linear-gradient($topColor, $bottomColor); // Opera 11.10
+    background:linear-gradient($topColor, $bottomColor); // the standard
+  }
+}
+//@mixin -pie-linear-gradient( $arg, $option:none ) {
+//  @include linear-gradient( $arg );
+//  @if length( $arg ) == 2 and type-of( nth( $arg, 1 ) ) == color {
+//    $topColor: nth( $arg, 1 );
+//    $bottomColor: nth( $arg, 2 );
+//    -pie-background: linear-gradient($topColor, $bottomColor);
+//    behavior:$piePath;
+//  }
+//  @if( $option == ie6 ) {
+//    _position:relative; // IE6
+//  } @elseif( $option == ie67 ) {
+//    *position:relative; // IE6,7
+//  } @elseif( $option == ie678 ) {
+//    position:relative\9; // IE6,7,8
+//  }
+//}
+// ********************
+// user-select
+// ********************
+@mixin user-select( $arg ) {
+  -ms-user-select: $arg; // IE10
+  -moz-user-select: $arg; // 
+  -webkit-user-select: $arg; // 
+  -o-user-select: $arg; // Opera?
+  user-select: $arg; // the standard
+}
+// ********************
+// image-rendering
+// ********************
+@mixin image-rendering( $arg ) {
+  @if $arg == auto {
+    image-rendering:auto;
+  }
+  @if $arg == optimize-contrast {
+    image-rendering:-webkit-optimize-contrast;
+    image-rendering:-o-crisp-edges;
+    image-rendering:optimize-contrast;
+  }
+}
+// ■■■■■■■■■■■■■■■■■■■■
+// transition
+// ■■■■■■■■■■■■■■■■■■■■
+$prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
+@mixin transition( $arg ) {
+  @each $p in $prefix {
+    #{$p}transition:$arg;
+  }
+}

@@ -1,0 +1,533 @@
+/*! kaja.scss document */
+
+// ■■■■■■■■■■■■■■■■■■■■
+// $var
+// ■■■■■■■■■■■■■■■■■■■■
+$images-path:'/images/';
+// ■■■■■■■■■■■■■■■■■■■■
+// mixin
+// ■■■■■■■■■■■■■■■■■■■■
+@mixin global-nav-anchor {
+  display:block;
+  text-align:center;
+  font-size:16px;
+  font-weight:bold;
+  padding:0.5em 0;
+}
+@mixin contents-bg {
+  background: {
+    color:rgba( #fff, 0.4 );
+    image:url(#{$images-path}contents-bg.png);
+    repeat:repeat 0 0;
+    position:0 0;
+  }
+}
+.ex_lower-page-container {
+  position:relative;
+  z-index:100;
+  margin:20px auto;
+  padding-left:190px;
+  padding-right:20px;
+  max-width:750px;
+}
+@mixin lower-page-contents {
+  #Container {
+    @extend .ex_lower-page-container;
+  }
+  .contents {
+    margin:0 0 1em;
+    padding:4em 3em 3em;
+    @include contents-bg;
+    @include box-shadow( 0 0 8px rgba( #000, 0.3 ) );
+    p,
+    dd,
+    address {
+      line-height:2;
+      font-size:16px;
+    }
+    p,
+    dl,
+    dd,
+    ul {
+      margin-bottom:1.5em;
+    }
+  }
+  .about-header {
+    h1 {
+      font-size:70px;
+      margin-bottom:0;
+    }
+    h2 {
+      font-size:26px;
+      margin-bottom:0;
+    }
+    strong {
+      font-size:12px;
+      font-weight:normal;
+    }
+  }
+  // .contents h1
+  .contents h1 {
+    font-size:30px;
+    margin-bottom:1.5em;
+  }
+  // .contents h2
+  .contents h2 {
+    font-size:22px;
+    margin-bottom:1.2em;
+    margin-top:2em;
+  }
+  // .contents h3
+  .contents h3 {
+    font-size:16px;
+  }
+  dt h3::before {
+    content:'●';
+    font-size:12px;
+    margin-right:0.5em;
+    display:inline-block;
+  }
+}
+@mixin contents-h1 {
+  &::before {
+    content:'';
+    display:inline-block;
+    width:90px;
+    height:80px;
+    vertical-align:-30px;
+    margin:0 -20px 0 -10px;
+    background:url(#{$images-path}sprite.png) no-repeat -228px -244px;
+  }
+}
+// ■■■■■■■■■■■■■■■■■■■■
+// common
+// ■■■■■■■■■■■■■■■■■■■■
+// ********************
+// body
+// ********************
+body {
+  background:url(#{$images-path}body-bg.jpg) repeat 0 0 fixed;
+}
+// ********************
+// .bg-kumo
+// ********************
+.bg-kumo {
+  background:url(#{$images-path}sprite.png) no-repeat -450px 0;
+  position:fixed;
+  width:440px;
+  height:370px;
+  top:30px;
+  left:0;
+}
+// ********************
+// .bg-matsu
+// ********************
+.bg-matsu {
+  background:url(#{$images-path}sprite.png) no-repeat -200px -380px;
+  position:fixed;
+  width:680px;
+  height:480px;
+  bottom:0;
+  right:0;
+}
+// ■■■■■■■■■■■■■■■■■■■■
+// .sidebar
+// ■■■■■■■■■■■■■■■■■■■■
+.sidebar {
+  position:fixed;
+  padding:0 10px 10px;
+  top:20px;
+  left:20px;
+  width:150px;
+  background:rgba( #fff, 0.6 );
+  @include box-sizing( border-box );
+  @include box-shadow( 0 0 8px rgba( #000, 0.3 ) );
+}
+// ********************
+// .logo
+// ********************
+.sidebar {
+  .logo {
+    display:block;
+    width:130px;
+    height:272px;
+    background:url(#{$images-path}sprite.png) no-repeat -320px 0;
+    @include transition( all 1s ease-out );
+    &:hover {
+      @include box-shadow( 0 0 8px rgba( #000, 0.3 ) );
+      @include transition( all 0.5s ease-out );
+    }
+    .text {
+      display:none;
+    }
+  }
+}
+// ********************
+// .global-nav
+// ********************
+.sidebar {
+  .global-nav {
+    padding-top:1em;
+    a {
+      @include global-nav-anchor;
+    }
+  }
+}
+// about
+.ex_current_anchor {
+  @include user-select( none );
+  color:#C20000;
+  &:hover {
+    text-decoration:none;
+  }
+}
+#About .sidebar {
+  .about a {
+    @extend .ex_current_anchor;
+  }
+}
+// entry
+#Entry .sidebar {
+  .entry a {
+    @extend .ex_current_anchor;
+  }
+}
+// kaja
+#Kaja .sidebar {
+  .kaja a {
+    @extend .ex_current_anchor;
+  }
+}
+// ********************
+// .copy
+// ********************
+.sidebar {
+  .copy {
+    display:inline-block;
+    margin-top:2em;
+    font-size:10px;
+  }
+}
+// ■■■■■■■■■■■■■■■■■■■■
+// #Index
+// ■■■■■■■■■■■■■■■■■■■■
+// ********************
+// .site-title-wrapper
+// ********************
+.site-title-wrapper {
+  position:absolute;
+  top:50%;
+  margin-top:-245px;
+  width:100%;
+}
+// ********************
+// .site-title
+// ********************
+.site-title {
+  position:relative;
+  display:block;
+  margin:auto;
+  width:164px;
+  height:470px;
+  @include contents-bg;
+  @include transition( all 1s ease-out );
+  &:hover {
+    @include box-shadow( 0 0 8px rgba( #000, 0.3 ) );
+    @include transition( all 0.5s ease-out );
+  }
+}
+// ********************
+// parts
+// ********************
+.site-title {
+  .image {
+    position:absolute;
+    background-image:url(#{$images-path}sprite.png);
+    background-repeat:no-repeat;
+  }
+  .text {
+    display:none;
+  }
+  // wa-logo
+  .wa-logo {
+    top:-60px;
+    left:-70px;
+    width:170px;
+    height:440px;
+    cursor:default;
+    background-position:0 0;
+    @include transition( all 1s ease-out );
+  }
+  &:hover {
+    .wa-logo {
+      left:-280px;
+      @include transition( all 1s ease-out );
+    }
+  }
+  // yo-logo
+  .yo-logo {
+    top:140px;
+    right:-50px;
+    width:150px;
+    height:244px;
+    background-position:-170px 0;
+    @include transition( all 1s ease-out );
+  }
+  &:hover {
+    .yo-logo {
+      right:230px;
+      @include transition( all 1s ease-out );
+    }
+  }
+  // begin-recruitment
+  .begin-recruitment {
+    bottom:-100px;
+    left:10px;
+    width:30px;
+    height:150px;
+    background-position:-170px -244px;
+    @include transition( all 1s ease-out );
+  }
+  &:hover {
+    .begin-recruitment {
+      left:-210px;
+      @include transition( all 1s ease-out );
+    }
+  }
+  // stamp
+  .stamp {
+    bottom:10px;
+    right:24px;
+    width:30px;
+    height:30px;
+    background-position:-200px -244px;
+    @include transition( all 1s ease-out );
+  }
+  &:hover {
+    .stamp {
+      right:262px;
+      @include transition( all 1s ease-out );
+    }
+  }
+  // copy
+  .copy {
+    bottom:-60px;
+    left:-64px;
+    width:20px;
+    height:60px;
+    background-position:-200px -274px;
+    @include transition( all 1s ease-out );
+  }
+  &:hover {
+    .copy {
+      left:-124px;
+      @include transition( all 1s ease-out );
+    }
+  }
+  // logo
+  .logo {
+    top:0;
+    left:16px;
+    width:130px;
+    height:272px;
+    background-position:-320px 0;
+    opacity:0;
+    @include transition( all 0.5s 0.5s ease-out );
+  }
+  &:hover {
+    .logo {
+      opacity:1;
+      @include transition( all 0.5s 1s ease-out );
+    }
+  }
+  // global-nav
+  .global-nav {
+    padding-top:25em;
+    .link {
+      @include user-select( none );
+      position:relative;
+      top:-10px;
+      opacity:0;
+    }
+    a {
+      @include global-nav-anchor;
+    }
+    // about
+    .about {
+      @include transition( all 0.5s 0.5s ease-out );
+    }
+    // entry
+    .entry {
+      @include transition( all 0.5s 0.4s ease-out );
+    }
+    // kaja
+    .kaja {
+      @include transition( all 0.5s 0.3s ease-out );
+    }
+  }
+  &:hover {
+    .global-nav {
+      .link {
+        top:0;
+        opacity:1;
+      }
+      // about
+      .about {
+        @include transition( all 0.5s 1s ease-out );
+      }
+      // entry
+      .entry {
+        @include transition( all 0.5s 1.1s ease-out );
+      }
+      // kaja
+      .kaja {
+        @include transition( all 0.5s 1.2s ease-out );
+      }
+    }
+  }
+}
+// ■■■■■■■■■■■■■■■■■■■■
+// #About
+// ■■■■■■■■■■■■■■■■■■■■
+#About {
+  @include lower-page-contents;
+  header {
+    padding:2em 1em 4em;
+  }
+  .contents h1 {
+    @include contents-h1;
+  }
+  .about-contents a {
+    color:#C20000;
+  }
+  .committee-contents address {
+    line-height:1.5;
+    .label {
+      display:inline-block;
+      width:7em;
+    }
+  }
+}
+// ■■■■■■■■■■■■■■■■■■■■
+// #Entry
+// ■■■■■■■■■■■■■■■■■■■■
+#Entry {
+  @include lower-page-contents;
+  .contents h1 {
+    @include contents-h1;
+  }
+  .contents h2 {
+    margin-bottom:0;
+  }
+  header .deadline {
+    margin-bottom:0;
+    &::before {
+    }
+  }
+  // ********************
+  // .entry-form
+  // ********************
+  .entry-form {
+    h2 {
+      margin-top:0;
+      margin-bottom:1em;
+    }
+    p {
+      margin-bottom:1em;
+    }
+    label,
+    .input {
+      font-size:14px;
+      vertical-align:top;
+      @include box-sizing( border-box );
+    }
+    // label
+    label {
+      display:block;
+      margin-bottom:0.25em;
+    }
+    // input
+    .input {
+      width:100%;
+      @include border-radius( 4px );
+      border:1px solid #ddd;
+    }
+    // textarea
+    textarea {
+      padding:0.5em;
+    }
+    // button
+    .button {
+      display:block;
+      width:140px;
+      margin:auto;
+      padding:8px;
+      font-size:14px;
+      font-weight:bold;
+      color:#5F5A45;
+      border:1px solid;
+      border-color:#E7E3D6 #D3CEB0 #A0996D;
+      @include box-shadow( 0 1px 6px rgba( #000, 0.5 ) );
+      @include box-sizing( border-box );
+      @include linear-gradient( #D3CEB0 #B7AD7B );
+      @include border-radius( 4px );
+      &:hover {
+        @include box-shadow( 0 0 4px rgba( #000, 0.3 ) );
+      }
+    }
+  }
+}
+// ■■■■■■■■■■■■■■■■■■■■
+// #Kaja
+// ■■■■■■■■■■■■■■■■■■■■
+#Kaja {
+  #Container {
+    @extend .ex_lower-page-container;
+    padding-right:0;
+    max-width:none;
+  }
+  .contents {
+    margin:0;
+  }
+  #KajaContainer {
+    position:relative;
+    .kaja {
+      & {
+        padding:6px;
+        width:280px;
+        background:rgba( #fff, 0.5 );
+        @include box-sizing( border-box );
+        @include box-shadow( 0 0 6px rgba( #000, 0.3 ) );
+        @include transition( background 0.5s ease-out );
+      }
+      &:hover {
+        background:rgba( #fff, 0.8 );
+        @include box-shadow( 0 0 6px rgba( #000, 0.6 ) );
+        @include transition( all 0.5s ease-out );
+      }
+      .inner-kaja {
+        @include contents-bg;
+        padding:10px;
+      }
+      .img {
+        display:inline-block;
+        width:70px;
+        height:70px;
+        background:#fff;
+        margin-bottom:0.5em;
+      }
+      .kaja-name {
+        font-size:24px;
+        margin-bottom:0;
+      }
+      .community {
+        color:#C20000;
+        font-size:12px;
+        display:inline-block;
+        margin-bottom:1em;
+      }
+      .text {
+      }
+    }
+  }
+}
