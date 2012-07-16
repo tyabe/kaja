@@ -43,11 +43,6 @@ class Kaja < Padrino::Application
     end
   end
 
-  get %r{/(en/)?kaja} do
-    @page_id = 'Kaja'
-    render :kaja
-  end
-
   private
 
   def i18n_path(s)
