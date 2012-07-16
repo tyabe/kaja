@@ -2,9 +2,16 @@
   <a href="/" class="logo"><small class="text">Ruby Kaja</small></a>
   <nav class="global-nav">
     <ul>
-      <li class="about link"><a href="/about">About</a></li>
-      <li class="entry link"><a href="/entry">Entry</a></li>
-      <li class="kaja link"><a href="/kaja">Kaja</a></li>
+      <% %w[about entry kaja].each do | page | %>
+        <li class="<%= page %> link"><%= link_to page.to_sym, i18n_path("/#{page}") %></li>
+      <% end %>
+      <li class="locale link">
+        <% if I18n.locale == :ja %>
+          <a href="/en/about">English</a>
+        <% else %>
+          <a href="/about">日本語</a>
+        <% end %>
+      </li>
     </ul>
   </nav>
   <span class="copy">

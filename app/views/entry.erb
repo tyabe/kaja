@@ -16,31 +16,8 @@
       <p>RubyKajaにご参加いただき、ありがとうございます。<br/>
       後日、運営委員の審査結果及び、Kajaの登録方法をメールにてご連絡いたします。</p>
     </div>
-  <% end %>
-
-  <h2>コミュニティの情報を入力してください</h2>
-  <% form_for @community, '/entry#communities', class: "" do |f| %>
-    <% if @community.errors.any? %>
-      <div class="errors">
-        <ul>
-          <li><%= error_messages_for :community %></li>
-        </ul>
-      </div>
-    <% end %>
-    <p>
-      <%= f.label :name %>
-      <%= f.text_field :name, class: "input" %>
-    </p>
-    <p>
-      <%= f.label :description %>
-      <%= f.text_area :description, rows: 5, class: "input", placeholder: '活動内容や今後の予定を入力ください' %>
-    </p>
-    <p>
-      <%= f.label :email %>
-      <%= f.email_field :email, class: "input" %>
-    </p>
-    <p>
-      <%= submit_tag '応募する', class: "button" %>
-    </p>
+  <% else %>
+    <h2>コミュニティの情報を入力してください</h2>
+    <%= partial 'form' %>
   <% end %>
 </section>
