@@ -476,6 +476,21 @@ body {
       }
     }
   }
+  // ********************
+  // .errors
+  // ********************  
+  .errors {
+    li {
+      font-size:14px;
+      color:#C20000;
+      &::before {
+        content:'●';
+        font-size:10px;
+        margin-right:0.5em;
+        display:inline-block;
+      }
+    }
+  }
 }
 // ■■■■■■■■■■■■■■■■■■■■
 // #Kaja
