@@ -1,10 +1,6 @@
 <% form_for @community, i18n_path("/entry") do |f| %>
   <% if @community.errors.any? %>
-    <div class="errors">
-      <ul>
-        <li><%= error_messages_for :community %></li>
-      </ul>
-    </div>
+    <%= error_messages_for :community %>
   <% end %>
   <p>
     <%= f.label :name %>
