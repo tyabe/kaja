@@ -43,6 +43,11 @@ class Kaja < Padrino::Application
     end
   end
 
+  get %r{/(en/)?faq} do
+    @page_id = 'Faq'
+    render :faq
+  end
+
   private
 
   def i18n_path(s)
