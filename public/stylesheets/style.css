@@ -797,6 +797,14 @@ body {
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); }
+#Entry .errors li {
+  font-size: 14px;
+  color: #C20000; }
+  #Entry .errors li::before {
+    content: '●';
+    font-size: 10px;
+    margin-right: 0.5em;
+    display: inline-block; }
 
 #Kaja #Container {
   padding-right: 0;
