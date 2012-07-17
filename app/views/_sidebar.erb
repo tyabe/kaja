@@ -2,7 +2,7 @@
   <a href="<%= i18n_path('/') %>" class="logo"><small class="text">Ruby Kaja</small></a>
   <nav class="global-nav">
     <ul>
-      <% %w[about entry].each do | page | %>
+      <% %w[about entry faq].each do | page | %>
         <li class="<%= page %> link"><%= link_to page.capitalize, i18n_path("/#{page}") %></li>
       <% end %>
       <li class="locale link">
