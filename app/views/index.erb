@@ -2,8 +2,9 @@
   <div class="site-title">
     <nav class="global-nav">
       <ul>
-        <li class="about link"><a href="/about">About</a></li>
-        <li class="entry link"><a href="/entry">Entry</a></li>
+        <% %w[about entry].each do | page | %>
+          <li class="<%= page %> link"><%= link_to page.capitalize, i18n_path("/#{page}") %></li>
+        <% end %>
       </ul>
     </nav>
     <span class="rubyist-award image"><small class="text">Rubyist award for regional community</small></span>
