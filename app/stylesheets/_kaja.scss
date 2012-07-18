@@ -477,15 +477,19 @@ body {
     }
   }
   // ********************
-  // .errors
+  // .field-errors
   // ********************  
-  .errors {
+  .field-errors {
+    h2 {
+      font-size:16px;
+      margin-bottom:0.25em;
+      color:#C20000;
+    }
     li {
       font-size:14px;
       color:#C20000;
       &::before {
         content:'●';
-        font-size:10px;
         margin-right:0.5em;
         display:inline-block;
       }
