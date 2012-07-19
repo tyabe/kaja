@@ -8,3 +8,7 @@ en:
     description_placeholder: "Please let us know about your community's activities"
     apply: Apply
     legend: Please enter information about the community
+  models:
+    errors:
+      template:
+        body: ! ' '
