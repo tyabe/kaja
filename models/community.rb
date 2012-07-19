@@ -2,7 +2,7 @@ class Community < ActiveRecord::Base
 
   # Fields
   field :name
-  field :description
+  field :description, as: :text
   field :email
   timestamps
 
