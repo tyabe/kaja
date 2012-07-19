@@ -344,13 +344,13 @@ html .hide-important {
   cursor: pointer; }
 
 /* kaja.scss document */
-.ex_lower-page-container, #About #Container, #Entry #Container, #Kaja #Container {
+.ex_lower-page-container, #About #Container, #Entry #Container, #Faq #Container, #Kaja #Container {
   position: relative;
   z-index: 100;
   margin: 20px auto;
   padding-left: 190px;
   padding-right: 20px;
-  max-width: 750px; }
+  max-width: 760px; }
 
 body {
   background: url(/images/body-bg.jpg) repeat 0 0 fixed; }
@@ -595,19 +595,25 @@ body {
     font-size: 16px;
     font-weight: bold;
     padding: 0.5em 0; }
-  .site-title .global-nav .about {
+  .site-title .global-nav li:nth-child(1) {
+    -moz-transition: all 0.5s 0.6s ease-out;
+    -webkit-transition: all 0.5s 0.6s ease-out;
+    -o-transition: all 0.5s 0.6s ease-out;
+    -ms-transition: all 0.5s 0.6s ease-out;
+    transition: all 0.5s 0.6s ease-out; }
+  .site-title .global-nav li:nth-child(2) {
     -moz-transition: all 0.5s 0.5s ease-out;
     -webkit-transition: all 0.5s 0.5s ease-out;
     -o-transition: all 0.5s 0.5s ease-out;
     -ms-transition: all 0.5s 0.5s ease-out;
     transition: all 0.5s 0.5s ease-out; }
-  .site-title .global-nav .entry {
+  .site-title .global-nav li:nth-child(3) {
     -moz-transition: all 0.5s 0.4s ease-out;
     -webkit-transition: all 0.5s 0.4s ease-out;
     -o-transition: all 0.5s 0.4s ease-out;
     -ms-transition: all 0.5s 0.4s ease-out;
     transition: all 0.5s 0.4s ease-out; }
-  .site-title .global-nav .kaja {
+  .site-title .global-nav li:nth-child(4) {
     -moz-transition: all 0.5s 0.3s ease-out;
     -webkit-transition: all 0.5s 0.3s ease-out;
     -o-transition: all 0.5s 0.3s ease-out;
@@ -616,28 +622,34 @@ body {
 .site-title:hover .global-nav .link {
   top: 0;
   opacity: 1; }
-.site-title:hover .global-nav .about {
+.site-title:hover .global-nav li:nth-child(1) {
   -moz-transition: all 0.5s 1s ease-out;
   -webkit-transition: all 0.5s 1s ease-out;
   -o-transition: all 0.5s 1s ease-out;
   -ms-transition: all 0.5s 1s ease-out;
   transition: all 0.5s 1s ease-out; }
-.site-title:hover .global-nav .entry {
+.site-title:hover .global-nav li:nth-child(2) {
   -moz-transition: all 0.5s 1.1s ease-out;
   -webkit-transition: all 0.5s 1.1s ease-out;
   -o-transition: all 0.5s 1.1s ease-out;
   -ms-transition: all 0.5s 1.1s ease-out;
   transition: all 0.5s 1.1s ease-out; }
-.site-title:hover .global-nav .kaja {
+.site-title:hover .global-nav li:nth-child(3) {
   -moz-transition: all 0.5s 1.2s ease-out;
   -webkit-transition: all 0.5s 1.2s ease-out;
   -o-transition: all 0.5s 1.2s ease-out;
   -ms-transition: all 0.5s 1.2s ease-out;
   transition: all 0.5s 1.2s ease-out; }
+.site-title:hover .global-nav li:nth-child(4) {
+  -moz-transition: all 0.5s 1.3s ease-out;
+  -webkit-transition: all 0.5s 1.3s ease-out;
+  -o-transition: all 0.5s 1.3s ease-out;
+  -ms-transition: all 0.5s 1.3s ease-out;
+  transition: all 0.5s 1.3s ease-out; }
 
 #About .contents {
   margin: 0 0 1em;
-  padding: 4em 3em 3em;
+  padding: 4em 6em 3em;
   background-color: rgba(255, 255, 255, 0.4);
   background-image: url(/images/contents-bg.png);
   background-repeat: repeat 0 0;
@@ -698,7 +710,7 @@ body {
 
 #Entry .contents {
   margin: 0 0 1em;
-  padding: 4em 3em 3em;
+  padding: 4em 6em 3em;
   background-color: rgba(255, 255, 255, 0.4);
   background-image: url(/images/contents-bg.png);
   background-repeat: repeat 0 0;
@@ -808,6 +820,67 @@ body {
     content: '●';
     margin-right: 0.5em;
     display: inline-block; }
+
+#Faq .contents {
+  margin: 0 0 1em;
+  padding: 4em 6em 3em;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: url(/images/contents-bg.png);
+  background-repeat: repeat 0 0;
+  background-position: 0 0;
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
+  #Faq .contents p, #Faq .contents dd, #Faq .contents address {
+    line-height: 2;
+    font-size: 16px; }
+  #Faq .contents p, #Faq .contents dl, #Faq .contents dd, #Faq .contents ul {
+    margin-bottom: 1.5em; }
+#Faq .about-header h1 {
+  font-size: 70px;
+  margin-bottom: 0; }
+#Faq .about-header h2 {
+  font-size: 26px;
+  margin-bottom: 0; }
+#Faq .about-header strong {
+  font-size: 12px;
+  font-weight: normal; }
+#Faq .contents h1 {
+  font-size: 30px;
+  margin-bottom: 1.5em; }
+#Faq .contents h2 {
+  font-size: 22px;
+  margin-bottom: 1.2em;
+  margin-top: 2em; }
+#Faq .contents h3 {
+  font-size: 16px; }
+#Faq dt h3::before {
+  content: '●';
+  font-size: 12px;
+  margin-right: 0.5em;
+  display: inline-block; }
+#Faq .contents h1::before {
+  content: '';
+  display: inline-block;
+  width: 90px;
+  height: 80px;
+  vertical-align: -30px;
+  margin: 0 -20px 0 -10px;
+  background: url(/images/sprite.png) no-repeat -228px -244px; }
+#Faq .contents h3 {
+  margin-bottom: 0.5em;
+  margin-left: 1.7em;
+  text-indent: -0.8em; }
+#Faq .contents p {
+  margin-bottom: 2em;
+  margin-left: 1.7em;
+  text-indent: -0.8em;
+  line-height: 1.5;
+  color: #333; }
+#Faq .contents strong {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.5em; }
 
 #Kaja #Container {
   padding-right: 0;

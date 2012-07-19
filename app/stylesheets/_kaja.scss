@@ -28,7 +28,7 @@ $images-path:'/images/';
   margin:20px auto;
   padding-left:190px;
   padding-right:20px;
-  max-width:750px;
+  max-width:760px;
 }
 @mixin lower-page-contents {
   #Container {
@@ -36,7 +36,7 @@ $images-path:'/images/';
   }
   .contents {
     margin:0 0 1em;
-    padding:4em 3em 3em;
+    padding:4em 6em 3em;
     @include contents-bg;
     @include box-shadow( 0 0 8px rgba( #000, 0.3 ) );
     p,
@@ -352,17 +352,20 @@ body {
     a {
       @include global-nav-anchor;
     }
-    // about
-    .about {
-      @include transition( all 0.5s 0.5s ease-out );
-    }
-    // entry
-    .entry {
-      @include transition( all 0.5s 0.4s ease-out );
-    }
-    // kaja
-    .kaja {
-      @include transition( all 0.5s 0.3s ease-out );
+    // menu link
+    li {
+      &:nth-child(1) {
+        @include transition( all 0.5s 0.6s ease-out );
+      }
+      &:nth-child(2) {
+        @include transition( all 0.5s 0.5s ease-out );
+      }
+      &:nth-child(3) {
+        @include transition( all 0.5s 0.4s ease-out );
+      }
+      &:nth-child(4) {
+        @include transition( all 0.5s 0.3s ease-out );
+      }
     }
   }
   &:hover {
@@ -371,17 +374,20 @@ body {
         top:0;
         opacity:1;
       }
-      // about
-      .about {
-        @include transition( all 0.5s 1s ease-out );
-      }
-      // entry
-      .entry {
-        @include transition( all 0.5s 1.1s ease-out );
-      }
-      // kaja
-      .kaja {
-        @include transition( all 0.5s 1.2s ease-out );
+      // menu link
+      li {
+        &:nth-child(1) {
+          @include transition( all 0.5s 1s ease-out );
+        }
+        &:nth-child(2) {
+          @include transition( all 0.5s 1.1s ease-out );
+        }
+        &:nth-child(3) {
+          @include transition( all 0.5s 1.2s ease-out );
+        }
+        &:nth-child(4) {
+          @include transition( all 0.5s 1.3s ease-out );
+        }
       }
     }
   }
@@ -493,6 +499,34 @@ body {
         margin-right:0.5em;
         display:inline-block;
       }
+    }
+  }
+}
+// ■■■■■■■■■■■■■■■■■■■■
+// #Faq
+// ■■■■■■■■■■■■■■■■■■■■
+#Faq {
+  @include lower-page-contents;
+  .contents {
+    h1 {
+      @include contents-h1;
+    }
+    h3 {
+      margin-bottom:0.5em;
+      margin-left:1.7em;
+      text-indent:-0.8em;
+    }
+    p {
+      margin-bottom:2em;
+      margin-left:1.7em;
+      text-indent:-0.8em;
+      line-height:1.5;
+      color:#333;
+    }
+    strong {
+      display:inline-block;
+      font-weight:bold;
+      margin-right:0.5em;
     }
   }
 }
