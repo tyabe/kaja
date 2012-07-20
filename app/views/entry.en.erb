@@ -7,17 +7,40 @@
     <h2>We are currently recruiting communities for Ruby Kaja.</h2>
     <p class="deadline"><strong>Application deadline: the last day of July, 2012</p>
   </header>
+
+  <div class="entry-form">
+    <% if flash[:complete] %>
+      <div class="success">
+        <h2>Application Completed</h2>
+        <p>Thank you for participating in RubyKaja.<br/>
+        We'll contact you later regarding the method for registering a Kaja.
+      </div>
+    <% else %>
+      <h2>Please enter the information of the community.</h2>
+      <div class="form">
+        <%= partial 'form' %>
+      </div>
+    <% end %>
+  </div>
 </section>
 
-<section class="entry-form contents">
-  <% if flash[:complete] %>
-    <div class="success">
-      <h2>Application Completed</h2>
-      <p>Thank you for participating in RubyKaja.<br/>
-      We'll contact you later regarding the method for registering a Kaja.
-    </div>
-  <% else %>
-    <h2>Please enter the information of the community.</h2>
-    <%= partial 'form' %>
-  <% end %>
+<section class="community-list contents">
+  <h1>参加コミュニティ一覧</h1>
+  <p>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his.</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Shibuya.rb</th>
+        <td>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his. Meis inani te cum, ponderum assueverit cu duo. No vocent commune quo, purto justo pericula eu per. Ius putent commodo euripidis in, eligendi appetere ne ius.</td>
+      </tr>
+      <tr>
+        <th>Shibuya.rb</th>
+        <td>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his. Meis inani te cum, ponderum assueverit cu duo. No vocent commune quo, purto justo pericula eu per. Ius putent commodo euripidis in, eligendi appetere ne ius.</td>
+      </tr>
+      <tr>
+        <th>Shibuya.rb</th>
+        <td>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his. Meis inani te cum, ponderum assueverit cu duo. No vocent commune quo, purto justo pericula eu per. Ius putent commodo euripidis in, eligendi appetere ne ius.</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
