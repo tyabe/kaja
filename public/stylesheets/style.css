@@ -757,7 +757,7 @@ body {
 #Entry .contents h2 {
   margin-bottom: 0; }
 #Entry header .deadline {
-  margin-bottom: 0; }
+  margin-bottom: 2.5em; }
 #Entry .entry-form h2 {
   margin-top: 0;
   margin-bottom: 1em; }
@@ -820,6 +820,20 @@ body {
     content: '●';
     margin-right: 0.5em;
     display: inline-block; }
+#Entry .community-list table {
+  border-spacing: 4px;
+  border-collapse: separate; }
+#Entry .community-list th,
+#Entry .community-list td {
+  font-size: 14px;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
 
 #Faq .contents {
   margin: 0 0 1em;

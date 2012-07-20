@@ -426,7 +426,7 @@ body {
     margin-bottom:0;
   }
   header .deadline {
-    margin-bottom:0;
+    margin-bottom:2.5em;
     &::before {
     }
   }
@@ -484,7 +484,7 @@ body {
   }
   // ********************
   // .field-errors
-  // ********************  
+  // ********************
   .field-errors {
     h2 {
       font-size:16px;
@@ -499,6 +499,24 @@ body {
         margin-right:0.5em;
         display:inline-block;
       }
+    }
+  }
+  // ********************
+  // .community-list
+  // ********************
+  .community-list {
+    table {
+      border-spacing:4px;
+      border-collapse:separate;
+    }
+    th,
+    td {
+      font-size:14px;
+      padding:1em;
+      background-color:rgba( #fff, 0.5 );
+      border:0;
+      @include border-radius( 2px );
+      @include box-shadow( 0 0 6px rgba( #000, 0.2 ) );
     }
   }
 }
