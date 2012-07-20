@@ -1,11 +1,7 @@
 <div class="site-title-wrapper">
   <div class="site-title">
     <nav class="global-nav">
-      <ul>
-        <% %w[about entry faq].each do | page | %>
-          <li class="<%= page %> link"><%= link_to page.capitalize, i18n_path("/#{page}") %></li>
-        <% end %>
-      </ul>
+      <%= menu_list %>
     </nav>
     <span class="rubyist-award image"><small class="text">Rubyist award for regional community</small></span>
     <span class="yo-logo image"><small class="text">Ruby kaja</small></span>

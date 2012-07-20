@@ -1,10 +1,8 @@
 <div class="sidebar">
   <a href="<%= i18n_path('/') %>" class="logo"><small class="text">Ruby Kaja</small></a>
   <nav class="global-nav">
+    <%= menu_list %>
     <ul>
-      <% %w[about entry faq].each do | page | %>
-        <li class="<%= page %> link"><%= link_to page.capitalize, i18n_path("/#{page}") %></li>
-      <% end %>
       <li class="locale link">
         <% if I18n.locale == :ja %>
           <a href="/en/about">English</a>

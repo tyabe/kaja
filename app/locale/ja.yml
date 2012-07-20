@@ -1,9 +1,8 @@
 ja:
   menu:
-    about: RubyKajaとは
-    application_criteria: 応募要項
-    participating_communities: 参加コミュニティ
-    management_community: 運営委員
+    about: About
+    entry: Entry
+    faq: FAQ
   form:
     description_placeholder: '活動内容や今後の予定を入力ください'
     apply: '応募する'

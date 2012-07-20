@@ -1,9 +1,7 @@
 en:
   menu:
     about: About
-    application_criteria: Application Criteria
-    participating_communities: Participating Communities
-    management_community: Management Community
+    entry: Entry
   form:
     description_placeholder: "Please let us know about your community's activities"
     apply: Apply
