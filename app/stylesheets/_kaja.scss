@@ -459,6 +459,13 @@ body {
       vertical-align:top;
       @include box-sizing( border-box );
     }
+    // form
+    .form {
+      padding:3em 3em 2em;
+      background-color:rgba( #fff, 0.3 );
+      @include border-radius( 2px );
+      @include box-shadow( 0 0 6px rgba( #000, 0.3 ) );
+    }
     // label
     label {
       display:block;

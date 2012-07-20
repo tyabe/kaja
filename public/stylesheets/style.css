@@ -784,6 +784,14 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+#Entry .entry-form .form {
+  padding: 3em 3em 2em;
+  background-color: rgba(255, 255, 255, 0.3);
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
 #Entry .entry-form label {
   display: block;
   margin-bottom: 0.25em; }
