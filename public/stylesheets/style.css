@@ -758,6 +758,20 @@ body {
   margin-bottom: 0; }
 #Entry header .deadline {
   margin-bottom: 2.5em; }
+  #Entry header .deadline::before {
+    content: '!';
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    height: 1.2em;
+    line-height: 1.2;
+    width: 16px;
+    text-align: center;
+    margin-right: 0.3em;
+    font-weight: bold;
+    font-size: 14px;
+    -moz-border-radius: 8px;
+    border-radius: 8px; }
 #Entry .entry-form h2 {
   margin-top: 0;
   margin-bottom: 1em; }

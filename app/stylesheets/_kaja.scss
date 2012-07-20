@@ -428,6 +428,18 @@ body {
   header .deadline {
     margin-bottom:2.5em;
     &::before {
+      content:'!';
+      background-color:#000;
+      color:#fff;
+      display:inline-block;
+      height:1.2em;
+      line-height:1.2;
+      width:16px;
+      text-align:center;
+      margin-right:0.3em;
+      font-weight:bold;
+      font-size:14px;
+      @include border-radius( 8px );
     }
   }
   // ********************
