@@ -13,4 +13,7 @@
       .group
         =simple_format h @community.description
 
+      .group.navform.wat-cf
+        =button_to pat(:delete), url(:communities, :destroy, id: @community.id), method: :delete, class: :button_to, onsubmit: "return confirm('#{pat(:confirm)}')"
+
 -content_for :sidebar, partial("base/sidebar")
