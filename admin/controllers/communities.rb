@@ -25,6 +25,16 @@ Admin.controllers :communities do
     end
   end
 
+  patch :update, map: '/:id' do
+    community = Community.find(params[:id])
+    if params[:approval].present? && community.update_attributes(approval: params[:approval])
+      flash[:notice] = 'Community was successfully updated.'
+    else
+      flash[:error] = 'Unable to update!'
+    end
+    redirect url(:communities, :index)
+  end
+
   delete :destroy, with: :id do
     community = Community.find(params[:id])
     if community.destroy

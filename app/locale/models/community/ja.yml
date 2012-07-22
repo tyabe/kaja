@@ -7,4 +7,4 @@ ja:
         description: 説明
         email: 連絡用メールアドレス
         created_at: 登録日
-
+        approval: 承認

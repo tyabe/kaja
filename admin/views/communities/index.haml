@@ -11,17 +11,19 @@
       %table.table
         %tr
           %th=mat(:community, :name)
-          %th=mat(:community, :description)
-          %th=mat(:community, :email)
           %th=mat(:community, :created_at)
+          %th=mat(:community, :approval)
           %th.last="&nbsp;"
         -@communities.each do |community|
           %tr
             %td=h community.name
-            %td=h community.description
-            %td=h community.email
             %td=l community.created_at
+            %td= community.approved? ? pat(:approved) : pat(:disapproved)
             %td.last
+              -form_tag url(:communities, :update, community.id), class: :button_to, method: :patch, onsubmit: "return confirm('#{pat(:confirm)}')" do
+                =hidden_field_tag :approval, value: "#{!community.approved?}"
+                =submit_tag community.approved? ? pat(:disapprove) : pat(:approve)
+              ="|"
               =button_to pat(:show), url(:communities, :show, id: community.id), method: :get, class: :button_to
       .actions-bar.wat-cf
         .actions="&nbsp;"

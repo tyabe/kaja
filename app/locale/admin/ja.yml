@@ -1,6 +1,11 @@
 ja:
   padrino:
     admin:
+      confirm: 本当によろしいですか？
+      approve: 承認
+      disapprove: 取消
+      approved: 済
+      disapproved: '-'
       menu:
         accounts: アカウント
         communities: コミュニティ
