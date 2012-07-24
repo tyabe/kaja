@@ -530,12 +530,22 @@ body {
     }
     th,
     td {
-      font-size:14px;
-      padding:1em;
+      padding:12px 24px;
       background-color:rgba( #fff, 0.5 );
       border:0;
       @include border-radius( 2px );
       @include box-shadow( 0 0 6px rgba( #000, 0.2 ) );
+    }
+    td :last-child {
+      margin-bottom:0;
+    }
+    th {
+      font-size:18px;
+    }
+    p {
+      font-size:14px;
+      line-height:1.6;
+      margin-bottom:1em;
     }
   }
 }
