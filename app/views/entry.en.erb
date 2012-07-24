@@ -24,23 +24,18 @@
   </div>
 </section>
 
-<section class="community-list contents">
-  <h1>参加コミュニティ一覧</h1>
-  <p>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his.</p>
+<% if Community.approved.count > 0 %>
+  <section class="community-list contents">
+  <h1>Joined Communities</h1>
   <table>
     <tbody>
-      <tr>
-        <th>Shibuya.rb</th>
-        <td>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his. Meis inani te cum, ponderum assueverit cu duo. No vocent commune quo, purto justo pericula eu per. Ius putent commodo euripidis in, eligendi appetere ne ius.</td>
-      </tr>
-      <tr>
-        <th>Shibuya.rb</th>
-        <td>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his. Meis inani te cum, ponderum assueverit cu duo. No vocent commune quo, purto justo pericula eu per. Ius putent commodo euripidis in, eligendi appetere ne ius.</td>
-      </tr>
-      <tr>
-        <th>Shibuya.rb</th>
-        <td>Lorem ipsum dolor sit amet, pro at justo commune copiosae, quas euismod qui an. Et dicta percipitur reformidans usu, dicta fierent no his. Meis inani te cum, ponderum assueverit cu duo. No vocent commune quo, purto justo pericula eu per. Ius putent commodo euripidis in, eligendi appetere ne ius.</td>
-      </tr>
+      <% Community.approved.each do |community| %>
+        <tr>
+          <th><%=h community.name %></th>
+          <td><%=simple_format h(community.description) %></td>
+        </tr>
+      <% end %>
     </tbody>
   </table>
-</section>
+  </section>
+<% end %>

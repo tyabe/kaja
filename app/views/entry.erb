@@ -24,23 +24,18 @@
   </div>
 </section>
 
-<section class="community-list contents">
-  <h1>参加コミュニティ一覧</h1>
-  <p>野レ喫方ぽどぐぞ雑勉克モノ街小りをど動6委ん間数カハ救教こ評24転ロルツ寧潤造タイヲ御12発直就素ど。</p>
+<% if Community.approved.count > 0 %>
+  <section class="community-list contents">
+  <h1>参加コミュニティ</h1>
   <table>
     <tbody>
-      <tr>
-        <th>Shibuya.rb</th>
-        <td>野レ喫方ぽどぐぞ雑勉克モノ街小りをど動6委ん間数カハ救教こ評24転ロルツ寧潤造タイヲ御12発直就素ど。西ル胸続しお炎強カ合隈スい開帰ノハ間違強くしわふ同書く書後ノクア痢暮樹セ一話昭ラ質摘横日父宅もでお。事4詐メ碁車みがふう落身くえなぶ減吏ヨニミラ車端ぐさ一田な台必ッゆ二立ルウ増52壌お窮必ばべみ頑象ぱぎイ確座マノヤヒ庫僚ウヌ新民リハヒユ止喚宴ほぜ。</td>
-      </tr>
-      <tr>
-        <th>Shibuya.rb</th>
-        <td>野ヲ御12発直就素ど。西ルハ間違強日父宅もでお。事4一田な台必ッゆ二立ルウ増52壌お窮必ばべみ頑象ぱぎイ確座マノヤヒ庫僚ウヌ新民リハヒユ止喚宴ほぜ。</td>
-      </tr>
-      <tr>
-        <th>Shibuya.rb</th>
-        <td>野レ喫方ぽど24転ロルツ寧潤造タイヲ御12発直就素ど。西ルハ間違強くしわふ同書く書後ノクア痢暮樹セ一話昭ラ質摘横日父宅もでお。事4詐メ碁車みがふう落身くえなぶ減吏ヨニミラ車端ぐさ一田な台必ッゆ二立ルウ増52壌お窮必ばべみ頑象ぱぎイ確座マノヤヒ庫僚ウヌ新民リハヒユ止喚宴ほぜ。</td>
-      </tr>
+      <% Community.approved.each do |community| %>
+        <tr>
+          <th><%=h community.name %></th>
+          <td><%=simple_format h(community.description) %></td>
+        </tr>
+      <% end %>
     </tbody>
   </table>
-</section>
+  </section>
+<% end %>
