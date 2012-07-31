@@ -2,40 +2,24 @@
 
 <section class="communities-contents contents">
   <h1>参加コミュニティ登録</h1>
-
   <header>
-    <h2>現在、Ruby Kajaでは参加コミュニティを募集中です。</h2>
+    <h2>参加コミュニティの応募は締め切りました。</h2>
     <p class="deadline"><strong>応募締め切り：2012年7月末日</strong></p>
   </header>
-
-  <div class="entry-form">
-    <% if flash[:complete] %>
-      <div class="success">
-        <h2>応募を受け付けました</h2>
-        <p>RubyKajaにご参加いただき、ありがとうございます。<br/>
-        後日、運営委員の審査結果及び、Kajaの登録方法をメールにてご連絡いたします。</p>
-      </div>
-    <% else %>
-      <h2>コミュニティの情報を入力してください</h2>
-      <div class="form">
-        <%= partial 'form' %>
-      </div>
-    <% end %>
-  </div>
 </section>
 
 <% if Community.approved.count > 0 %>
   <section class="community-list contents">
-  <h1>参加コミュニティ</h1>
-  <table>
-    <tbody>
-      <% Community.approved.each do |community| %>
-        <tr>
-          <th><%=h community.name %></th>
-          <td><%=simple_format h(community.description) %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+    <h1>参加コミュニティ</h1>
+    <table>
+      <tbody>
+        <% Community.approved.each do |community| %>
+          <tr>
+            <th><%=h community.name %></th>
+            <td><%=simple_format h(community.description) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </section>
 <% end %>

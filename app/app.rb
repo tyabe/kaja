@@ -27,20 +27,8 @@ class Kaja < Padrino::Application
   end
 
   get %r{/(en/)?entry} do
-    @community = Community.new
     @page_id = 'Entry'
     render :entry
-  end
-
-  post %r{/(en/)?entry} do
-    @community = Community.new(params[:community])
-    @page_id = 'Entry'
-    if @community.save
-      flash[:complete] = true
-      redirect i18n_path('/entry')
-    else
-      render :entry
-    end
   end
 
   get %r{/(en/)?faq} do
