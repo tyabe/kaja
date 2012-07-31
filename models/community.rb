@@ -1,4 +1,5 @@
 class Community < ActiveRecord::Base
+  attr_accessible :name, :description, :email
 
   # Fields
   field :name
