@@ -718,10 +718,15 @@ body {
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
-  #Entry .contents p, #Entry .contents dd, #Entry .contents address {
+  #Entry .contents p,
+  #Entry .contents dd,
+  #Entry .contents address {
     line-height: 2;
     font-size: 16px; }
-  #Entry .contents p, #Entry .contents dl, #Entry .contents dd, #Entry .contents ul {
+  #Entry .contents p,
+  #Entry .contents dl,
+  #Entry .contents dd,
+  #Entry .contents ul {
     margin-bottom: 1.5em; }
 #Entry .about-header h1 {
   font-size: 70px;
@@ -874,10 +879,15 @@ body {
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
-  #Faq .contents p, #Faq .contents dd, #Faq .contents address {
+  #Faq .contents p,
+  #Faq .contents dd,
+  #Faq .contents address {
     line-height: 2;
     font-size: 16px; }
-  #Faq .contents p, #Faq .contents dl, #Faq .contents dd, #Faq .contents ul {
+  #Faq .contents p,
+  #Faq .contents dl,
+  #Faq .contents dd,
+  #Faq .contents ul {
     margin-bottom: 1.5em; }
 #Faq .about-header h1 {
   font-size: 70px;
@@ -932,31 +942,23 @@ body {
   margin: 0; }
 #Kaja #KajaContainer {
   position: relative; }
+  #Kaja #KajaContainer .flowting {
+    position: relative !important;
+    z-index: 3000; }
   #Kaja #KajaContainer .kaja {
     padding: 6px;
     width: 280px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    -moz-transition: background 0.5s ease-out;
-    -webkit-transition: background 0.5s ease-out;
-    -o-transition: background 0.5s ease-out;
-    -ms-transition: background 0.5s ease-out;
-    transition: background 0.5s ease-out; }
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
   #Kaja #KajaContainer .kaja:hover {
-    background: rgba(255, 255, 255, 0.8);
     -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-    -moz-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
   #Kaja #KajaContainer .kaja .inner-kaja {
     background-color: rgba(255, 255, 255, 0.4);
     background-image: url(/images/contents-bg.png);

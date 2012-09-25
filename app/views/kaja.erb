@@ -100,14 +100,130 @@
     </li>
   </ul>
 </section>
-<script type="text/javascript" src="/javascripts/jquery.wookmark.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.wookmark.min.js"></script>
 <script type="text/javascript">
+  //$(function(){
+  //  $('#KajaContainer li').wookmark({
+  //    autoResize: true,
+  //    container: $('#KajaContainer'),
+  //    offset: 10,
+  //    itemWidth: 280
+  //  });
+  //});
+
   $(function(){
-    $('#KajaContainer li').wookmark({
+
+    // **********************
+    // init
+    // **********************
+    $.fx.interval = 30;
+    var $KajaContainer = $('#KajaContainer');
+    var KajaContainerWidth = 0;
+    var flowtingStatus = {
+      flag:0,
+      scrolltop:0,
+      top:0,
+      left:0,
+      width:0,
+      margin:10,
+      padding:0
+    };
+
+    $KajaContainer.find('li').wookmark({
       autoResize: true,
-      container: $('#KajaContainer'),
+      container: $KajaContainer,
       offset: 10,
       itemWidth: 280
     });
+
+    $KajaContainer.find('li').css('cursor','pointer');
+
+    // **********************
+    // event
+    // **********************
+    $KajaContainer.find('li').on('click', function(){
+      if( $(this).is('.flowting') ){
+        flowtingReset( 'move' );
+
+      } else if( flowtingStatus.flag ){
+        flowtingReset();
+        flowtingSet( $(this) );
+
+      } else {
+        flowtingSet( $(this) );
+      }
+    });
+
+    $(window).on('resize scroll', function(){
+      flowtingReset( 'move' );
+    });
+
+    // **********************
+    // functions
+    // **********************
+    function flowtingSet( $this ){
+
+      $this = $this;
+      KajaContainerWidth = $KajaContainer.width();
+
+      var fs = flowtingStatus;
+      fs.flag = 1;
+      fs.scrolltop = $('body').scrollTop();
+      fs.top = $this.css('top');
+      fs.left = $this.css('left');
+      fs.width = $this.outerWidth();
+      fs.padding = parseInt( $this.css('padding') );
+
+      $this.addClass('flowting').animate({
+        top:fs.margin + fs.scrolltop,
+        left:fs.margin,
+        width:KajaContainerWidth - fs.margin * 2 - fs.padding * 2
+      }, 300, 'swing', function(){
+        $this.find('.hide').slideDown();
+      });
+
+      //console.log({
+      //  'scrolltop':fs.scrolltop,
+      //  'top':fs.top,
+      //  'left':fs.left,
+      //  'margin':fs.margin,
+      //  'padding':fs.padding,
+      //  'width':fs.width
+      //});
+    }
+
+    function flowtingReset( mode ){
+      if( flowtingStatus.flag ){
+
+        var mode = mode || 'normal';
+        var $flowting = $KajaContainer.find('.flowting');
+        var fs = flowtingStatus;
+
+        $flowting.find('.hide').hide();
+
+        if( mode == 'normal'){
+          $flowting.css({
+            top:fs.top,
+            left:fs.left,
+            width:fs.width
+          });
+          $flowting.removeClass('flowting');
+
+        } else if ( mode == 'move' ){
+          $flowting.animate({
+            top:fs.top,
+            left:fs.left,
+            width:fs.width
+          }, 200, 'swing', function(){
+            $flowting.removeClass('flowting');
+          });
+        }
+
+        flowtingStatus.flag = 0;
+      }
+    }
+
+
   });
+
 </script>
