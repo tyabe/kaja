@@ -213,10 +213,7 @@ html {
   }
   // 表示しない
   .hide {
-    // hideの管理は必ずJSでする仕様となったので
-    // !importantをデフォルトで付与 2012/06/20
-    //display:none;
-    display:none !important;
+    display:none;
   }
   .hide-important {
     display:none !important;

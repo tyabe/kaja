@@ -2,16 +2,52 @@
 
 <section class="contents">
   <ul id="KajaContainer">
+
+    <!-- ---------------------------- -->
+
+
+
     <li class="kaja">
       <div class="inner-kaja">
         <img class='img' src="" alt="kaja icon" />
-        <h2 class="kaja-name">kaja name</h2>
-        <span class="community">community name</span>
-        <p class="text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h2 class="kaja-name">西川茂伸</h2>
+        <a href="#" class="github link">shishi</a>
+        <a href="#" class="twitter link">@shishi4tw</a>
+        <p class="text hide">
+          株式会社Aiming 所属<br />
+          Shinjuku.rb ファウンダー、主催<br />
+          TDDBC、日本Symfonyユーザー会所属
         </p>
+        <p class="text hide">
+          TDD や CI といった、自動テストを用いた開発手法に強く興味を持ち、勉強会や執筆を通じて多くの人にも実践してもらおうと務めています。Ruby を仕事で使うようになってまだ1年経っていませんが、盛んなコミュニティ活動、気の良い Rubyist に恵まれ楽しい開発をしています。
+        </p>
+        <h3 class="criterion hide">Kaja選定の基準や方法</h3>
+        <p class="text hide">@tyabe 氏作成のウェブサイトによる投票</p>
+        <h3 class="hide">Kaja投票理由（抜粋）</h3>
+        <ul class="motive hide">
+          <li>司会進行とりまとめいつもありがとうございます！</li>
+          <li>いつもお世話になっています！</li>
+          <li>コミュニティの運営ご苦労様です！</li>
+          <li>いつもありがとうございます。</li>
+          <li>Extream Fish Bowlの仕切りは、かなり大変だと思います。 あれは、tTDDの普及に一役買っているはず。</li>
+          <li>お疲れ様です!!</li>
+          <li>Shinjuku.rbといえば！というくらい存在感が大きい</li>
+          <li>初心者にもすごく丁寧に教えてくださいます</li>
+          <li>Shinjuku.rb以外のイベントにも関わりながら？忙しい中でも毎回の準備・開催に感謝しております</li>
+          <li>毎回お世話になってます。</li>
+          <li>実行力がすごい！お世話になってます</li>
+        </ul>
+        <h2 class="community-name">Shinjuku.rb</h2>
+        <p class="text">Rails3レシピブックの読書会やペアプロを主な活動とする勉強会&コミュニティです。</p>
+        <h3 class="hide">お知らせ</h3>
+        <p class="text hide">Shinjuku.rb でお待ちしています！</p>
       </div>
     </li>
+
+
+
+    <!-- ---------------------------- -->
+
     <li class="kaja">
       <div class="inner-kaja">
         <img class='img' src="" alt="kaja icon" />
@@ -102,15 +138,6 @@
 </section>
 <script type="text/javascript" src="/javascripts/jquery.wookmark.min.js"></script>
 <script type="text/javascript">
-  //$(function(){
-  //  $('#KajaContainer li').wookmark({
-  //    autoResize: true,
-  //    container: $('#KajaContainer'),
-  //    offset: 10,
-  //    itemWidth: 280
-  //  });
-  //});
-
   $(function(){
 
     // **********************
@@ -126,22 +153,23 @@
       left:0,
       width:0,
       margin:10,
-      padding:0
+      padding:0,
+      innerPadding:10
     };
 
-    $KajaContainer.find('li').wookmark({
+    $KajaContainer.find('.kaja').wookmark({
       autoResize: true,
       container: $KajaContainer,
       offset: 10,
       itemWidth: 280
     });
 
-    $KajaContainer.find('li').css('cursor','pointer');
+    $KajaContainer.find('.kaja').css('cursor','pointer');
 
     // **********************
     // event
     // **********************
-    $KajaContainer.find('li').on('click', function(){
+    $KajaContainer.find('.kaja').on('click', function(){
       if( $(this).is('.flowting') ){
         flowtingReset( 'move' );
 
@@ -154,7 +182,8 @@
       }
     });
 
-    $(window).on('resize scroll', function(){
+    //$(window).on('resize scroll', function(){
+    $(window).on('resize', function(){
       flowtingReset( 'move' );
     });
 
@@ -175,11 +204,15 @@
       fs.padding = parseInt( $this.css('padding') );
 
       $this.addClass('flowting').animate({
-        top:fs.margin + fs.scrolltop,
+        top:fs.scrolltop,
         left:fs.margin,
         width:KajaContainerWidth - fs.margin * 2 - fs.padding * 2
       }, 300, 'swing', function(){
         $this.find('.hide').slideDown();
+      });
+
+      $this.find('.inner-kaja').css({
+        padding:'4em'
       });
 
       //console.log({
@@ -200,6 +233,9 @@
         var fs = flowtingStatus;
 
         $flowting.find('.hide').hide();
+        $flowting.find('.inner-kaja').css({
+          padding:fs.innerPadding
+        });
 
         if( mode == 'normal'){
           $flowting.css({
@@ -222,8 +258,6 @@
         flowtingStatus.flag = 0;
       }
     }
-
-
   });
 
 </script>

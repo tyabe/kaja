@@ -599,6 +599,7 @@ body {
       & {
         padding:6px;
         width:280px;
+        max-width:600px;
         background:rgba( #fff, 0.8 );
         @include box-sizing( border-box );
         @include box-shadow( 0 0 6px rgba( #000, 0.3 ) );
@@ -619,17 +620,65 @@ body {
         background:#fff;
         margin-bottom:0.5em;
       }
-      .kaja-name {
+      h2 {
         font-size:24px;
         margin-bottom:0;
       }
-      .community {
-        color:#C20000;
-        font-size:12px;
-        display:inline-block;
+      h3 {
+        font-size:16px;
+      }
+      p {
+        font-size:14px;
+        line-height:1.8;
         margin-bottom:1em;
       }
-      .text {
+      a {
+        color:#C20000;
+        font-size:12px;
+        display:block;
+      }
+      .github {
+        &:before {
+          content:'';
+          display:inline-block;
+          width:16px;
+          height:16px;
+          margin-right:4px;
+          vertical-align:-4px;
+          background:#ccc;
+          @include border-radius( 8px );
+        }
+      }
+      .twitter {
+        margin-bottom:1em;
+        &:before {
+          content:'';
+          display:inline-block;
+          width:16px;
+          height:16px;
+          margin-right:4px;
+          vertical-align:-4px;
+          background:#ccc;
+          @include border-radius( 8px );
+        }
+      }
+      .community-name {
+        margin-top:1em;
+        padding-top:0.7em;
+        border-top:1px dotted #999;
+      }
+      .criterion {
+        margin-top:1.8em;
+        padding-top:2em;
+        border-top:1px dotted #999;
+      }
+      .motive {
+        font-size:14px;
+        margin-bottom:1em;
+        li {
+          list-style-type:disc;
+          margin-left:1.5em;
+        }
       }
     }
   }

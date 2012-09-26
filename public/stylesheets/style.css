@@ -336,7 +336,7 @@ html .hidden {
 html .focus {
   background: red; }
 html .hide {
-  display: none !important; }
+  display: none; }
 html .hide-important {
   display: none !important; }
 
@@ -948,6 +948,7 @@ body {
   #Kaja #KajaContainer .kaja {
     padding: 6px;
     width: 280px;
+    max-width: 600px;
     background: rgba(255, 255, 255, 0.8);
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -971,14 +972,55 @@ body {
     height: 70px;
     background: #fff;
     margin-bottom: 0.5em; }
-  #Kaja #KajaContainer .kaja .kaja-name {
+  #Kaja #KajaContainer .kaja h2 {
     font-size: 24px;
     margin-bottom: 0; }
-  #Kaja #KajaContainer .kaja .community {
+  #Kaja #KajaContainer .kaja h3 {
+    font-size: 16px; }
+  #Kaja #KajaContainer .kaja p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 1em; }
+  #Kaja #KajaContainer .kaja a {
     color: #C20000;
     font-size: 12px;
+    display: block; }
+  #Kaja #KajaContainer .kaja .github:before {
+    content: '';
     display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: -4px;
+    background: #ccc;
+    -moz-border-radius: 8px;
+    border-radius: 8px; }
+  #Kaja #KajaContainer .kaja .twitter {
     margin-bottom: 1em; }
+    #Kaja #KajaContainer .kaja .twitter:before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+      vertical-align: -4px;
+      background: #ccc;
+      -moz-border-radius: 8px;
+      border-radius: 8px; }
+  #Kaja #KajaContainer .kaja .community-name {
+    margin-top: 1em;
+    padding-top: 0.7em;
+    border-top: 1px dotted #999; }
+  #Kaja #KajaContainer .kaja .criterion {
+    margin-top: 1.8em;
+    padding-top: 2em;
+    border-top: 1px dotted #999; }
+  #Kaja #KajaContainer .kaja .motive {
+    font-size: 14px;
+    margin-bottom: 1em; }
+    #Kaja #KajaContainer .kaja .motive li {
+      list-style-type: disc;
+      margin-left: 1.5em; }
 
 /* ie.scss document */
 #ie_container {
