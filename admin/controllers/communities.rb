@@ -5,7 +5,7 @@ Admin.controllers :communities do
     render 'communities/index'
   end
 
-  get :show, with: :id do
+  get :show, map: 'communities/:id' do
     @community = Community.find(params[:id])
     render 'communities/show'
   end
@@ -25,7 +25,7 @@ Admin.controllers :communities do
     end
   end
 
-  patch :update, map: '/:id' do
+  patch :update, map: 'communities/:id' do
     community = Community.find(params[:id])
     if params[:approval].present? && community.update_attributes(approval: params[:approval])
       flash[:notice] = 'Community was successfully updated.'
@@ -35,7 +35,7 @@ Admin.controllers :communities do
     redirect url(:communities, :index)
   end
 
-  delete :destroy, with: :id do
+  delete :destroy, map: 'communities/:id' do
     community = Community.find(params[:id])
     if community.destroy
       flash[:notice] = 'Community was successfully destroyed.'
