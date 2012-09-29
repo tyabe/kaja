@@ -9,6 +9,7 @@ gem 'thin' # or mongrel
 # Project requirements
 gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
+gem 'active_attr'
 
 # Component requirements
 gem 'bcrypt-ruby', :require => "bcrypt"

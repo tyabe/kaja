@@ -6,14 +6,9 @@ class Kaja < Padrino::Application
   register Padrino::Mailer
   register Padrino::Helpers
 
-  enable :sessions
 
   before do
-    I18n.locale = if params[:captures] && s = params[:captures].first 
-      s.gsub("/","").to_sym 
-    else 
-      :ja
-    end
+    I18n.locale = (params[:captures] && s=params[:captures].first) ? s.gsub("/","").to_sym : :ja
   end
 
   get %r{/(en)?} do
@@ -38,6 +33,7 @@ class Kaja < Padrino::Application
 
   get %r{/(en/)?kaja} do
     @page_id = 'Kaja'
+    @nominees = Nominee.of(2012)
     render :kaja
   end
 
