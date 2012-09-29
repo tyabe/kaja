@@ -22,6 +22,7 @@ gem 'padrino', '0.10.7'
 
 group :production do
   gem 'pg'
+  gem 'dalli'
 end
 
 group :development do

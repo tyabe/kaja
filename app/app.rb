@@ -5,36 +5,52 @@ class Kaja < Padrino::Application
   register Padrino::Rendering
   register Padrino::Mailer
   register Padrino::Helpers
+  register Padrino::Cache
 
-
-  before do
-    I18n.locale = (params[:captures] && s=params[:captures].first) ? s.gsub("/","").to_sym : :ja
+  configure :production do
+    set :cache, Padrino::Cache::Store::Memcache.new(::Dalli::Client.new(ENV["MEMCACHIER_SERVERS"],
+                                                                        { username: ENV["MEMCACHIER_USERNAME"],
+                                                                          password: ENV["MEMCACHIER_PASSWORD"]}
+                                                                       ))
+  end
+  configure :development do
+    set :cache, Padrino::Cache::Store::Memory.new(5000)
   end
 
-  get %r{/(en)?} do
-    @page_id = 'Index'
-    render :index
-  end
+  enable :caching
 
-  get %r{/(en/)?about} do
-    @page_id = 'About'
-    render :about
-  end
+  controller cache: true do
 
-  get %r{/(en/)?entry} do
-    @page_id = 'Entry'
-    render :entry
-  end
+    before do
+      I18n.locale = (params[:captures] && s=params[:captures].first) ? s.gsub("/","").to_sym : :ja
+      expires_in 60
+    end
 
-  get %r{/(en/)?faq} do
-    @page_id = 'Faq'
-    render :faq
-  end
+    get %r{/(en)?} do
+      @page_id = 'Index'
+      render :index
+    end
 
-  get %r{/(en/)?kaja} do
-    @page_id = 'Kaja'
-    @nominees = Nominee.of(2012)
-    render :kaja
+    get %r{/(en/)?about} do
+      @page_id = 'About'
+      render :about
+    end
+
+    get %r{/(en/)?entry} do
+      @page_id = 'Entry'
+      render :entry
+    end
+
+    get %r{/(en/)?faq} do
+      @page_id = 'Faq'
+      render :faq
+    end
+
+    get %r{/(en/)?kaja} do
+      @page_id = 'Kaja'
+      @nominees = Nominee.of(2012)
+      render :kaja
+    end
   end
 
   private
