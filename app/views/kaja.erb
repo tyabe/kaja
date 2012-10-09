@@ -169,94 +169,147 @@
     // **********************
     // event
     // **********************
-    $KajaContainer.find('.kaja').on('click', function(){
+    $(document).on('click', '#KajaContainer .kaja', function(){
+
+      var width = $('body').width();
+      var height = $('body').height();
+
       if( $(this).is('.flowting') ){
-        flowtingReset( 'move' );
-
-      } else if( flowtingStatus.flag ){
-        flowtingReset();
-        flowtingSet( $(this) );
-
+        $(this).fadeOut('normal', function(){
+          $(this).remove();
+        });
+        removebg();
+      } else if( $KajaContainer.find('.flowting').length ){
+        $KajaContainer.find('.flowting').fadeOut('normal', function(){
+          $(this).remove();
+        });
+        removebg();
       } else {
-        flowtingSet( $(this) );
+        var $this = $(this);
+        var $kaja = $this.clone();
+
+        addbg( width, height );
+
+        $kaja.addClass('flowting').addClass('hide');
+        $('#KajaContainer').append( $kaja );
+        $kaja.find('.hide').removeClass('hide');
+        $kaja.fadeIn();
       }
+
     });
 
-    //$(window).on('resize scroll', function(){
+    $(document).on('click', '#KajaContainer .kaja a', function(e){
+      e.stopPropagation();
+    });
+
+    $(document).on('click', '#KajaContainer .flowting-bg', function(e){
+      $KajaContainer.find('.flowting').fadeOut('normal', function(){
+        $(this).remove();
+      });
+      removebg();
+    });
+
     $(window).on('resize', function(){
-      flowtingReset( 'move' );
+      if( $KajaContainer.find('.flowting-bg').length ){
+        var width = $('body').width();
+        var height = $('body').height();
+        addbg( width, height, 'resize' );
+      }
     });
 
     // **********************
     // functions
     // **********************
+    function addbg( w, h, option ){
+      var option = option || 'normal';
+      var $KajaContainer = $('#KajaContainer');
+      if( option == 'resize' ){
+        $KajaContainer.find('.flowting-bg').css({
+          width: w + 'px',
+          height: h + 'px'
+        });
+      } else {
+        var $flowtingbg = $('<div class="flowting-bg"/>');
+        $flowtingbg.css({
+          width: w + 'px',
+          height: h + 'px',
+          top: 0,
+          left: 0,
+          position: 'fixed',
+          background: 'rgba(0,0,0,0.5)',
+          zIndex: '1000'
+        });
+        $('#KajaContainer').prepend( $flowtingbg );
+      }
+    }
+
+    function removebg(){
+      var $KajaContainer = $('#KajaContainer');
+      $KajaContainer.find('.flowting-bg').fadeOut('normal', function(){
+        $KajaContainer.find('.flowting-bg').remove();
+      });
+    }
+
+
     function flowtingSet( $this ){
 
-      $this = $this;
-      KajaContainerWidth = $KajaContainer.width();
 
-      var fs = flowtingStatus;
-      fs.flag = 1;
-      fs.scrolltop = $('body').scrollTop();
-      fs.top = $this.css('top');
-      fs.left = $this.css('left');
-      fs.width = $this.outerWidth();
-      fs.padding = parseInt( $this.css('padding') );
+      //$this = $this;
+      //KajaContainerWidth = $KajaContainer.width();
 
-      $this.addClass('flowting').animate({
-        top:fs.scrolltop,
-        left:fs.margin,
-        width:KajaContainerWidth - fs.margin * 2 - fs.padding * 2
-      }, 300, 'swing', function(){
-        $this.find('.hide').slideDown();
-      });
+      //var fs = flowtingStatus;
+      //fs.flag = 1;
+      //fs.scrolltop = $('body').scrollTop();
+      //fs.top = $this.css('top');
+      //fs.left = $this.css('left');
+      //fs.width = $this.outerWidth();
+      //fs.padding = parseInt( $this.css('padding') );
 
-      $this.find('.inner-kaja').css({
-        padding:'4em'
-      });
+      //$this.addClass('flowting').animate({
+      //  top:fs.scrolltop,
+      //  left:fs.margin,
+      //  width:KajaContainerWidth - fs.margin * 2 - fs.padding * 2
+      //}, 300, 'swing', function(){
+      //  $this.find('.hide').slideDown();
+      //});
 
-      //console.log({
-      //  'scrolltop':fs.scrolltop,
-      //  'top':fs.top,
-      //  'left':fs.left,
-      //  'margin':fs.margin,
-      //  'padding':fs.padding,
-      //  'width':fs.width
+      //$this.find('.inner-kaja').css({
+      //  padding:'4em'
       //});
     }
 
     function flowtingReset( mode ){
-      if( flowtingStatus.flag ){
+      //if( flowtingStatus.flag ){
 
-        var mode = mode || 'normal';
-        var $flowting = $KajaContainer.find('.flowting');
-        var fs = flowtingStatus;
+      //  var mode = mode || 'normal';
+      //  var $flowting = $KajaContainer.find('.flowting');
+      //  var fs = flowtingStatus;
 
-        $flowting.find('.hide').hide();
-        $flowting.find('.inner-kaja').css({
-          padding:fs.innerPadding
-        });
+      //  $flowting.find('.hide').hide();
+      //  $flowting.find('.inner-kaja').css({
+      //    padding:fs.innerPadding
+      //  });
 
-        if( mode == 'normal'){
-          $flowting.css({
-            top:fs.top,
-            left:fs.left,
-            width:fs.width
-          });
-          $flowting.removeClass('flowting');
+      //  if( mode == 'normal'){
+      //    $flowting.css({
+      //      top:fs.top,
+      //      left:fs.left,
+      //      width:fs.width
+      //    });
+      //    $flowting.removeClass('flowting');
 
-        } else if ( mode == 'move' ){
-          $flowting.animate({
-            top:fs.top,
-            left:fs.left,
-            width:fs.width
-          }, 200, 'swing', function(){
-            $flowting.removeClass('flowting');
-          });
-        }
+      //  } else if ( mode == 'move' ){
+      //    $flowting.animate({
+      //      top:fs.top,
+      //      left:fs.left,
+      //      width:fs.width
+      //    }, 200, 'swing', function(){
+      //      $flowting.removeClass('flowting');
+      //    });
+      //  }
 
-        flowtingStatus.flag = 0;
-      }
+      //  flowtingStatus.flag = 0;
+      //}
     }
   });
 
