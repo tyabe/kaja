@@ -5,6 +5,28 @@
 // ■■■■■■■■■■■■■■■■■■■■
 $images-path:'/images/';
 // ■■■■■■■■■■■■■■■■■■■■
+// fonts
+// ■■■■■■■■■■■■■■■■■■■■
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot");
+  src: url("../fonts/fontello.eot?#iefix") format('embedded-opentype'),
+        url("../fonts/fontello.woff") format('woff'),
+        url("../fonts/fontello.ttf") format('truetype'),
+        url("../fonts/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.kaja {
+}
+.twitter:before {
+}
+.github:before {
+}
+
+
+
+// ■■■■■■■■■■■■■■■■■■■■
 // mixin
 // ■■■■■■■■■■■■■■■■■■■■
 @mixin global-nav-anchor {
@@ -592,8 +614,14 @@ body {
   #KajaContainer {
     position:relative;
     .flowting {
-      position:relative !important;
-      z-index:3000;
+      position:absolute !important;
+      z-index:3000 !important;
+      left:0 !important;
+      width:auto !important;
+      max-width:600px;
+      .inner-kaja {
+        padding:3em !important;
+      }
     }
     .kaja {
       & {
@@ -601,6 +629,7 @@ body {
         width:280px;
         max-width:600px;
         background:rgba( #fff, 0.8 );
+        cursor:pointer;
         @include box-sizing( border-box );
         @include box-shadow( 0 0 6px rgba( #000, 0.3 ) );
         //@include transition( background 0.5s ease-out );
@@ -637,29 +666,31 @@ body {
         font-size:12px;
         display:block;
       }
+      .link {
+        &:before {
+          font-family: 'fontello';
+          font-style: normal;
+          font-weight: normal;
+          speak: none;
+          display: inline-block;
+          text-decoration: inherit;
+          width: 1em;
+          margin-right:8px;
+          text-align: center;
+          color:#000;
+          text-decoration:none;
+        }
+      }
       .github {
         &:before {
-          content:'';
-          display:inline-block;
-          width:16px;
-          height:16px;
-          margin-right:4px;
-          vertical-align:-4px;
-          background:#ccc;
-          @include border-radius( 8px );
+          content: '\f308';
         }
       }
       .twitter {
         margin-bottom:1em;
         &:before {
-          content:'';
-          display:inline-block;
-          width:16px;
-          height:16px;
-          margin-right:4px;
-          vertical-align:-4px;
-          background:#ccc;
-          @include border-radius( 8px );
+          content: '\f303';
+          margin-left:-2px;
         }
       }
       .community-name {
