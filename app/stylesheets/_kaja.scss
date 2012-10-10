@@ -616,7 +616,6 @@ body {
     .flowting {
       position:absolute !important;
       z-index:3000 !important;
-      top:0 !important;
       left:0 !important;
       width:auto !important;
       max-width:600px;
@@ -630,6 +629,7 @@ body {
         width:280px;
         max-width:600px;
         background:rgba( #fff, 0.8 );
+        cursor:pointer;
         @include box-sizing( border-box );
         @include box-shadow( 0 0 6px rgba( #000, 0.3 ) );
         //@include transition( background 0.5s ease-out );
