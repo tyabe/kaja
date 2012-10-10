@@ -14,20 +14,20 @@
         <a href="https://github.com/<%=h nominee.github %>" target="_blank" class="github link"><%=h nominee.github %></a>
         <a href="https://twitter.com/<%=h nominee.twitter %>" target="_blank" class="twitter link">@<%=h nominee.twitter %></a>
         <p class="text hide">
-          <%=simple_format h(nominee.profile) %>
+          <%=simple_format auto_link(nominee.profile) %>
         </p>
         <p class="text hide">
-          <%=simple_format h(nominee.supplement) %>
+          <%=simple_format auto_link(nominee.supplement) %>
         </p>
         <h3 class="criterion hide">Kaja選定の基準や方法</h3>
-        <p class="text hide"><%=h nominee.judged_by %></p>
+        <p class="text hide"><%=simple_format auto_link(nominee.judged_by) %></p>
         <h3 class="hide">Kaja投票理由</h3>
         <ul class="motive hide">
-          <%=simple_format h(nominee.reason_for) %>
+          <%=simple_format auto_link(nominee.reason_for) %>
         </ul>
         <h2 class="community-name"><%=h nominee.community %></h2>
-        <p class="text"><%=simple_format h(nominee.description) %></p>
-        <p class="text hide"><%=h nominee.comment %></p>
+        <p class="text"><%=simple_format auto_link(nominee.description) %></p>
+        <p class="text hide"><%=simple_format auto_link(nominee.comment) %></p>
       </div>
     </li>
 

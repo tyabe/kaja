@@ -8,4 +8,8 @@ Kaja.helpers do
     concat_content text
   end
 
+  def auto_link(value)
+    value.to_s.gsub(%r{([^"]|^)(https?)(://[\w:;/.?%#&=+-]+)}, '\1<a href="\2\3" target="_blank">\2\3</a>' )
+  end
+
 end
