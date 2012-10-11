@@ -2,6 +2,8 @@ en:
   menu:
     about: About
     entry: Entry
+    faq: FAQ
+    kaja: Kaja
   form:
     description_placeholder: "Please let us know about your community's activities"
     apply: Apply
