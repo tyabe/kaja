@@ -641,6 +641,7 @@ body {
       .inner-kaja {
         @include contents-bg;
         padding:10px;
+        word-wrap: break-word;
       }
       .img {
         display:inline-block;

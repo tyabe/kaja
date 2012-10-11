@@ -978,7 +978,8 @@ body {
     background-image: url(/images/contents-bg.png);
     background-repeat: repeat 0 0;
     background-position: 0 0;
-    padding: 10px; }
+    padding: 10px;
+    word-wrap: break-word; }
   #Kaja #KajaContainer .kaja .img {
     display: inline-block;
     width: 70px;
