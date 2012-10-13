@@ -119,8 +119,14 @@ LLVM/clang などの一部環境でのみ発生するバグとも戦う。
 ",,"Asakusa.rb","毎週火曜日にmeetupをやっています。地域Ruby会議として大江戸Ruby会議01, 02を開催しました。来春には03も開催予定です。 http://asakusa.rubyist.net","火曜日の定例ミートアップの参加者どうしで話し合って决めました。
 ","Rubyを良くすることに貢献する活動をしたいという思いから始まったAsakusa.rbのメンバーのなかからkajaを選ぶとなると、最もアウトプットの多いnobuしかない、という結論に至りました。
 ",
-"Takashi Hayasaka","iwhurtafly ","iwhurtafly ","iwhurtafly","『Rubyを世界へ』をモットーにしている草の根活動家です。Rubyで世界中のみんながハッピーに、巡り巡って自分もハッピーになれればと思い、日々活動しています。Ruby歴2年の非プログラマーです。",,"Tokyo Rubyist Meetup","Tokyo Rubyist Meetupは、日本のRubyistと世界のRubyistとをつなげるための場になることを目指して設立されました。定例会には、東京近郊に住んでいる海外出身のRubyistたちと日本人Rubyistたちが参加します。例会の公用語は英語になりますが、英語が苦手な方も、一緒に英語の練習をするくらいのつもりでお気軽にご参加ください。﻿","主催者（@pwim）が選びました。Tokyo Rubyist Meetupは日本のRubyコミュニティーの国際化の目的がありましたから、Kajaもその活動しているべきでした。","前回のRuby会議のあと、ビデオを字幕するプロジェクトがありました。（https://github.com/ruby-no-kai/rubykaigi/wiki/VideoSubtitleJobs）僕（@pwim）は@tenderloveの発表をUniversal Subtitlesのサービスで字幕を作成はじましたが、すごく時間かかってあきらめました。ある日、早坂さんが「字幕を手伝わせてください」のようなメールをもらいました。賛成しましたら、前朝Universal Subtitlesから編集があったのようなメールもらいました。一ヶ月ぐらいあとで、彼は字幕を作成しました。
+"Takashi Hayasaka","iwhurtafly ","iwhurtafly ","iwhurtafly","『Rubyを世界へ』をモットーにしている草の根活動家です。Rubyで世界中のみんながハッピーに、巡り巡って自分もハッピーになれればと思い、日々活動しています。Ruby歴2年の非プログラマーです。",,"Tokyo Rubyist Meetup","Tokyo Rubyist Meetupは、日本のRubyistと世界のRubyistとをつなげるための場になることを目指して設立されました。
+定例会には、東京近郊に住んでいる海外出身のRubyistたちと日本人Rubyistたちが参加します。定例会の公用語は英語になりますが、英語が苦手な方も、一緒に英語の練習をするくらいのつもりでお気軽にご参加ください。﻿","主催者（@pwim）が選びました。
+Tokyo Rubyist Meetupは、日本のRubyコミュニティーの国際化が目的ですので、Kajaもそのような活動をしている人が相応しいという基準で選びました。","Ruby会議2011のビデオを字幕化するプロジェクトがありました。（https://github.com/ruby-no-kai/rubykaigi/wiki/VideoSubtitleJobs）
+僕（@pwim）は@tenderloveの発表をUniversal Subtitlesのサービスで字幕を作成はじましたが、すごく時間かかってあきらめました。
+ある日、早坂さんから「字幕を手伝わせてください」というメールがあり、作業を手伝ってもらうことにしました。翌朝にはUniversal Subtitlesから編集があったとのメールがあり、一ヶ月程で彼は字幕を完成させました。
 
-Tokyo Rubyist Meetupは日本のRubyistと世界のRubyistとをつなげるため作りました。早坂さんはいつも海外とつがえるチャンスを求めます。よく東京で外国人があるイベントに参加しまして、他の日本人のRubyistもそのようなイベントに進めます。Heroku Dev Center (https://github.com/herokaijp/devcenter)のプロジェクトでHerokuの日本語ドキュメントを作成しています。Tokyo Rubyist Meetupの翻訳をしています。アメリカ人のRubyistとSkypeしています。早坂さんは日本のRubyコミュニティーを国際化しています。",
+Tokyo Rubyist Meetupは日本のRubyistと世界のRubyistとをつなげるため作りました。早坂さんはいつも海外とつながるチャンスを求めています。東京で外国人が参加しているイベントに積極的に参加し、他の日本人のRubyistにもイベントを紹介しています。
+Heroku Dev Center (https://github.com/herokaijp/devcenter)のプロジェクトでは、Herokuの日本語ドキュメントを作成しています。Tokyo Rubyist Meetupの翻訳をしています。アメリカ人のRubyistとSkypeしています。
+早坂さんは日本のRubyコミュニティーの国際化に貢献しています。",
 "池澤 一廣",,"awazeki","awazeki","テキスト処理業。毎日Rubyのスクリプトを書いている。生涯プログラマ。","来年も黒字を目指します！！！","toRuby","毎月第一水曜日、西那須野公民館でRubyに関する本を使って写経しながら、勉強会をしています。たまに大きめの会議っぽいことをしたり、出張イベントなどをします。","toRubyに貢献している人、toRubyを代表する人としてだれがいいかを全員で話して決めました。
 ","toRuby発起人。常に新しいことにチャレンジしている勉強家。toRuby会計をしていてコミュニティにも貢献している。また、toRubyをはじめ周囲にいつも刺激を与えるとてもすばらしい人なので満場一致で決まりました。","とてか02やります。http://d.hatena.ne.jp/tochigitestnokaigi/20121020/1342628221"
