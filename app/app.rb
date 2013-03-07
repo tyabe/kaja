@@ -24,15 +24,4 @@ class Kaja < Padrino::Application
     expires_in 60
   end
 
-  private
-
-  def i18n_path(s)
-    root = I18n.locale == :ja ? "/" : "/#{I18n.locale}"
-    s == "/" ? root : File.join(root, s)
-  end
-
-  def rubyize(s,t)
-    "<ruby>#{s}<rp>（</rp><rt>#{t}</rt><rp>）</rp></ruby>"
-  end
-
 end

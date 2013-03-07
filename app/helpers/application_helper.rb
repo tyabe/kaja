@@ -12,4 +12,13 @@ Kaja.helpers do
     value.to_s.gsub(%r{([^"]|^)(https?)(://[\w:;/.?%#&=+-]+)}, '\1<a href="\2\3" target="_blank">\2\3</a>' )
   end
 
+  def i18n_path(s)
+    root = I18n.locale == :ja ? "/" : "/#{I18n.locale}"
+    s == "/" ? root : File.join(root, s)
+  end
+
+  def rubyize(s,t)
+    "<ruby>#{s}<rp>（</rp><rt>#{t}</rt><rp>）</rp></ruby>"
+  end
+
 end
