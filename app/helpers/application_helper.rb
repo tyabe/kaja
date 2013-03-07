@@ -21,4 +21,8 @@ Kaja.helpers do
     "<ruby>#{s}<rp>（</rp><rt>#{t}</rt><rp>）</rp></ruby>"
   end
 
+  def page_id
+    request.action.to_s.camelcase
+  end
+
 end
