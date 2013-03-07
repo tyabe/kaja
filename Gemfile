@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 ruby '1.9.3'
 
@@ -18,7 +18,7 @@ gem 'haml'
 gem 'mini_record'
 
 # Padrino Stable Gem
-gem 'padrino', '0.10.7'
+#gem 'padrino', '0.10.7'
 
 group :production do
   gem 'pg'
@@ -37,7 +37,7 @@ group :test do
 end
 
 # Or Padrino Edge
-# gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
+gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
 
 # Or Individual Gems
 # %w(core gen helpers cache mailer admin).each do |g|
