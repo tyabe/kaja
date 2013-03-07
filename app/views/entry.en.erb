@@ -7,19 +7,3 @@
     <p class="deadline"><strong>Application deadline: the last day of July, 2012</p>
   </header>
 </section>
-
-<% if Community.approved.count > 0 %>
-  <section class="community-list contents">
-    <h1>Joined Communities</h1>
-    <table>
-      <tbody>
-        <% Community.approved.each do |community| %>
-          <tr>
-            <th><%=h community.name %></th>
-            <td><%=simple_format h(community.description) %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </section>
-<% end %>
