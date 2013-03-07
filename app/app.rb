@@ -1,4 +1,3 @@
-# coding: utf-8
 class Kaja < Padrino::Application
   register ScssInitializer
   use ActiveRecord::ConnectionAdapters::ConnectionManagement
@@ -7,14 +6,16 @@ class Kaja < Padrino::Application
   register Padrino::Helpers
   register Padrino::Cache
 
-  configure :production do
-    set :cache, Padrino::Cache::Store::Memcache.new(::Dalli::Client.new(ENV["MEMCACHIER_SERVERS"],
-                                                                        { username: ENV["MEMCACHIER_USERNAME"],
-                                                                          password: ENV["MEMCACHIER_PASSWORD"]}
-                                                                       ))
-  end
-  configure :development do
+  case Padrino.env
+  when :develpment
     set :cache, Padrino::Cache::Store::Memory.new(5000)
+  when :production
+    set :cache, Padrino::Cache::Store::Memcache.new(
+      ::Dalli::Client.new(
+        ENV["MEMCACHIER_SERVERS"],
+        { username: ENV["MEMCACHIER_USERNAME"],
+          password: ENV["MEMCACHIER_PASSWORD"]}
+    ))
   end
 
   enable :caching
