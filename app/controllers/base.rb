@@ -1,24 +1,33 @@
 Kaja.controllers :base, cache: true do
 
-  get :index, %r{/(en)?} do
+  get :index, %r{/(\w{2})?} do
     render :index
   end
 
-  get :entry, %r{/(en/)?entry} do
+  get :entry, %r{/(\w{2}/)?entry} do |lcid|
     render :entry
   end
 
-  get :faq, %r{/(en/)?faq} do
+  get :faq, %r{/(\w{2}/)?faq} do |lcid|
     render :faq
   end
 
-  get :about, %r{/(en/)?about} do
-    render :about
+  get %r{/(\w{2}/)?2012} do |lcid|
+    redirect "2012/#{lcid}about"
+  end
+  get %r{/(\w{2}/)?about} do |lcid|
+    redirect "/#{current_year}/#{lcid}about"
+  end
+  get :about, %r{/(\d{4}/)?(\w{2}/)?about} do
+    render "#{current_year}/about"
   end
 
-  get :kaja, %r{/(en/)?kaja} do
+  get %r{/(\w{2}/)?kaja} do |lcid|
+    redirect "2012/#{lcid}kaja"
+  end
+  get :kaja, %r{/2012/(\w{2}/)?kaja} do
     @nominees = Nominee.of(2012)
-    render :kaja
+    render "2012/kaja"
   end
 
 end

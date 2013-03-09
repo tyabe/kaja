@@ -21,8 +21,14 @@ class Kaja < Padrino::Application
   enable :caching
 
   before do
-    I18n.locale = (params[:captures] && s=params[:captures].first) ? s.gsub("/","").to_sym : :ja
+    captures = params[:captures].to_a.dup
+    I18n.locale = (@lcid=captures.pop) ? @lcid.gsub("/","").to_sym : :ja
+    @year = captures.pop
     expires_in 60
+  end
+
+  def current_year
+    @year ||= "2012"
   end
 
 end

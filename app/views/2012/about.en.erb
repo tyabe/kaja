@@ -1,28 +1,11 @@
 <%= partial 'sidebar' %>
 
 <header class="about-header">
-  <h1>Ruby Kaja</h1>
-  <h2>
-    Praise the Rubyists in your community through Ruby Kaja<br/>
-  </h2>
-  <p><strong>To begin recruitment from 2012-06-02.</strong></p>
+  <h1>Ruby Kaja 2012</h1>
 </header>
 
 <section class="about-contents contents">
-  <h1>What is Ruby Kaja?</h1>
-  <p>
-    <strong>Ruby Kaja</strong> is a title to recognize people who have contributed to Ruby or the Ruby community
-  </p>
-  <p>
-    Let's commemorate not only those who have made a great contribution, but also those who are not so well known
-  </p>
-  <p>
-    Kaja means 「<%= "#{rubyize '若手', 'わかて'}の#{rubyize '筆頭', 'ひっとう'}" %>」 - literally, the young person's brush tip, and comes from 
-    the Kyōgen term Tarō kaja(<%= "#{rubyize '太郎冠者', 'たろうかじゃ'}" %>).
-  </p>
-  <p>
-    Traditionally, the term has been used to refer to young men, but for Ruby Kaja, gender does not matter.
-  </p>
+  <h2><%= link_to "Ruby Kaja 2012 受賞者", "/2012/#{@lcid}kaja" %>
 </section>
 
 <section class="guidelines-contents contents">
