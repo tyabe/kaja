@@ -28,7 +28,7 @@ class Kaja < Padrino::Application
   end
 
   def current_year
-    @year ||= "2012"
+    @year ||= "2013"
   end
 
 end
