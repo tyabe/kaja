@@ -12,8 +12,8 @@ Kaja.controllers :base, cache: true do
     render :faq
   end
 
-  get %r{/(\w{2}/)?2012} do |lcid|
-    redirect "2012/#{lcid}about"
+  get %r{/(\w{2}/)?(\d{4})} do |lcid, year|
+    redirect "#{year}/#{lcid}about"
   end
   get %r{/(\w{2}/)?about} do |lcid|
     redirect "/#{current_year}/#{lcid}about"
