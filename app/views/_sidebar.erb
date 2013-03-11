@@ -2,15 +2,6 @@
   <a href="<%= i18n_path('/') %>" class="logo"><small class="text">Ruby Kaja</small></a>
   <nav class="global-nav">
     <%= menu_list %>
-    <ul>
-      <li class="locale link">
-        <% if I18n.locale == :ja %>
-          <a href="/en/about">English</a>
-        <% else %>
-          <a href="/about">日本語</a>
-        <% end %>
-      </li>
-    </ul>
   </nav>
   <span class="copy">
     &copy; 2012<br />
