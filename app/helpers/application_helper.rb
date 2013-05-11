@@ -9,7 +9,7 @@ Kaja.helpers do
   end
 
   def auto_link(value)
-    value.to_s.gsub(%r{([^"]|^)(https?)(://[\w!:;/.?%#&=+-]+)}, '\1<a href="\2\3" target="_blank">\2\3</a>' )
+    value.to_s.gsub(%r{([^"]|^)(https?)(://[\w!:;/.?%#&=+-~]+)}, '\1<a href="\2\3" target="_blank">\2\3</a>' )
   end
 
   def i18n_path(s)
