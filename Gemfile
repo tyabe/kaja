@@ -8,12 +8,10 @@ gem 'thin' # or mongrel
 
 # Project requirements
 gem 'rake'
-gem 'sinatra-flash', :require => 'sinatra/flash'
 gem 'active_attr'
 
 # Component requirements
 gem 'sass'
-gem 'haml'
 
 # Padrino Stable Gem
 #gem 'padrino', '0.10.7'
