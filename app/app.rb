@@ -33,5 +33,7 @@ module Kaja
       @year ||= "2013"
     end
 
+    error Padrino::Rendering::TemplateNotFound do not_found; end
+
   end
 end
