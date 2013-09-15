@@ -1,0 +1,155 @@
+Name,Github,Twitter,ImageFile,Profile,Supplement,Community,Description,JudgedBy,ReasonFor,Comment
+鳥井雪,yakitorii,yotii23,yotii23,"第二回Rails Girls Tokyo のオーガナイザーのひとり。
+株式会社万葉所属。
+Rails Girls Tokyo卒業生のための継続的な勉強会「Rails Girls, More!」を提案、運用。
+個人でオンラインで俳句の句会をするためのアプリケーションを作成し、2012 RubyConfにてLTによりアプリを紹介する。2013年3月には、フランスのアートスクールで句会のワークショップをするため、句会アプリをフランス語にローカライズして提供した。
+Rails Girls Tokyoに関しては、2012年福岡Ruby会議のLT、2013年３月の大江戸Ruby会議のNinja Talksにて活動を紹介している。",Rails GIrls Tokyoは、参加者の熱意と、優秀で誠実なコーチ陣の継続的な協力、理解あるスポンサーによって支えられています。Kajaが、この取り組みを多くのひとに知っていただく機会となり、今後の活動の広がりへのあたらしい力となることを願います。,Rails Girls Tokyo,"RailsGirls Tokyoは、女性がIT技術に触れるチャンスを増やし、さらに継続して技術を習得するサポートを提供するためのコミュニティです。世界的なムーブメントであるRails GirlsのTokyoでの開催、およびその卒業生のための月一回の勉強会（Rails Girls, More!）の運営が活動内容となります。
+RailsGirlsは第一回を2012/9/7-8に、第二回を2013/3/1-2に開催し、毎回参加は公募となります。
+Rails Girls, More!は2012年10月より、月一回 株式会社万葉を会場として開催し、現在第六回を数えています。RG Tokyo卒業生をメインの対象にしていますが、その他にもRailsを学びたい女性をひろく受け入れています。
+また、Rails Girls Tokyoは、教える側のコーチの協力が不可欠です。自薦あるいは関係者の他薦により、コーチとしてのRubyistのご参加もお待ちしております。
+
+Rails Girls Tokyo第一回
+<a href=""http://railsgirls.com/tokyo-2012-09-07.html"" target=""_blank"">http://railsgirls.com/tokyo-2012-09-07.html</a>
+Rails Girls Tokyo第二回
+<a href=""http://railsgirls.com/tokyo"" target=""_blank"">http://railsgirls.com/tokyo</a>
+Rails Girls, More! FBグループ
+<a href=""https://www.facebook.com/groups/113145785502645/"" target=""_blank"">https://www.facebook.com/groups/113145785502645/</a> ","基準： Rails Girls Tokyoの活動に貢献した人間
+方法： 2013/3/31の勉強会で行った推薦と参加者の全賛成による","<Rails Girls Tokyo 2nd オーガナイザー>
+1st のオーガナイザーが渡米してしまったため、宙に浮いた形になった Rails Girls Tokyo を引き継ぎ、 2nd を主催した。前回の大好評のプレッシャーに負けず、優れた問題解決能力でたくさんのコーチをまとめ、2nd を成功させ、多くの Girls がプログラミングへ挑戦するきっかけをつくった。コーチ内でのKPTでは「Keep! 鳥井さん」と名指しされ満場の拍手が起こるなど、強者ぞろいのRailsGirlsコーチ陣からの信頼も厚い。
+
+<Rails Girls Tokyo, More! の立ち上げと主催>
+Rails Girls Tokyo 1st の後、卒業生を継続的にフォローするための勉強会 ""Rails Girls Tokyo, More!"" を提案し、運営している。コーチによる親切丁寧な指導が好評で、最近では、More でRubyへの興味を深めた参加者が、More以外の勉強会に出たり発表したり、とRubyコミュニティへの新たな仲間を増やすことに大きく貢献している。",Rails Girls Tokyoは女性が未経験からIT技術に触れるチャンスをひろげ、あたらしい世界へ踏み出すためのコミュニティです。ITの世界の多様性を豊かにすることを目的としています。
+米澤慎,,vestige_,vestige_,toRuby,,toRuby,"毎月１回、とちぎ県の県北でRubyの勉強会を行っています。
+たまに出張でイベントをしています。
+<a href=""http://pub.cozmixng.org/~the-rwiki/?cmd=view;name=toRuby"" target=""_blank"">http://pub.cozmixng.org/~the-rwiki/?cmd=view;name=toRuby</a>",他薦、多数決,toRubyではずっと司会係をしているので選出しました。,"2013.9.21 とちぎRuby会議05を行います。
+Rubyスポンサーの有限会社情報デザイン
+、ツルマウソフトをよろしくお願いします。"
+海老沢聡,satococoa,satococoa,satococoa,Ruby/Railsエンジニア。最近はRubyMotionを日本に広める活動を行なっており、iPhoneアプリをリリースしている。また、デザイナー向けプログラム部（P4D）を主催するなどコミュニティ活動も積極的に推進している。,,yokohamarb,"2010年10月から毎月、神奈川県横浜市神奈川地区センターにてRubyレシピブックやLT、自作アプリの発表などを行なっています。
+
+参加登録と各種情報は
+<a href=""http://bukt.org/groups/3"" target=""_blank"">http://bukt.org/groups/3</a>
+から。 ",Yokohama.rbの参加者が各自推薦者を紹介し、RubyKaja投票サイト経由で投票を実施。一番多く票を獲得した人をRubyKajaとして選出しました。,RubyMotionを通じての活動（Rubyfriendsカメラ）やP4dの設立と定期的な開催に尽力。 Yokohama.rbでも安定の司会力で場を取り仕切っていただいた。,「Rubyレシピブック」読書会をメインコンテンツに、毎月1回定期開催しています。初心者Rubyistが参加しやすいとおもいます。
+@garden_tree,gardentree,garden_tree,garden_tree,きれいなジャイアン。,,Shinjuku.rb,"
+1ヶ月に1度、第4水曜日に開催
+
+Facebook
+<a href=""https://www.facebook.com/groups/shinjuku.rb/"" target=""_blank"">https://www.facebook.com/groups/shinjuku.rb/</a>
+
+Google Group
+<a href=""https://groups.google.com/forum/#!forum/shinjukurb"" target=""_blank"">https://groups.google.com/forum/#!forum/shinjukurb</a>
+
+Extreme Fish Bowl(公開ペアプロ) や Rails レシピブック読書会などをしています。
+月に1度主催者がFacebookやGoogle Group、Twitterにて募集の告知をしますので参加登録の上お越しください！",投票による,コミュニティの投票による,ペアプロ主体の、コードを書く .rb
+柴田 博志,hsbt,hsbt,hsbt,Rubyコミッタ。Asakusa.rbメンバー。RailsGirls in Japanのオーガナイザーのひとり。,,Asakusa.rb,Asakusa.rb is probably the most active regional Rubyist group in Japan. We're having weekly meetup on every Ruby Tuesday evening at somewhere around Asakusa. ,前回のRubyKaja以降に、Rubyコミュニティに成果をフィードバックするというAsakusa.rbのビジョンに照らして誰がふさわしいかをmeetupで話し合って决めました。,Rubyコミッタに就任してからの八面六臂の活躍(5/30の本編のトークを参照)を、Askausa.rbとして賞賛します。,柴田さんから当日、Asakusa.rbのコミュニティアピールもやってもらいます
+大仲 能史 (Takafumi Onaka),onk,onk,onk,2006年に株式会社ドリコムに入社後、SNS やブログの構築を手がける。2009年4月、ソーシャルゲーム事業部の立ち上げに伴いソーシャルゲームの開発・インフラ構築に携わる。以来、ドリコムのソーシャルゲームを支え続けている。,,Rails勉強会@東京,"東京近郊のRailsユーザーが集まって、気になるトピックについて話し合ったり、コードリーディングをしたり、困っている事を相談する、等の活動をしています。
+
+月1で大体第三・第四土曜日に開催しています。
+会場は、永和システムマネジメント、ドリコムを活用させていただく事が多い。
+
+開催の告知、その他活動内容の案内について。
+元々はwikiで告知されていましたが、最近はFacebookグループで活動についてアナウンスされています。
+
+Facebookグループ
+<a href=""https://www.facebook.com/groups/133320066732707/"" target=""_blank"">https://www.facebook.com/groups/133320066732707/</a>
+
+参加者の募集は、主にDoorkeeperを用いて行っています。
+
+Doorkeeperグループ
+<a href=""http://railsmeetingtokyo.doorkeeper.jp/"" target=""_blank"">http://railsmeetingtokyo.doorkeeper.jp/</a>","Facebookグループで提案し、メンバーの話し合いによって決定。
+Rails界隈で活躍している人、勉強会そのものへの貢献が大きい人をKaja候補として推薦しました。",Railsの内部実装に詳しく、Rails勉強会でもコミット内容を解説してくれたり、司会や会場提供等にも協力してくれており、Rails勉強会@東京に大きく貢献している。,"・活動内容
+・開催時期
+・開催場所
+・募集方法
+・Facebookグループ"
+Tatsuro TAMASHIRO,kimihito,kimihito_,kimihito_,"ギークハウス沖縄の住人.
+
+ギークハウス沖縄
+http://text.geeoki.com/",ギークハウス沖縄はOkinawa.rbによって支えられています!!!いつもありがとうございます!!,Okinawa.rb,"Okinawa.rb is a local community for Ruby/Rails users in Okinawa, Japan. From beginners to veterans, all those who are interested in Ruby/Rails are welcome!
+
+沖縄の Ruby/Rails コミュニュティです。沖縄に在住または滞在している Ruby/Rails な方々の情報交換を目的として、毎週水曜日の夜にギークハウス沖縄で Weekly Meetup を開いています。また、不定期にハッカソンや勉強会も開催しています。
+
+Okinawa.rb では、技術を学ぶだけでなく、それをユーザが実際に使える形にして公開する事を推奨しています。モノを作って公開することで、早く失敗し早く学習する文化を沖縄に根ざしていけたら、と考えています。
+
+沖縄在住の方でも、たまたま沖縄にフラっと寄っている方でも、どなたでも歓迎致します。Weekly Meetup に参加して頂けると大変嬉しいですが、Facebook Group に登録するだけな方も歓迎です！
+
+Okinawa.rb 公式サイト
+<a href=""http://qwik.jp/okinawarb/"" target=""_blank"">http://qwik.jp/okinawarb/</a>
+
+Okinawa.rb Facebook Group
+<a href=""http://www.facebook.com/groups/okinawarb/"" target=""_blank"">http://www.facebook.com/groups/okinawarb/</a>",Okinawa.rb のFacebook Group 内でアンケートを実施および集計した結果、最も多く感謝（投票）された人を Kaja として選定いたしました。,Okinawa.rb の会場である「ギークハウス沖縄」を毎週提供した頂くだけでなく、「つくって学ぶプログラミング言語 - RubyによるScheme処理系の実装」や「なるほどUnixプロセス - Rubyで学ぶUnixの基礎」などの読書会を頻繁に企画して頂いているため、2013年度のOkinawa.rb RubyKaja にふさわしいと判断しました。,"毎週水曜日の 19:00 からギークハウス沖縄で Weekly Meetup を開いています。沖縄在住の方でも、たまたま沖縄にフラっと寄っている方でも、どなたでも歓迎しているので、お気軽にご参加くださ〜い。
+
+Weekly Meetup - Okinawa.rb
+https://www.facebook.com/groups/okinawarb/events/"
+火村 智彦,eiel,eielh,eiel,"Hiroshima.rb の会場準備係。普段は隠しているが発起人。
+Ruby とか Haskell とかが趣味。最近はまわりの人に Github を広めようとがんばっているところです。",本当はコミュニティアピールしにいきたいのですが、都合が合いませんでした。,Hiroshima.rb,"2009年12月ぐらいから広島を中心に活動。
+
+GithubやGoogle Group などでやりとりを基本にしつつ、
+1月と5月を除いた毎月第一土曜日に勉強会などのイベントのを開催しています。
+
+ウェブサイト:
+<a href=""http://hiroshimarb.github.com/"" target=""_blank"">http://hiroshimarb.github.com/</a>
+
+Github:
+<a href=""https://github.com/hiroshimarb"" target=""_blank"">https://github.com/hiroshimarb</a>
+
+Google Group:
+<a href=""https://groups.google.com/forum/?fromgroups#!forum/hiroshimarb"" target=""_blank"">https://groups.google.com/forum/?fromgroups#!forum/hiroshimarb</a>",Hiroshima.rb のメンバーによる推薦した人を候補者として、Webで一般の人たちに投票を行い決定しました。,"Hiroshima.rbのメンバーの中で、Rubyの知識と経験が豊富であり、
+勉強会では積極的に発表を行なっている。
+加えて、Ruby関連のオープンソースへのコミット、県外のRuby関連の勉強会への参加など、Ruby に関する活動を積極的におこなっており、Rubyの普及への情熱が人一倍あるため。","広島を中心に活動している地域コミュニティです。1月と5月を除いた第一土曜日に勉強会などのイベントを行っています。
+Ruby初心者のほうが多くて、かなり緩いので気軽に遊びにきてください。
+広島、もっと盛り上がるといいなぁ。
+http://hiroshimarb.github.io/"
+金澤 宏昭,kanayannet,@kanayannet,kanayannet,"#guruby #gunmaweb に出没。
+WEBサービス会社でエンジニアをしてます。",よろしくお願いします！,guRuby,"群馬で毎月第3水曜日に開催しているRubyの勉強会です。
+今は「メタプログラミングRuby」を朗読、写経しています。
+#guruby",5月の勉強会参において、参加者の多数決で決めました。,"guRuby初期からのメンバーでもあり、
+guRubyより先輩である地域のコミュニティGunma.webを主催するなど地域のRuby普及に貢献していることが評価されました","毎週第3水曜日に群馬でやってまーす。
+「メタプログラミングRuby」を読んでます。"
+SugHimsi==SUGIHARA Hiroshi,SugHimsi,sughimsi,sughimsi,非プログラマ。,上記Twitterアカウントをフォローしても、Rubyの役には立ちません。,るびま編集コミュニティ,"コミュニティの活動内容：
+時々るびまを編集して出します。
+URL:
+<a href=""http://magazine.rubyist.net/"" target=""_blank"">http://magazine.rubyist.net/</a>
+<a href=""https://github.com/rubima/"" target=""_blank"">https://github.com/rubima/</a>
+参加方法：
+お近くのるびま編集者に声をかけていただくか、magazine at ruby-no-kai org までメール下さい。",るびまの編集にアクティブに関わっている人をコミュニティメンバーが推薦し、最も多くの賛同を得た人をKajaに選定した。,るびまの編集にもっとも古くから（創刊号から: http://jp.rubyist.net/magazine/?0001-EditorsNote ）関わり、現在もアクティブに活躍しているため。,Rubyist Magazine では、記事と編集者を切実に切実に募集しております。
+橋立 友宏,joker1007,joker1007,joker1007,大手SIerを退職後、趣味で触っていたRailsを本職にし、Railsエンジニアとして活動中。小規模な受託開発案件を担当しつつ、開発環境や運用環境の改善を支援している。JOJOエバンジェリスト,,Shibuya.rb,"Shibuya.rbは、渋谷近郊のRubyが好き﻿だったり、Rubyの周辺技術が気になっている人のための地域Rubyistコミュニティです。
+meetupは毎月第三水曜日に定期開催して互いにコミュニケーションしています。
+meetup情報の告知、Webでのコミュニケーションはfacebookグループ(<a href=""http://www.facebook.com/groups/shibuya.rb/"" target=""_blank"">http://www.facebook.com/groups/shibuya.rb/</a>)を使っていますので是非ご参加ください。","コミュニティメンバーが、Shibuya.rbのコミュニティ活動に貢献していると思う人に投票を行い、獲得票数の多い人を選びました。
+http://shibuyarbkaja.herokuapp.com/","Railsや開発環境周辺技術に造詣が深く、毎月のミートアップで行っているLTがコミュニティメンバーから高く評価された。
+http://shibuyarbkaja.herokuapp.com/nominees/joker1007",毎月第3水曜日にミートアップを行っています。気軽にコミュニケートしに来てください。
+wtnabe,wtnabe,wtnabe,wtnabe,"One of the Kanazawa.rb founders
+
+北陸エンジニアグループの勉強会だったりKanazawa.jsに参加者として出席していたが、もうちょっと自分好みのグダグダかつプロダクティブなコミュニティにならないかと思って2012年に周りの人に声を掛けてKanazawa.rbを立ち上げる。
+
+普段はWebっぽいことをやったりITに明るくない会社で普通の会社員ぽいことをしたりレガシーコードと戦ったりしています。RubyとビールとTDDが好き。",,Kanazawa.rb,"<a href=""http://kanazawarb.github.io/"" target=""_blank"">http://kanazawarb.github.io/</a> (コミュニティ、meetup詳細)
+<a href=""http://kzrb.doorkeeper.jp/"" target=""_blank"">http://kzrb.doorkeeper.jp/</a> (参加申し込み)
+
+活動内容、参加方法
+---------------
+金沢市および周辺地域在住あるいはRubyやビールに興味のあるすべての人を対象にした小さな地域Rubyコミュニティです。自分たちの学習や成果発表、情報交換のためのコミュニティです。
+
+* だいたい毎月第3土曜辺りに金沢市中心部でmeetupを行います
+* テーマや形態は固定していません。セミナーだったり、自習だったり。RubyのことでもRubyのことじゃなくてもわいわい、あるいはもくもくやります
+* meetup自体にテーマがない場合は自分でテーマを持ってきてください ",Kanazawa.rb organizerの総意,kanazawa.rb の立ち上げに尽力し、ファウンダーとしてコミュニティの方向性を定め、力強く牽引してくださったことを評価して。,日本の西海岸でのびのびやってます。遊びにきてね。
+横山昌史(Masafumi Yokoyama) ,myokoym,myokoym,myokoym,"RubyとRabbitが好きな札幌生まれのプログラマ。
+
+GUIアプリ、CLIアプリ、ライブラリ、Webアプリなどを作成して、
+RubyGems.org や http://myokoym.net などで公開しています。
+小さいものが多いので、軸になるソフトウェアをひとつ決めるこ
+とが今年の目標です。
+
+Ruby-GNOME2、ruby-listなどなどにお世話になっており、自分も
+GitHubでパッチを送ったりMLでバグレポートをしたりしています。
+
+今の会社では、 @tricknotes と @onjiro_mohyahya の意思を継い
+で勉強会を開催しています。
+
+Kaigiなどのイベントにはあまり参加していませんが、今の活動を
+継続しつつ、少しずつ参加していきたいと思っています。",,Ruby札幌,"<a href=""http://ruby-sapporo.org"" target=""_blank"">http://ruby-sapporo.org</a>
+
+札幌にて Ruby に関する活動を行っているコミュニティです。Ruby勉強会＠札幌などのイベントを不定期に開催しています。
+",Ruby札幌ではコードでRubyコミュニティに貢献している人が第一に評価されると良いなと考えており、そうした方を Kaja として選定しています。,"ruby-gnome2-devel-ja などでの活動から、今年は @myokoym さんを推薦しようと考えました。
+
+参考:
+- https://github.com/myokoym
+- http://www.cozmixng.org/~w3ml/index.rb/rabbit-shocker/msg/1091",
