@@ -13,21 +13,22 @@ Kaja::App.controllers :base, cache: true do
   end
 
   get %r{/(\w{2}/)?(\d{4})} do |lcid, year|
-    redirect "#{year}/#{lcid}about"
+    redirect "#{lcid}#{year}/about"
   end
   get %r{/(\w{2}/)?about} do |lcid|
-    redirect "/#{current_year}/#{lcid}about"
+    redirect "#{lcid}#{current_year}/about"
   end
-  get :about, %r{/(\d{4}/)?(\w{2}/)?about} do
-    render "#{current_year}/about"
+  get :about, %r{/(\w{2}/)?(\d{4}/)?about} do |lcid, year|
+    render "#{year}about"
   end
 
   get %r{/(\w{2}/)?kaja} do |lcid|
-    redirect "2012/#{lcid}kaja"
+    redirect "#{lcid}2012/kaja"
   end
-  get :kaja, %r{/2012/(\w{2}/)?kaja} do
-    @nominees = Nominee.of(2012)
-    render "2012/kaja"
+  get :kaja, %r{/(\w{2}/)?(\d{4}/)?kaja} do |lcid, year|
+    @year     = year.gsub('/', '')
+    @nominees = Nominee.of(@year)
+    render "#{@year}/kaja"
   end
 
 end
