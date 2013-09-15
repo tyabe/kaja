@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*
+/*!
   YUI 3.4.1 (build 4118)
   Copyright 2011 Yahoo! Inc. All rights reserved.
   Licensed under the BSD License.
@@ -104,7 +104,7 @@ select {
 legend {
   color: #000; }
 
-/*
+/*!
   YUI 3.4.1 (build 4118)
   Copyright 2011 Yahoo! Inc. All rights reserved.
   Licensed under the BSD License.
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, strong {
   font-weight: bold; }
 
 abbr, acronym {
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted #000;
   cursor: help; }
 
 em {
@@ -148,7 +148,7 @@ dl dd {
   margin-left: 1em; }
 
 th, td {
-  border: 1px solid black;
+  border: 1px solid #000;
   padding: .5em; }
 
 th {
@@ -166,12 +166,12 @@ input[type=text], input[type=password], textarea {
   width: 12.25em;
   *width: 11.9em; }
 
-/*
+/*!
  * kaja Style *
  * author:
  * url   :
  */
-/* my-default.scss document */
+/*! my-default.scss document */
 body,
 div,
 dl, dt, dd,
@@ -246,7 +246,7 @@ th {
   text-align: center; }
 
 th, td {
-  border: 1px solid #cccccc; }
+  border: 1px solid #ccc; }
 
 iframe {
   margin: 0;
@@ -343,7 +343,7 @@ html .hide-important {
 .s_handler {
   cursor: pointer; }
 
-/* kaja.scss document */
+/*! kaja.scss document */
 @font-face {
   font-family: 'fontello';
   src: url("../fonts/fontello.eot");
@@ -811,7 +811,7 @@ body {
   width: 100%;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid #dddddd; }
+  border: 1px solid #ddd; }
 #Entry .entry-form textarea {
   padding: 0.5em; }
 #Entry .entry-form .button {
@@ -823,7 +823,7 @@ body {
   font-weight: bold;
   color: #5F5A45;
   border: 1px solid;
-  border-color: #e7e3d6 #d3ceb0 #a0996d;
+  border-color: #E7E3D6 #D3CEB0 #A0996D;
   -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -942,6 +942,10 @@ body {
   font-weight: bold;
   margin-right: 0.5em; }
 
+#Kaja .about-header h1 {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 0; }
 #Kaja #Container {
   padding-right: 0;
   max-width: none; }
@@ -1021,11 +1025,11 @@ body {
   #Kaja #KajaContainer .kaja .community-name {
     margin-top: 1em;
     padding-top: 0.7em;
-    border-top: 1px dotted #999999; }
+    border-top: 1px dotted #999; }
   #Kaja #KajaContainer .kaja .criterion {
     margin-top: 1.8em;
     padding-top: 2em;
-    border-top: 1px dotted #999999; }
+    border-top: 1px dotted #999; }
   #Kaja #KajaContainer .kaja .motive {
     font-size: 14px;
     margin-bottom: 1em; }
@@ -1033,7 +1037,7 @@ body {
       list-style-type: disc;
       margin-left: 1.5em; }
 
-/* ie.scss document */
+/*! ie.scss document */
 #ie_container {
   display: none !important; }
 
