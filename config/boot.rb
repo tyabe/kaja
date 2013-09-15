@@ -25,7 +25,6 @@ end
 # Add your after load hooks here
 #
 Padrino.after_load do
-  ActiveRecord::Base.auto_upgrade!
 end
 
 Padrino.load!

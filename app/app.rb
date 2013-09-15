@@ -1,6 +1,5 @@
 class Kaja < Padrino::Application
   register ScssInitializer
-  use ActiveRecord::ConnectionAdapters::ConnectionManagement
   register Padrino::Rendering
   register Padrino::Mailer
   register Padrino::Helpers

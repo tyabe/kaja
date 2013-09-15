@@ -14,18 +14,15 @@ gem 'active_attr'
 # Component requirements
 gem 'sass'
 gem 'haml'
-gem 'mini_record'
 
 # Padrino Stable Gem
 #gem 'padrino', '0.10.7'
 
 group :production do
-  gem 'pg'
   gem 'dalli'
 end
 
 group :development do
-  gem 'sqlite3'
   gem 'pry-padrino'
 end
 
