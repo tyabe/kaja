@@ -28,7 +28,7 @@ Kaja::App.controllers :base, cache: true do
   get :kaja, %r{/(\w{2}/)?(\d{4}/)?kaja} do |lcid, year|
     @year     = year.gsub('/', '')
     @nominees = Nominee.of(@year)
-    render "#{@year}/kaja"
+    render :kaja
   end
 
 end
