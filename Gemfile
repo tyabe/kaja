@@ -32,10 +32,9 @@ group :test do
   gem 'rack-test'
 end
 
-# Or Padrino Edge
-gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
-
-# Or Individual Gems
-# %w(core gen helpers cache mailer admin).each do |g|
-#   gem 'padrino-' + g, '0.10.7'
-# end
+# Padrino
+if path = ENV['PADRINO_PATH']
+  gem 'padrino', path: path
+else
+  gem 'padrino', '0.11.3'
+end

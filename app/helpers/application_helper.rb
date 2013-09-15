@@ -1,4 +1,4 @@
-Kaja.helpers do
+Kaja::App.helpers do
 
   def menu_list
     text = "<ul>" +

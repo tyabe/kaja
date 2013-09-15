@@ -1,4 +1,4 @@
-Kaja.controllers :base, cache: true do
+Kaja::App.controllers :base, cache: true do
 
   get :index, %r{/(\w{2})?} do
     render :index

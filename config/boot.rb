@@ -7,22 +7,19 @@ require 'rubygems' unless defined?(Gem)
 require 'bundler/setup'
 Bundler.require(:default, PADRINO_ENV)
 
-##
-# Enable devel logging
-#
-# Padrino::Logger::Config[:development][:log_level]  = :devel
-# Padrino::Logger::Config[:development][:log_static] = true
-#
+# Setup logger
+Padrino::Logger::Config[:production][:colorize_logging] = false
+
+I18n.default_locale = :ja
 
 ##
-# Add your before load hooks here
+# Add your before (RE)load hooks here
 #
 Padrino.before_load do
-  I18n.locale = :ja
 end
 
 ##
-# Add your after load hooks here
+# Add your after (RE)load hooks here
 #
 Padrino.after_load do
 end
