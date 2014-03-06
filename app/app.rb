@@ -6,7 +6,9 @@ module Kaja
     register Padrino::Helpers
     register Padrino::Cache
 
-    enable :sessions
+    disable :sessions
+    disable :protect_from_csrf
+    enable  :caching
 
     case Padrino.env
     when :develpment
@@ -20,17 +22,15 @@ module Kaja
       ))
     end
 
-    enable :caching
-
     before do
       captures = params[:captures].to_a.dup
-      I18n.locale = (@lcid = captures.shift) ? @lcid.to_s.gsub("/","").to_sym : :ja
+      I18n.locale = (@lcid = captures.shift) ? @lcid.to_s.gsub('/', '').to_sym : :ja
       @year = captures.pop
-      expires_in 60
+      expires 60
     end
 
     def current_year
-      @year ||= "2013"
+      @year ||= '2013'
     end
 
     error Padrino::Rendering::TemplateNotFound do not_found; end
