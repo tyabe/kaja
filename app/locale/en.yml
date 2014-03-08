@@ -3,8 +3,3 @@ en:
     2013: 'RubyKaja 2013'
     2012: 'RubyKaja 2012'
     faq: FAQ
-  form:
-    description_placeholder: "Please let us know about your community's activities"
-    apply: Apply
-    legend: Please enter information about the community
-

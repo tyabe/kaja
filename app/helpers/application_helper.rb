@@ -1,11 +1,13 @@
 Kaja::App.helpers do
 
   def menu_list
-    text = "<ul>" +
-    t('menu').inject('') {| string, (menu, text) |
-      string << %(<li class="#{menu} link">#{link_to(text, i18n_path("/#{menu}"))}</li>)
-    } + "</ul>"
-    concat_content text
+    content_tag :ul do
+      t('menu').inject(ActiveSupport::SafeBuffer.new) do | list, (menu, text) |
+        list << content_tag(:li, class: "#{menu} link") do
+          link_to text.to_s, i18n_path("/#{menu}")
+        end
+      end
+    end
   end
 
   def auto_link(value)

@@ -3,7 +3,3 @@ ja:
     2013: 'RubyKaja 2013'
     2012: 'RubyKaja 2012'
     faq: FAQ
-  form:
-    description_placeholder: '活動内容や今後の予定を入力ください'
-    apply: '応募する'
-    legend: コミュニティの情報を入力してください
