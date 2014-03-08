@@ -12,13 +12,11 @@ module Kaja
 
     case Padrino.env
     when :develpment
-      set :cache, Padrino::Cache::Store::Memory.new(5000)
+      set :cache, Padrino::Cache.new(:LRUHash)
     when :production
-      set :cache, Padrino::Cache::Store::Memcache.new(
-        ::Dalli::Client.new(
-          ENV["MEMCACHIER_SERVERS"],
-          { username: ENV["MEMCACHIER_USERNAME"],
-            password: ENV["MEMCACHIER_PASSWORD"]}
+      set :cache, Padrino::Cache.new(:Memcached,
+                                     backend: ::Dalli::Client.new(
+                                       ENV["MEMCACHIER_SERVERS"], { username: ENV["MEMCACHIER_USERNAME"], password: ENV["MEMCACHIER_PASSWORD"] }
       ))
     end
 
