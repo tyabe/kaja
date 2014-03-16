@@ -13,7 +13,7 @@
       <% @nominees.each do |nominee| %>
         <li class="kaja">
           <div class="inner-kaja">
-            <%= image_tag "profile/#{nominee[:imagefile]}", class: 'img', alt: h(nominee[:name]) %>
+            <%= image_tag "profile/#{nominee[:image]}", class: 'img', alt: h(nominee[:name]) %>
             <h2 class="kaja-name"><%=h nominee[:name] %></h2>
             <% if nominee[:github].present? %>
               <a href="https://github.com/<%=h nominee[:github] %>" target="_blank" class="github link"><%=h nominee[:github] %></a>
@@ -22,20 +22,20 @@
               <a href="https://twitter.com/<%=h nominee[:twitter] %>" target="_blank" class="twitter link">@<%=h nominee[:twitter] %></a>
             <% end %>
             <p class="text hide">
-              <%= auto_link(nominee[:profile]) %>
+              <%= auto_link(simple_format nominee[:profile]) %>
             </p>
             <p class="text hide">
-              <%= auto_link(nominee[:supplement]) %>
+              <%= auto_link(simple_format nominee[:supplement]) %>
             </p>
             <h3 class="criterion hide">Kaja選定の基準や方法</h3>
-            <p class="text hide"><%= auto_link(nominee[:judged_by]) %></p>
+            <p class="text hide"><%= auto_link(simple_format nominee[:judged_by]) %></p>
             <h3 class="hide">Kaja投票理由</h3>
             <ul class="motive hide">
-              <%= auto_link(nominee[:reason_for]) %>
+              <%= auto_link(simple_format nominee[:reason_for]) %>
             </ul>
             <h2 class="community-name"><%=h nominee[:community] %></h2>
-            <p class="text"><%= auto_link(nominee[:description]) %></p>
-            <p class="text hide"><%= auto_link(nominee[:comment]) %></p>
+            <p class="text"><%= auto_link(simple_format nominee[:description]) %></p>
+            <p class="text hide"><%= auto_link(simple_format nominee[:comment]) %></p>
           </div>
         </li>
       <% end %>

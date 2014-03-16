@@ -11,16 +11,8 @@ Kaja::App.helpers do
   end
 
   def auto_link(value)
-    t = :p
-    start_tag = tag(t, {}, true)
-    text = value.to_s
-    text.gsub!(%r{([^"]|^)(https?)(://[\w!:;/.?%#&=+-~]+)}, '\1<a href="\2\3" target="_blank">\2\3</a>')
-    text.gsub!(/\r\n?/, "\n")
-    text.gsub!(/\n\n+/, "</#{t}>\n\n#{start_tag}")
-    text.gsub!(/([^\n]\n)(?=[^\n])/, '\1<br />')
-    text.insert 0, start_tag
-    text << "</#{t}>"
-    text.html_safe
+    value.to_s.gsub!(%r{([^"]|^)(https?)(://[\w!:;/.?%#&=+-~]+)}, '\1<a href="\2\3" target="_blank">\2\3</a>' )
+    value.to_s.gsub(%r{([^"]|^)(https?)(:&#x2F;&#x2F;[\w!:;/.?%#&=+-~]+)}, '\1<a href="\2\3" target="_blank">\2\3</a>' ).html_safe
   end
 
   def i18n_path(s)
