@@ -25,8 +25,7 @@ Kaja::App.controllers :base, cache: true do
   end
   get :kaja, %r{/(\w{2}/)?(\d{4}/)?kaja} do |lcid, year|
     @year     = year.gsub('/', '')
-    csv_file  = Padrino.root("db/kaja_#{@year}.csv")
-    @nominees = File.exist?(csv_file) ? CSV.table(csv_file) : []
+    @nominees = Nominee.by(@year)
     render :kaja
   end
 

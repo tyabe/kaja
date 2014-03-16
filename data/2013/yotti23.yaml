@@ -1,0 +1,51 @@
+name:
+  鳥井雪
+github:
+  yakitorii
+twitter:
+  yotii23
+image:
+  yotii23
+profile: |-
+  第二回Rails Girls Tokyo のオーガナイザーのひとり。
+  株式会社万葉所属。
+  Rails Girls Tokyo卒業生のための継続的な勉強会「Rails Girls, More!」を提案、運用。
+  個人でオンラインで俳句の句会をするためのアプリケーションを作成し、2012 RubyConfにてLTによりアプリを紹介する。
+  2013年3月には、フランスのアートスクールで句会のワークショップをするため、句会アプリをフランス語にローカライズして提供した。
+  Rails Girls Tokyoに関しては、2012年福岡Ruby会議のLT、2013年３月の大江戸Ruby会議のNinja Talksにて活動を紹介している。
+supplement: |-
+  Rails Girls Tokyoは、参加者の熱意と、優秀で誠実なコーチ陣の継続的な協力、理解あるスポンサーによって支えられています。
+  Kajaが、この取り組みを多くのひとに知っていただく機会となり、今後の活動の広がりへのあたらしい力となることを願います。
+community:
+  Rails Girls Tokyo
+description: |-
+  Rails Girls Tokyoは、女性がIT技術に触れるチャンスを増やし、さらに継続して技術を習得するサポートを提供するためのコミュニティです。
+  世界的なムーブメントであるRails GirlsのTokyoでの開催、およびその卒業生のための月一回の勉強会（Rails Girls, More!）の運営が活動内容となります。
+  Rails Girlsは第一回を2012/9/7-8に、第二回を2013/3/1-2に開催し、毎回参加は公募となります。
+  Rails Girls, More!は2012年10月より、月一回 株式会社万葉を会場として開催し、現在第六回を数えています。
+  RG Tokyo卒業生をメインの対象にしていますが、その他にもRailsを学びたい女性をひろく受け入れています。
+  また、Rails Girls Tokyoは、教える側のコーチの協力が不可欠です。
+  自薦あるいは関係者の他薦により、コーチとしてのRubyistのご参加もお待ちしております。
+
+  Rails Girls Tokyo第一回
+  http://railsgirls.com/tokyo-2012-09-07.html
+  Rails Girls Tokyo第二回
+  http://railsgirls.com/tokyo
+  Rails Girls, More! FBグループ
+  https://www.facebook.com/groups/113145785502645/
+judged_by: |-
+  基準： Rails Girls Tokyoの活動に貢献した人間
+  方法： 2013/3/31の勉強会で行った推薦と参加者の全賛成による
+reason_for: |-
+  <Rails Girls Tokyo 2nd オーガナイザー>
+  1st のオーガナイザーが渡米してしまったため、宙に浮いた形になった Rails Girls Tokyo を引き継ぎ、 2nd を主催した。
+  前回の大好評のプレッシャーに負けず、優れた問題解決能力でたくさんのコーチをまとめ、2nd を成功させ、多くの Girls がプログラミングへ挑戦するきっかけをつくった。
+  コーチ内でのKPTでは「Keep! 鳥井さん」と名指しされ満場の拍手が起こるなど、強者ぞろいのRailsGirlsコーチ陣からの信頼も厚い。
+
+  <Rails Girls Tokyo, More! の立ち上げと主催>
+  Rails Girls Tokyo 1st の後、卒業生を継続的にフォローするための勉強会
+  "Rails Girls Tokyo, More!" を提案し、運営している。
+  コーチによる親切丁寧な指導が好評で、最近では、More でRubyへの興味を深めた参加者が、More以外の勉強会に出たり発表したり、とRubyコミュニティへの新たな仲間を増やすことに大きく貢献している。
+comment:
+  Rails Girls Tokyoは女性が未経験からIT技術に触れるチャンスをひろげ、あたらしい世界へ踏み出すためのコミュニティです。
+  ITの世界の多様性を豊かにすることを目的としています。

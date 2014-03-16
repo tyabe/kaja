@@ -1,0 +1,45 @@
+name:
+  比嘉 正栄（HIGA, Seiei）
+github:
+  hanachin
+twitter:
+  hanachin_
+image:
+  hanachin_
+profile: |-
+  沖縄生まれ沖縄育ち、ギークハウス沖縄在住のテストおじさん（赤）。沖縄の大学を中退後、独学で C や Ruby/Rails, CoffeeScript, Lisp などを学び続け、2011年にはコードゴルフで高専の教授よりも高いスコアを叩き出したり、Yammer や郵便貯金の XSS 脆弱性を報告したりしている。2012年1月からは、Okinawa.rb の Weekly Meetup を毎週運営している。
+
+  作品例：
+  1. Favtile     http://favtile.com/
+  2. ミク☆キュン     http://9leap.net/games/840/
+  3. enchant.js.coffee      https://github.com/hanachin/enchant.js
+supplement: |-
+  未踏ユース2012コクリエータ。現在は YasuLab のエンジニアとして、PaaS のモジュール開発やソーシャル iOS アプリ、ソーシャルWebサービスの開発を行っている。また、シリコンバレー在住のエンジニアと共同で自社サービスの開発も行っている。
+
+  YasuLab
+  http://yasulab.jp/
+community:
+  Okinawa.rb
+description: |-
+  Okinawa.rb is a local community for Ruby/Rails users in Okinawa, Japan. From beginners to veterans, all those who are interested in Ruby/Rails are welcome!
+
+  沖縄のRuby/Railsコミュニュティです。沖縄のRuby/Railsな方々の情報交換を主な目的としていて、毎週水曜日の夕方には、ギークハウス沖縄で Weekly Meetup を開いています。
+
+  Okinawa.rb では、技術を学ぶだけでなく、それをユーザが実際に使える形にして公開する事を推奨しています。モノを作って公開することで、早く失敗し早く学習する文化を沖縄に根ざしていけたらなー、と考えています。
+
+  沖縄在住／出身の方でも、たまたま沖縄にフラっと寄っている方でも、どなたでも歓迎致します。勉強会やハッカソンに参加して頂けると大変嬉しいですが、MLに登録するだけな方もOKです。
+
+  Web
+  http://qwik.jp/okinawarb/
+judged_by: |-
+  Okinawa.rb の Facebook Group において、2012年の RubyKaja 選出アンケートを８月１５日から８月２２日までの１週間実施。結果、８月２２日に１６票の投票を得て、今年の Okinawa.rb の RubyKaja として @hanachin_ を選定した。
+
+  RubyKaja アンケート @ Okinawa.rb
+  http://www.facebook.com/groups/okinawarb/permalink/365704760169007/
+reason_for:
+  Okinawa.rb の RubyKaja 選出方法において、最も RubyKaja に相応しいと選定されたため。
+comment: |-
+  Minami.rb と Shibuya.rb、Okinawa.rb の共同運営で、2012年11月17,23,24日に Rails Hackathon in Okinawa を開催します。ご興味のある方は是非予定を空けておいて下さい！
+
+  Rails Hackathon in Okinawa
+  http://railshackathon.net/

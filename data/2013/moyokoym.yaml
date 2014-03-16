@@ -1,0 +1,35 @@
+name:
+  横山昌史(Masafumi Yokoyama)
+github:
+  myokoym
+twitter:
+  myokoym
+image:
+  myokoym
+profile: |-
+  RubyとRabbitが好きな札幌生まれのプログラマ。
+  GUIアプリ、CLIアプリ、ライブラリ、Webアプリなどを作成して、
+  RubyGems.org や http://myokoym.net などで公開しています。
+  小さいものが多いので、軸になるソフトウェアをひとつ決めるこ
+  とが今年の目標です。
+  Ruby-GNOME2、ruby-listなどなどにお世話になっており、自分も
+  GitHubでパッチを送ったりMLでバグレポートをしたりしています。
+  今の会社では、 @tricknotes と @onjiro_mohyahya の意思を継い
+  で勉強会を開催しています。
+  Kaigiなどのイベントにはあまり参加していませんが、今の活動を
+  継続しつつ、少しずつ参加していきたいと思っています。
+supplement: |-
+community:
+  Ruby札幌
+description: |-
+  http://ruby-sapporo.org
+  札幌にて Ruby に関する活動を行っているコミュニティです。
+  Ruby勉強会＠札幌などのイベントを不定期に開催しています。
+judged_by: |-
+  Ruby札幌ではコードでRubyコミュニティに貢献している人が第一に評価されると良いなと考えており、そうした方を Kaja として選定しています。
+reason_for: |-
+  ruby-gnome2-devel-ja などでの活動から、今年は @myokoym さんを推薦しようと考えました。
+  参考:
+  https://github.com/myokoym
+  http://www.cozmixng.org/~w3ml/index.rb/rabbit-shocker/msg/1091
+comment:

@@ -1,0 +1,27 @@
+name:
+  '@garden_tree'
+github:
+  gardentree
+twitter:
+  garden_tree
+image:
+  garden_tree
+profile: |-
+  きれいなジャイアン。
+supplement: |-
+community:
+  Shinjuku.rb
+description: |-
+  1ヶ月に1度、第4水曜日に開催
+  Facebook
+    https://www.facebook.com/groups/shinjuku.rb/
+  Google Group
+    https://groups.google.com/forum/#!forum/shinjukurb
+  Extreme Fish Bowl(公開ペアプロ) や Rails レシピブック読書会などをしています。
+  月に1度主催者がFacebookやGoogle Group、Twitterにて募集の告知をしますので参加登録の上お越しください！
+judged_by: |-
+  投票による
+reason_for: |-
+  コミュニティの投票による
+comment:
+  ペアプロ主体の、コードを書く .rb

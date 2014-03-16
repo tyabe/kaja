@@ -1,0 +1,38 @@
+name:
+  火村 智彦
+github:
+  eiel
+twitter:
+  eielh
+image:
+  eiel
+profile: |-
+  Hiroshima.rb の会場準備係。普段は隠しているが発起人。
+  Ruby とか Haskell とかが趣味。
+  最近はまわりの人に Github を広めようとがんばっているところです。
+supplement: |-
+  本当はコミュニティアピールしにいきたいのですが、都合が合いませんでした。
+community:
+  Hiroshima.rb
+description: |-
+  2009年12月ぐらいから広島を中心に活動。
+  GithubやGoogle Group などでやりとりを基本にしつつ、
+  1月と5月を除いた毎月第一土曜日に勉強会などのイベントのを開催しています。
+  ウェブサイト:
+    http://hiroshimarb.github.com/
+  Github:
+    https://github.com/hiroshimarb
+  Google Group:
+    https://groups.google.com/forum/?fromgroups#!forum/hiroshimarb
+judged_by: |-
+  Hiroshima.rb のメンバーによる推薦した人を候補者として、Webで一般の人たちに投票を行い決定しました。
+reason_for: |-
+  Hiroshima.rbのメンバーの中で、Rubyの知識と経験が豊富であり、
+  勉強会では積極的に発表を行なっている。
+  加えて、Ruby関連のオープンソースへのコミット、県外のRuby関連の勉強会への参加など、Ruby に関する活動を積極的におこなっており、Rubyの普及への情熱が人一倍あるため。
+comment:
+  広島を中心に活動している地域コミュニティです。
+  1月と5月を除いた第一土曜日に勉強会などのイベントを行っています。
+  Ruby初心者のほうが多くて、かなり緩いので気軽に遊びにきてください。
+  広島、もっと盛り上がるといいなぁ。
+  http://hiroshimarb.github.io/

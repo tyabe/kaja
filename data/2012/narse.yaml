@@ -1,0 +1,29 @@
+name:
+  成瀬ゆい
+github:
+  nurse
+twitter:
+  nalsh
+image:
+  nalsh
+profile: |-
+  nkf メンテナ・Ruby コミッタ。
+  2004 年から nkf ライブラリのメンテナとして Ruby の開発に参加。
+  Ruby 1.9 から文字コード関係全般に関わるようになり、最近では BSD 系や
+  LLVM/clang などの一部環境でのみ発生するバグとも戦う。
+  ここ半年ほど Ruby 1.9.3 ブランチメンテナ。
+supplement:
+community:
+  Ruby開発コミュニティ
+description:
+  Rubyの仕様の検討や CRuby 2.0 の開発をしています．
+judged_by:
+  ruby-dev  ML にて，Ruby開発にもっとも貢献している人の中の一人（若い人）として成瀬氏を推薦し，賛同を得た．
+reason_for: |-
+  成瀬氏は Ruby 1.9 から導入された Ruby M17N 機構への貢献がよく知られているが，
+  それ以外にもメーリングリストでの議論の整理や，RubySpec に Ruby 最新版の変更を追随させる作業，
+  そして Ruby 1.9.3 のリリースマネージメント作業など，
+  いわゆる面倒な作業を継続的に行っている．
+  このように，Ruby 開発コミュニティにおいて特筆すべき貢献を行っており，
+  成瀬氏は Ruby-Kaja にふさわしいものである．
+comment:
