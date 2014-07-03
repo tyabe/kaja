@@ -620,6 +620,10 @@ body {
   #About .committee-contents address .label {
     display: inline-block;
     width: 7em; }
+#About .entry-contents a {
+  color: #C20000;
+  text-decoration: underline;
+  font-size: 1.5em; }
 
 #Entry .contents {
   margin: 0 0 1em;
