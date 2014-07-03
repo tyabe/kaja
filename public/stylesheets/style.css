@@ -350,7 +350,6 @@ html .hide-important {
   src: url("../fonts/fontello.eot?#iefix") format("embedded-opentype"), url("../fonts/fontello.woff") format("woff"), url("../fonts/fontello.ttf") format("truetype"), url("../fonts/fontello.svg#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .ex_lower-page-container, #About #Container, #Entry #Container, #Faq #Container, #Kaja #Container {
   position: relative;
   z-index: 100;
@@ -477,7 +476,7 @@ body {
   display: none; }
 .site-title .wa-logo {
   top: -60px;
-  left: -70px;
+  left: -280px;
   width: 170px;
   height: 440px;
   cursor: default;
@@ -487,16 +486,9 @@ body {
   -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
   transition: all 1s ease-out; }
-.site-title:hover .wa-logo {
-  left: -280px;
-  -moz-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  transition: all 1s ease-out; }
 .site-title .yo-logo {
   top: 140px;
-  right: -50px;
+  right: 230px;
   width: 150px;
   height: 244px;
   background-position: -170px 0;
@@ -505,16 +497,9 @@ body {
   -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
   transition: all 1s ease-out; }
-.site-title:hover .yo-logo {
-  right: 230px;
-  -moz-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  transition: all 1s ease-out; }
 .site-title .begin-recruitment {
   bottom: -100px;
-  left: 10px;
+  left: -210px;
   width: 30px;
   height: 150px;
   background-position: -170px -244px;
@@ -523,16 +508,9 @@ body {
   -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
   transition: all 1s ease-out; }
-.site-title:hover .begin-recruitment {
-  left: -210px;
-  -moz-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  transition: all 1s ease-out; }
 .site-title .stamp {
   bottom: 10px;
-  right: 24px;
+  right: 262px;
   width: 30px;
   height: 30px;
   background-position: -200px -244px;
@@ -541,26 +519,12 @@ body {
   -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
   transition: all 1s ease-out; }
-.site-title:hover .stamp {
-  right: 262px;
-  -moz-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  transition: all 1s ease-out; }
 .site-title .copy {
   bottom: -60px;
-  left: -64px;
+  left: -124px;
   width: 20px;
   height: 60px;
   background-position: -200px -274px;
-  -moz-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  transition: all 1s ease-out; }
-.site-title:hover .copy {
-  left: -124px;
   -moz-transition: all 1s ease-out;
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
@@ -572,13 +536,6 @@ body {
   width: 130px;
   height: 272px;
   background-position: -320px 0;
-  opacity: 0;
-  -moz-transition: all 0.5s 0.5s ease-out;
-  -webkit-transition: all 0.5s 0.5s ease-out;
-  -o-transition: all 0.5s 0.5s ease-out;
-  -ms-transition: all 0.5s 0.5s ease-out;
-  transition: all 0.5s 0.5s ease-out; }
-.site-title:hover .logo {
   opacity: 1;
   -moz-transition: all 0.5s 0.5s ease-out;
   -webkit-transition: all 0.5s 0.5s ease-out;
@@ -594,65 +551,14 @@ body {
     -o-user-select: none;
     user-select: none;
     position: relative;
-    top: -10px;
-    opacity: 0; }
+    top: 0;
+    opacity: 1; }
   .site-title .global-nav a {
     display: block;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
     padding: 0.5em 0; }
-  .site-title .global-nav li:nth-child(1) {
-    -moz-transition: all 0.5s 0.6s ease-out;
-    -webkit-transition: all 0.5s 0.6s ease-out;
-    -o-transition: all 0.5s 0.6s ease-out;
-    -ms-transition: all 0.5s 0.6s ease-out;
-    transition: all 0.5s 0.6s ease-out; }
-  .site-title .global-nav li:nth-child(2) {
-    -moz-transition: all 0.5s 0.5s ease-out;
-    -webkit-transition: all 0.5s 0.5s ease-out;
-    -o-transition: all 0.5s 0.5s ease-out;
-    -ms-transition: all 0.5s 0.5s ease-out;
-    transition: all 0.5s 0.5s ease-out; }
-  .site-title .global-nav li:nth-child(3) {
-    -moz-transition: all 0.5s 0.4s ease-out;
-    -webkit-transition: all 0.5s 0.4s ease-out;
-    -o-transition: all 0.5s 0.4s ease-out;
-    -ms-transition: all 0.5s 0.4s ease-out;
-    transition: all 0.5s 0.4s ease-out; }
-  .site-title .global-nav li:nth-child(4) {
-    -moz-transition: all 0.5s 0.3s ease-out;
-    -webkit-transition: all 0.5s 0.3s ease-out;
-    -o-transition: all 0.5s 0.3s ease-out;
-    -ms-transition: all 0.5s 0.3s ease-out;
-    transition: all 0.5s 0.3s ease-out; }
-.site-title:hover .global-nav .link {
-  top: 0;
-  opacity: 1; }
-.site-title:hover .global-nav li:nth-child(1) {
-  -moz-transition: all 0.5s 0.5s ease-out;
-  -webkit-transition: all 0.5s 0.5s ease-out;
-  -o-transition: all 0.5s 0.5s ease-out;
-  -ms-transition: all 0.5s 0.5s ease-out;
-  transition: all 0.5s 0.5s ease-out; }
-.site-title:hover .global-nav li:nth-child(2) {
-  -moz-transition: all 0.5s 0.6s ease-out;
-  -webkit-transition: all 0.5s 0.6s ease-out;
-  -o-transition: all 0.5s 0.6s ease-out;
-  -ms-transition: all 0.5s 0.6s ease-out;
-  transition: all 0.5s 0.6s ease-out; }
-.site-title:hover .global-nav li:nth-child(3) {
-  -moz-transition: all 0.5s 0.7s ease-out;
-  -webkit-transition: all 0.5s 0.7s ease-out;
-  -o-transition: all 0.5s 0.7s ease-out;
-  -ms-transition: all 0.5s 0.7s ease-out;
-  transition: all 0.5s 0.7s ease-out; }
-.site-title:hover .global-nav li:nth-child(4) {
-  -moz-transition: all 0.5s 0.8s ease-out;
-  -webkit-transition: all 0.5s 0.8s ease-out;
-  -o-transition: all 0.5s 0.8s ease-out;
-  -ms-transition: all 0.5s 0.8s ease-out;
-  transition: all 0.5s 0.8s ease-out; }
 
 #About .contents {
   margin: 0 0 1em;

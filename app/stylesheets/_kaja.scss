@@ -273,78 +273,48 @@ body {
   // wa-logo
   .wa-logo {
     top:-60px;
-    left:-70px;
+    left:-280px;
     width:170px;
     height:440px;
     cursor:default;
     background-position:0 0;
     @include transition( all 1s ease-out );
   }
-  &:hover {
-    .wa-logo {
-      left:-280px;
-      @include transition( all 1s ease-out );
-    }
-  }
   // yo-logo
   .yo-logo {
     top:140px;
-    right:-50px;
+    right:230px;
     width:150px;
     height:244px;
     background-position:-170px 0;
     @include transition( all 1s ease-out );
   }
-  &:hover {
-    .yo-logo {
-      right:230px;
-      @include transition( all 1s ease-out );
-    }
-  }
   // begin-recruitment
   .begin-recruitment {
     bottom:-100px;
-    left:10px;
+    left:-210px;
     width:30px;
     height:150px;
     background-position:-170px -244px;
     @include transition( all 1s ease-out );
   }
-  &:hover {
-    .begin-recruitment {
-      left:-210px;
-      @include transition( all 1s ease-out );
-    }
-  }
   // stamp
   .stamp {
     bottom:10px;
-    right:24px;
+    right:262px;
     width:30px;
     height:30px;
     background-position:-200px -244px;
     @include transition( all 1s ease-out );
   }
-  &:hover {
-    .stamp {
-      right:262px;
-      @include transition( all 1s ease-out );
-    }
-  }
   // copy
   .copy {
     bottom:-60px;
-    left:-64px;
+    left:-124px;
     width:20px;
     height:60px;
     background-position:-200px -274px;
     @include transition( all 1s ease-out );
-  }
-  &:hover {
-    .copy {
-      left:-124px;
-      @include transition( all 1s ease-out );
-    }
   }
   // logo
   .logo {
@@ -353,14 +323,8 @@ body {
     width:130px;
     height:272px;
     background-position:-320px 0;
-    opacity:0;
+    opacity:1;
     @include transition( all 0.5s 0.5s ease-out );
-  }
-  &:hover {
-    .logo {
-      opacity:1;
-      @include transition( all 0.5s 0.5s ease-out );
-    }
   }
   // global-nav
   .global-nav {
@@ -368,49 +332,11 @@ body {
     .link {
       @include user-select( none );
       position:relative;
-      top:-10px;
-      opacity:0;
+      top:0;
+      opacity:1;
     }
     a {
       @include global-nav-anchor;
-    }
-    // menu link
-    li {
-      &:nth-child(1) {
-        @include transition( all 0.5s 0.6s ease-out );
-      }
-      &:nth-child(2) {
-        @include transition( all 0.5s 0.5s ease-out );
-      }
-      &:nth-child(3) {
-        @include transition( all 0.5s 0.4s ease-out );
-      }
-      &:nth-child(4) {
-        @include transition( all 0.5s 0.3s ease-out );
-      }
-    }
-  }
-  &:hover {
-    .global-nav {
-      .link {
-        top:0;
-        opacity:1;
-      }
-      // menu link
-      li {
-        &:nth-child(1) {
-          @include transition( all 0.5s 0.5s ease-out );
-        }
-        &:nth-child(2) {
-          @include transition( all 0.5s 0.6s ease-out );
-        }
-        &:nth-child(3) {
-          @include transition( all 0.5s 0.7s ease-out );
-        }
-        &:nth-child(4) {
-          @include transition( all 0.5s 0.8s ease-out );
-        }
-      }
     }
   }
 }
