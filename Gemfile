@@ -7,6 +7,7 @@ gem 'puma'
 
 # Project requirements
 gem 'rake'
+gem 'rinku'
 
 # Component requirements
 gem 'sass'

@@ -14,10 +14,10 @@ module Kaja
     when :develpment
       set :cache, Padrino::Cache.new(:LRUHash)
     when :production
-      set :cache, Padrino::Cache.new(:Memcached,
-                                     backend: ::Dalli::Client.new(
-                                       ENV["MEMCACHIER_SERVERS"], { username: ENV["MEMCACHIER_USERNAME"], password: ENV["MEMCACHIER_PASSWORD"] }
-      ))
+      set :cache, Padrino::Cache.new(
+        :Memcached,
+        backend: ::Dalli::Client.new( ENV["MEMCACHIER_SERVERS"], { username: ENV["MEMCACHIER_USERNAME"], password: ENV["MEMCACHIER_PASSWORD"] })
+      )
     end
 
     before do
@@ -29,6 +29,10 @@ module Kaja
 
     def current_year
       @year ||= '2013'
+    end
+
+    def auto_link(text)
+      Rinku.auto_link(text).html_safe
     end
 
     error Padrino::Rendering::TemplateNotFound do not_found; end

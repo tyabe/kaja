@@ -17,7 +17,7 @@ class Nominee
   end
 
   def [](key)
-    @attr[key]
+    @attr[key].to_s.html_safe
   end
 
 end
