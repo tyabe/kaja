@@ -19,6 +19,7 @@ end
 
 group :development do
   gem 'pry-padrino'
+  gem 'foreman'
 end
 
 # Test requirements
