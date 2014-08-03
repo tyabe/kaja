@@ -10,16 +10,6 @@ module Kaja
     disable :protect_from_csrf
     enable  :caching
 
-    case Padrino.env
-    when :develpment
-      set :cache, Padrino::Cache.new(:LRUHash)
-    when :production
-      set :cache, Padrino::Cache.new(
-        :Memcached,
-        backend: ::Dalli::Client.new( ENV["MEMCACHIER_SERVERS"], { username: ENV["MEMCACHIER_USERNAME"], password: ENV["MEMCACHIER_PASSWORD"] })
-      )
-    end
-
     before do
       captures = params[:captures].to_a.dup
       I18n.locale = (@lcid = captures.shift) ? @lcid.to_s.gsub('/', '').to_sym : :ja
