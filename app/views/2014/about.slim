@@ -8,6 +8,8 @@ header.about-header
 section.entry-contents.contents
   h2#entr 参加コミュニティの応募は締め切りました。
   - if @communities.present?
+    p
+      a href="#community-list" 参加コミュニティ一覧
     ul
       - @communities.each_with_index do |community, i|
         li = link_to community[:name], "#community_#{i}"
@@ -59,7 +61,7 @@ section.guidelines-contents.contents
     |  なお、Ruby Kaja の趣旨や目的に合致しないと運営委員が判断した場合は、応募を受理しない事があります。
 
 section.community-list.contents
-  h1#community-list 参加コミュニティ
+  h1#community-list 参加コミュニティ一覧
   dl
     - if @communities.present?
       - @communities.each_with_index do |community, i|
