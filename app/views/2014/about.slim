@@ -7,6 +7,11 @@ header.about-header
     |  身近な Rubyist を賞賛しよう！
 section.entry-contents.contents
   h2#entr 参加コミュニティの応募は締め切りました。
+  - if @communities.present?
+    ul
+      - @communities.each_with_index do |community, i|
+        li = link_to community[:name], "#community_#{i}"
+
 section.about-contents.contents
   h1#about Ruby Kaja とは
   p
@@ -52,6 +57,17 @@ section.guidelines-contents.contents
     |  Ruby Kaja を推薦するコミュニティは、定められた期間中に本サイトの専用フォームより参加登録してください。
     br
     |  なお、Ruby Kaja の趣旨や目的に合致しないと運営委員が判断した場合は、応募を受理しない事があります。
+
+section.community-list.contents
+  h1#community-list 参加コミュニティ
+  dl
+    - if @communities.present?
+      - @communities.each_with_index do |community, i|
+        dt
+          h2 id="community_#{i}"
+            = community[:name]
+        dd = auto_link(simple_format community[:description].html_safe)
+
 section.committee-contents.contents
   h1#committee Ruby Kaja 2014 運営委員
   p 日本 Ruby の会の活動の一環として有志によって運営されています。

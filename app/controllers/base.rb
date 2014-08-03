@@ -15,6 +15,7 @@ Kaja::App.controllers :base do
     redirect "#{lcid}#{current_year}/about"
   end
   get :about, %r{/(\w{2}/)?(\d{4}/)?about} do |lcid, year|
+    @communities = Community.by(year.delete('/'))
     render "#{year}about"
   end
 
