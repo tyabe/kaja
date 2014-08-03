@@ -22,7 +22,7 @@ module Kaja
     end
 
     def auto_link(text)
-      Rinku.auto_link(text).html_safe
+      Rinku.auto_link(text, :all, 'target="_blank"').html_safe
     end
 
     error Padrino::Rendering::TemplateNotFound do not_found; end
