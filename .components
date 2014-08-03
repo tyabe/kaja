@@ -3,7 +3,7 @@
 :test: rspec
 :mock: none
 :script: jquery
-:renderer: erb
+:renderer: slim
 :stylesheet: scss
 :namespace: Kaja
 :migration_format: number

@@ -28,7 +28,7 @@ module Kaja
     end
 
     def current_year
-      @year ||= '2013'
+      @year ||= '2014'
     end
 
     def auto_link(text)

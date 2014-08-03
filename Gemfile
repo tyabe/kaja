@@ -10,6 +10,7 @@ gem 'rake'
 gem 'rinku'
 
 # Component requirements
+gem 'slim'
 gem 'sass'
 gem 'erubis'
 

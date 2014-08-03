@@ -1,0 +1,22 @@
+doctype html
+html lang="ja"
+  head
+    meta charset="UTF-8"
+    title = [@title, "Ruby Kaja"].compact.join(" | ")
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=800"
+    link rel="icon" href="/favicon-x16.png" sizes="16x16" type="image/png"
+    link rel="icon" href="/favicon-x32.png" sizes="32x32" type="image/png"
+    = stylesheet_link_tag "style", media: "all", cache: true
+  body id="#{page_id}"
+    .bg-kumo
+    .bg-matsu
+    #Container
+      = yield
+    #ie_container
+      strong ブラウザとして認識できませんでした。
+      p Google Chromeとかでみてください。
+    script[type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"]
+    script
+      |  window.jQuery || document.write( '<script type="text/javascript" src="/javascripts/jquery.js"><\/script>' )
+    = yield_content :footer

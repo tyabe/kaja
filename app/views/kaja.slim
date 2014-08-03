@@ -1,0 +1,33 @@
+- content_for :footer do
+  = javascript_include_tag 'jquery.wookmark.min', 'kaja'
+= partial 'sidebar'
+header.about-header
+  h1 Ruby Kaja #{@year}
+section.contents
+  ul#KajaContainer
+    - if @nominees.count > 0
+      - @nominees.each do |nominee|
+        li.kaja
+          .inner-kaja
+            = image_tag "profile/#{nominee[:image]}", class: 'img', alt: h(nominee[:name])
+
+            h2.kaja-name
+              =h nominee[:name]
+            - if nominee[:github].present?
+              = link_to nominee[:github], "https://github.com/#{nominee[:github]}", target: "_blank", class: "github link"
+            - if nominee[:twitter].present?
+              = link_to nominee[:twitter], "https://twitter.com/#{nominee[:twitter]}", target: "_blank", class: "twitter link"
+            p.text.hide = auto_link(simple_format nominee[:profile])
+            p.text.hide = auto_link(simple_format nominee[:supplement])
+
+            h3.criterion.hide Kaja選定の基準や方法
+            p.text.hide = auto_link(simple_format nominee[:judged_by])
+
+            h3.hide Kaja投票理由
+            ul.motive.hide = auto_link(simple_format nominee[:reason_for])
+
+            h2.community-name = nominee[:community]
+            p.text = auto_link(simple_format nominee[:description])
+            p.text.hide = auto_link(simple_format nominee[:comment])
+    - else
+      h2 That still hasn't been decided. Is it you?
