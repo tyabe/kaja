@@ -29,4 +29,4 @@ group :test do
   gem 'rack-test', :require => 'rack/test'
 end
 
-gem 'padrino', '0.12.2'
+gem 'padrino', '0.12.3'
