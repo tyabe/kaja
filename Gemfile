@@ -12,7 +12,6 @@ gem 'rinku'
 # Component requirements
 gem 'slim'
 gem 'sass'
-gem 'erubis'
 
 group :production do
   gem 'dalli'
