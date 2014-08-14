@@ -4,11 +4,9 @@ module Kaja
     register Padrino::Rendering
     register Padrino::Mailer
     register Padrino::Helpers
-    register Padrino::Cache
 
     disable :sessions
     disable :protect_from_csrf
-    enable  :caching
 
     before do
       captures = params[:captures].to_a.dup

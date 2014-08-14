@@ -13,10 +13,6 @@ gem 'rinku'
 gem 'slim'
 gem 'sass'
 
-group :production do
-  gem 'dalli'
-end
-
 group :development do
   gem 'pry-padrino'
   gem 'foreman'
