@@ -764,11 +764,12 @@ body {
     content: '●';
     margin-right: 0.5em;
     display: inline-block; }
-#Entry .community-list table {
+
+.community-list table {
   border-spacing: 4px;
   border-collapse: separate; }
-#Entry .community-list th,
-#Entry .community-list td {
+.community-list th,
+.community-list td {
   padding: 12px 24px;
   background-color: rgba(255, 255, 255, 0.5);
   border: 0;
@@ -777,14 +778,21 @@ body {
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
-#Entry .community-list td :last-child {
+.community-list td :last-child {
   margin-bottom: 0; }
-#Entry .community-list th {
+.community-list th {
   font-size: 18px; }
-#Entry .community-list p {
+.community-list p {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 1em; }
+.community-list li {
+  font-size: 14px;
+  color: #C20000; }
+  .community-list li::before {
+    content: '●';
+    margin-right: 0.5em;
+    display: inline-block; }
 
 #Faq .contents {
   margin: 0 0 1em;

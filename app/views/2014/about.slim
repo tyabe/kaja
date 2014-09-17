@@ -4,15 +4,18 @@ header.about-header
 section.entry-contents.contents
   h2 = link_to "Ruby Kaja 2014 受賞者（準備中）", "#"
 
-section.community-list.contents
-  h1#community-list 参加コミュニティ一覧
-  dl
-    - if @communities.present?
+- if @communities.present?
+  section.community-list.contents
+    h1#community-list 参加コミュニティ
+    ul
       - @communities.each_with_index do |community, i|
-        dt
-          h2 id="community_#{i}"
-            = community[:name]
-        dd = auto_link(simple_format community[:description].html_safe)
+        li = link_to community[:name], "#community_#{i}"
+
+    table
+      - @communities.each_with_index do |community, i|
+        tr id="community_#{i}"
+          th = community[:name]
+          td = auto_link(simple_format community[:description].html_safe)
 
 section.committee-contents.contents
   h1#committee Ruby Kaja 2014 運営委員
