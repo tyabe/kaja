@@ -75,6 +75,10 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rack-tracker (0.2.1)
+      activesupport (~> 4.1.0)
+      rack (~> 1.5.2)
+      tilt (~> 1.4.1)
     rake (10.3.2)
     rinku (1.7.3)
     rspec (3.0.0)
@@ -119,6 +123,7 @@ DEPENDENCIES
   pry-padrino
   puma
   rack-test
+  rack-tracker
   rake
   rinku
   rspec

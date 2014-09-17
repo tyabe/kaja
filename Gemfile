@@ -8,6 +8,7 @@ gem 'puma'
 # Project requirements
 gem 'rake'
 gem 'rinku'
+gem 'rack-tracker'
 
 # Component requirements
 gem 'slim'

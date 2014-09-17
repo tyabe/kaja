@@ -8,6 +8,12 @@ Bundler.require(:default, RACK_ENV)
 
 Padrino::Logger::Config[:production][:colorize_logging] = false
 
+if Padrino.env == :production
+  Padrino.use Rack::Tracker do
+    handler :google_analytics, { tracker: 'UA-54887802-1' }
+  end
+end
+
 Padrino.before_load do
   I18n.enforce_available_locales = true
   I18n.default_locale = :ja
