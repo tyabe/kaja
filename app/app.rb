@@ -11,7 +11,7 @@ module Kaja
     before do
       captures = params[:captures].to_a.dup
       I18n.locale = (@lcid = captures.shift) ? @lcid.to_s.gsub('/', '').to_sym : :ja
-      @year = captures.pop
+      @year = captures.pop.to_s.gsub('/', '')
       expires 60
     end
 

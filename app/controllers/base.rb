@@ -23,7 +23,6 @@ Kaja::App.controllers :base do
     redirect "#{lcid}#{current_year}/kaja"
   end
   get :kaja, %r{/(\w{2}/)?(\d{4}/)?kaja} do |lcid, year|
-    @year     = year.gsub('/', '')
     @nominees = Nominee.by(@year)
     render :kaja
   end
