@@ -1,8 +1,8 @@
 = partial 'sidebar'
 header.about-header
-  h1#top Ruby Kaja 2014
+  h1#top Ruby Kaja #{@year}
 section.entry-contents.contents
-  h2 = link_to "Ruby Kaja 2014 受賞者（準備中）", "#"
+  h2 = link_to "Ruby Kaja #{@year} 受賞者", "/#{@lcid}#{@year}/kaja"
 
 - if @communities.present?
   section.community-list.contents
@@ -18,7 +18,7 @@ section.entry-contents.contents
           td = auto_link(simple_format community[:description].html_safe)
 
 section.committee-contents.contents
-  h1#committee Ruby Kaja 2014 運営委員
+  h1#committee Ruby Kaja #{@year} 運営委員
   p 日本 Ruby の会の活動の一環として有志によって運営されています。
   ul
     li

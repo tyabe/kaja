@@ -1,11 +1,11 @@
 = partial 'sidebar'
 header.about-header
-  h1 Ruby Kaja 2012
+  h1 Ruby Kaja #{@year}
 section.entry-contents.contents
-  h2 = link_to "Ruby Kaja 2012 受賞者", "/#{@lcid}2012/kaja"
+  h2 = link_to "Ruby Kaja #{@year} 受賞者", "/#{@lcid}#{@year}/kaja"
 
 section.committee-contents.contents
-  h1 Ruby Kaja 2012 運営委員
+  h1 Ruby Kaja #{@year} 運営委員
   p 日本 Ruby の会の活動の一環として Yokohama.rb の有志によって運営されています。
   ul
     li
