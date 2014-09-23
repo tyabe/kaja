@@ -1,0 +1,34 @@
+name:
+  玉寄 修一
+github:
+  siman-man
+twitter:
+  _simanman
+image:
+  siman-man
+profile: |-
+  沖縄生まれの沖縄育ち、沖縄でSIerとして働いています。Ruby歴4年。
+
+  大学在学中に同級生や後輩と一緒にRyudai.rbを立ち上げて、大学内でRubyの布教活動を行っていました。
+
+  Rubyは大学3年の頃から触りはじめて、そこからハマり続けています。
+
+  Okinawa.rbには1年半前から参加しはじめています。様々なRubyistな人と会話できて楽しいです。
+supplement: |-
+  ちょっとしたツールを作るときはいつもRubyを使っています。
+community:
+  Okinawa.rb
+description: |-
+judged_by: |-
+  Okinawa.rbのFacebook Groupにてアンケート投票を行い、規定の期日までに最も投票を得たメンバーを Okinawa.rb の RubyKaja として選出致しました。
+reason_for: |-
+  1. 在学中に Ryudai.rb を立ち上げ，琉球大学における Ruby コミュニティの普及に貢献した (なお，今は就職し，代表を辞めている)．
+  2. 沖縄Ruby会議01ではスタッフとして尽力し，会場である琉球大学との連携を中心に取りまとめた．
+  3. メソッドチェインを使ったしりとりゲーム (siman-man/shiritori) などを開発・公開した．
+comment: |-
+  沖縄Ruby会議01が Rubyist Magazine に掲載されました!
+  もしよろしければ，是非ご一読ください :)
+
+  RegionalRubyKaigi レポート (44) 沖縄 Ruby 会議 01
+  http://magazine.rubyist.net/?0047-OkinawaRubyKaigi01Report
+

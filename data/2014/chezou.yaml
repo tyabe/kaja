@@ -1,0 +1,26 @@
+name:
+  chezou
+github:
+  chezou
+twitter:
+  chezou
+image:
+  chezou
+profile: |-
+  kawasaki.rbの発起人。
+
+  Machine Learning Casual Talksの主催やJuliaTokyoの共同主催も行い、機械学習や自然言語処理などに興味を持つ。
+  しばらくRubyでの機械学習を盛り上げようと考えていたが、最近はPython一辺倒なのが嫌でJuliaを盛り上げようとしている。
+supplement: |-
+  来年1/17の神奈川Ruby会議も頑張ります!
+community:
+  kawasaki.rb
+description: |-
+judged_by: |-
+  disqusで推薦者を募集し、得票の多かった者をKajaとして選出しました。
+  http://kawasakirb.github.io/kawasakirb/2014/07/26/kawasakirb-014--kaja-kwskrb/
+reason_for: |-
+  "Kawasaki.rb といいつつ Ruby 以外の言語 (主に Python) の発表をふんだんに織り交ぜ、そのすばらしさを語る (ことで Ruby の現状を再確認し、開発方針に示唆を与えてくれる) という活動を行い、川崎におけるプログラミング言語コミュニティの発展に貢献してくれているため。"  by mameさん
+comment: |-
+  地域柄か仕事ではなく趣味のRubyistが多いですが、Jekyllのドキュメント翻訳のリーダーやBestGems.orgの作者など、精力的に活動しているメンバーも多く、Rubyの楽しさを少しずつ広めています。
+

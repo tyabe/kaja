@@ -1,0 +1,33 @@
+name:
+  udzura
+github:
+  udzura
+twitter:
+  udzura
+image:
+  udzura
+profile: |-
+  近藤 宇智朗（こんどう うちお）
+  GMOペパボ株式会社 技術基盤チーム・シニアエンジニア
+
+  1984年愛知県生まれ。ECサイト、オンラインゲームの開発などを経て、2013年よりpaperboy&co.（現GMOペパボ）技術基盤チーム。同年10月から福岡支社勤務。
+  5年近くRubyとUN*X環境にどっぷりのエンジニアだが、地味にUnity3Dの開発経験があったりなど、技術の無駄な幅広さだけは自信がある。
+  Ruby関係の著作も手がけていて、2012年〜2014年の間に技術評論社『WEB+DB PRESS』でのRubyに関する連載の他、他共著で同社『パーフェクトRuby』、同社『パーフェクトRuby on Rails』などがある。
+  最近のマイブームはDockerとHubot
+supplement: |-
+community:
+  Fukuoka.rb
+description: |-
+judged_by: |-
+  GitHub のリポジトリ( https://github.com/fukuokarb/rubykaja2014 )に立候補者が pull request を送り、メンバーが +1 コメントで投票してコメントの数で選出。
+reason_for: |-
+  Fukuoka.rb の Web サイトの立ち上げ、開場のファシリテーション、ミートアップでの LT 発表など Fukuoka.rb のコミュニティ活動を盛り上げるのに貢献。
+comment: |-
+  Fukuoka.rb は、福岡周辺のRubyistが集まるコミュニティです。「福岡で、Rubyの話のできる人びとが集まる場所」を目指しています。
+  具体的には、集まって、gemを作ったり、Rubyのコミットログを読んだり、技術書を読んだり、質問があれば聞いたり、LTをしたりする、そんな場所となっています。
+  Asakusa.rb に憧れを送りつつ、 Shibuya.rb、Yokohama.rb、Sendagaya.rb などなどに影響を受けているような感じのコミュニティです。
+
+    URL: http://fukuokarb.doorkeeper.jp/
+
+    参加方法: 上記doorkeeperのイベントページ経由でご登録ください。Rubyに興味のある方なら、どなたでも歓迎します！
+
