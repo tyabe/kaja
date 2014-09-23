@@ -16,7 +16,7 @@ describe "BaseController" do
     it { get '/about';    expect(last_response).to be_redirect }
     it { get '/en/about'; expect(last_response).to be_redirect }
 
-    %w[2012 2013 2014].each do |year|
+    %w[2012 2013 2014 2015].each do |year|
       it { get "/#{year}";    expect(last_response).to be_redirect }
       it { get "/en/#{year}"; expect(last_response).to be_redirect }
 
