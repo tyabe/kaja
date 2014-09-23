@@ -9,7 +9,7 @@ section.contents
       - @nominees.each do |nominee|
         li.kaja
           .inner-kaja
-            = image_tag "profile/#{nominee[:image]}", class: 'img', alt: h(nominee[:name])
+            = image_tag "profile/#{nominee[:image]}.png", class: 'img', alt: h(nominee[:name])
 
             h2.kaja-name
               =h nominee[:name]
