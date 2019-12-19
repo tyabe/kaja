@@ -65,7 +65,7 @@ GEM
     pry-padrino (0.1.2)
       pry (>= 0.8)
     puma (2.15.3)
-    rack (1.6.4)
+    rack (1.6.12)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
