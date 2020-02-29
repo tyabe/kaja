@@ -74,7 +74,7 @@ GEM
       activesupport (>= 3.0)
       rack (>= 1.4)
       tilt (>= 1.4)
-    rake (10.4.2)
+    rake (12.3.3)
     rinku (1.7.3)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
